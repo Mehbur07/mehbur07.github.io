@@ -4,7 +4,7 @@ Mehmet Burak ŞAHİN'in (Mehbur07) kişisel sitesi: projeler, Minecraft modları
 
 🌐 **Adres:** https://mehbur07.github.io
 
-> Durum: **Faz 2 tamamlandı** — Bütün sayfalar ve içerik yayında. İndirme bağlantıları (Faz 3), İngilizce içerik (Faz 4) ve mesaj formu (Faz 5) sırada. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
+> Durum: **Faz 3 tamamlandı** — Bütün sayfalar yayında; launcher ve 4 mod GitHub Releases üzerinden indirilebiliyor. İngilizce içerik (Faz 4) ve mesaj formu (Faz 5) sırada. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
 
 ## Kullanılan teknolojiler
 
@@ -55,3 +55,14 @@ kaynak-gorseller/        Logoların orijinalleri (git'e girmez, sadece bu bilgis
 ## Yayına alma
 
 `main` branch'ine merge edilen her değişiklik birkaç dakika içinde otomatik olarak https://mehbur07.github.io adresinde yayınlanır. `main` korumalıdır; değişiklikler Pull Request ile girer.
+
+## Yeni sürüm yayınlama (launcher / mod)
+
+Dosyalar repoya konmaz, her sürüm ayrı bir GitHub Release olarak yüklenir. Etiket (tag) biçimi `<proje>-v<sürüm>`:
+`mehburmc-launcher-v0.31.2`, `deathnote-v1.0.0`, `irongolemtroll-v1.0.0`, `garipseylermc-v0.1.0`, `mehburity-v0.1.0`.
+
+```bash
+gh release create deathnote-v1.1.0 --target main --title "Death Note v1.1.0" --notes-file notlar.md deathnote-1.1.0.jar
+```
+
+Sonra `projelerim.html` içinde o kartın sürüm satırını, "İndir" bağlantısını (`releases/download/<tag>/<dosya>`) ve "Sürüm Notları" bağlantısını (`releases/tag/<tag>`) yeni etikete göre güncelle.

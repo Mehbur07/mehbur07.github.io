@@ -2,6 +2,21 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - Faz 3 (`feature/downloads`, PR ile main'e): 5 GitHub Release oluşturuldu — `mehburmc-launcher-v0.31.2` (Latest), `deathnote-v1.0.0`, `irongolemtroll-v1.0.0`, `garipseylermc-v0.1.0`, `mehburity-v0.1.0`
+  - Release notları Türkçe: açıklama, gereksinimler (jar'lardaki `fabric.mod.json`'dan: Fabric Loader ≥0.19.5, MC ~26.2, Java ≥25, Fabric API; Garip Şeyler için GeckoLib ≥5.5.5), kurulum adımları, SHA-256
+  - Yüklenen dosyalar geri indirilip SHA-256 ile doğrulandı; .exe gömülü anahtar/token için tarandı (temiz)
+  - Kartlara "İndir" (doğrudan dosya) + "Sürüm Notları" (Release sayfası) düğmeleri ve dosya boyutu eklendi
+- **Son Commit:** 3c02e44 Merge pull request #2 from Mehbur07/feature/pages
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Faz 4 — `feature/english`: `translations.js` içindeki `en` sözlüğüne bütün sayfa içeriklerinin İngilizcesini eklemek
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Launcher imzasız olduğu için Windows SmartScreen uyarısı çıkabilir (Release notunda "Ek bilgi → Yine de çalıştır" anlatıldı)
+  - Kartlardaki boyut yazısı ("1,4 MB") çevrilmiyor; Faz 4'te gerekirse ele alınır
+  - Yeni sürümde: yeni Release + `projelerim.html`'deki iki bağlantı ve sürüm satırı güncellenmeli (README'de anlatıldı)
+  - İkon yolları kökten (`/assets/icons/...`); dosyaya çift tıklayınca ikonlar görünmez, yerel sunucuyla sorun yok
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Faz 2 (`feature/pages`, PR ile main'e): `projelerim.html`, `hakkimda.html`, `sosyal-medya.html`, `iletisim.html` eklendi; ana sayfaya bölüm kartları, menüye 4 sayfa
   - Metinler eski Lovable sitesinden birebir alındı (kopyası: `kaynak-gorseller/eski-site-metinleri.txt`); mod açıklamaları jar içindeki `fabric.mod.json`'dan Türkçeye çevrildi
   - Launcher açıklamasından "~5 MB" kaldırıldı (yeni exe 14 MB). MehburOS/MehBrowser/MAIO için kısa yer tutucu açıklamalar yazıldı — kullanıcı düzeltecek
