@@ -2,6 +2,18 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `feature/minimap-card`: "Üzerinde Çalıştığım Projeler" bölümüne Mehbur's Mini Map kartı (MAIO'dan sonra), rozet "Geliştiriliyor"
+  - Logo: kullanıcının verdiği 512×512 piksel-art PNG → `assets/img/mehbursminimap.png` (256×256, en yakın komşu küçültme, 2 KB); orijinali `kaynak-gorseller/mehbursminimap-logo.png`
+  - Açıklama yer tutucu ("Kendi mini harita projem. Detaylar çok yakında!") — projenin kaynağı bu bilgisayarda bulunamadı; TR/EN eklendi (`alt.minimap`, `projects.minimap.text`)
+  - Ana sayfa sayacı "6 hazır · 5 geliştiriliyor"
+- **Son Commit:** a01fe73 Merge pull request #12 from Mehbur07/feature/mehpix-link
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map için gerçek açıklamalar, Discord davetinin süresiz olduğunun kontrolü
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Projelerim'e kart eklenip çıkarıldığında ana sayfadaki `home.projectsCount` sayacını (TR HTML + EN translations.js) da güncellemek gerekir
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - `feature/mehpix-link`: MehPiX sitesi yayında (https://mehpix.github.io/); ana sayfadaki kartın pasif "Siteye Git · Yakında" düğmesi gerçek bağlantı oldu (yeni sekmede açılır)
   - Rozet "Yapım aşamasında" → "Yayında"; açıklama sitenin gerçek içeriğine göre yazıldı: MehPiX artık "görsel üretim sitesi" değil, PyAI ve Quiz projelerini sunan bir yazılım stüdyosu
   - TR/EN metinleri güncellendi (`home.mehpixBadge`, `home.mehpixText`, `home.mehpixCta`)
