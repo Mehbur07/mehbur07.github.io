@@ -2,6 +2,18 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `fix/light-theme-colors`: açık temada `--yellow`/`--yellow-edge` koyu temayla aynı (#ffe62e/#d9b400); süs moru `--purple`/`--purple-deep` = #cfa6ff (beyaza yakın neon lavanta), `--border` #e4d2ff, `--glow-purple` lavanta
+  - Kullanıcı seçimi: mor YAZILAR beyaza yakın olmasın (okunmaz), daha parlak neon mor olsun → `--accent-text` #7f2cff (#6a1fd1 yerine; açık zeminlerde kontrast ≥4.5)
+  - Açık temada `.badge--purple` yazısı koyu (`--on-accent`), çünkü rozet zemini artık açık
+  - Erişilebilirlik betiği 6 sayfa × 2 tema temiz; koyu tema değişmedi
+- **Son Commit:** 494372e Merge pull request #10 from Mehbur07/docs/project-complete
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO açıklamaları, Discord davetinin süresiz olduğunun kontrolü, MehPix "Siteye Git" bağlantısı
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Açık temada yazı morunu açmak gerekirse #7f2cff'den daha açık bir ton beyaz zeminde 4.5:1 kontrastın altına düşer
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Kullanıcı Lovable sitesini yayından kaldırdı (proje silinmedi); `mehbur07.lovable.app` artık 404 "Project not found" veriyor
   - ROADMAP'te Faz 7 ve dolayısıyla bütün fazlar (0–7) ✅; v1.0.0 tag'i main'de (`8c0612f`)
 - **Son Commit:** 8c0612f Merge pull request #9 from Mehbur07/chore/release-v1.0.0

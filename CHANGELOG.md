@@ -7,6 +7,7 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 
 ### Değişti
 - Eski Lovable sitesi (mehbur07.lovable.app) kapatıldı; site artık sadece mehbur07.github.io adresinde.
+- Açık temada sarı artık koyu temadakiyle aynı neon sarı; mor süslemeler (çerçeve, rozet, parıltı) beyaza yakın neon lavanta, mor yazılar daha parlak bir neon mor oldu.
 
 ## [1.0.0] - 2026-11-10
 

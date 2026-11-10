@@ -42,28 +42,30 @@
   color-scheme: dark;
 }
 
-/* Açık tema: neon sarı beyaz zeminde okunmadığı için yazı vurgusu mor olur */
+/* Açık tema: sarı koyu temayla aynıdır. Süs amaçlı mor (çerçeve, parıltı, rozet)
+   beyaza yakın neon lavantadır; yazı olarak kullanılan mor ise beyaz zeminde
+   okunabilsin diye daha doygun, parlak bir neon mordur. */
 :root[data-theme="light"] {
   --bg: #faf7ff;
   --bg-soft: #f2ecfd;
   --surface: #ffffff;
   --surface-2: #f6f1ff;
-  --border: #ddd0f5;
+  --border: #e4d2ff;
   --text: #1b1030;
   --text-muted: #5b4a7a;
 
-  --yellow: #ffd60a;
-  --yellow-edge: #c9a300;
-  --purple: #6a1fd1;
-  --purple-deep: #4b1590;
+  --yellow: #ffe62e;         /* koyu temayla aynı neon sarı */
+  --yellow-edge: #d9b400;
+  --purple: #cfa6ff;         /* beyaza yakın neon mor (süs) */
+  --purple-deep: #cfa6ff;
 
   --accent: var(--yellow);
-  --accent-text: #6a1fd1;
+  --accent-text: #7f2cff;    /* parlak neon mor (yazı; beyaz zeminde okunur) */
   --on-accent: #1b1030;
   --success: #11804a;
   --danger: #c4183f;
-  --glow-yellow: rgba(255, 200, 0, .35);
-  --glow-purple: rgba(106, 31, 209, .18);
+  --glow-yellow: rgba(255, 230, 46, .55);
+  --glow-purple: rgba(207, 166, 255, .65);
   --header-bg: rgba(250, 247, 255, .82);
 
   color-scheme: light;
@@ -274,6 +276,7 @@ a { color: var(--accent-text); text-underline-offset: 3px; }
   color: var(--on-accent);
 }
 .badge--purple { background: var(--purple-deep); color: #f4effc; }
+:root[data-theme="light"] .badge--purple { color: var(--on-accent); }  /* açık zeminli rozette koyu yazı */
 .badge--outline { background: transparent; color: var(--accent-text); border: 1px solid currentColor; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0; list-style: none; }
