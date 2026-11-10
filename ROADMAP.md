@@ -25,7 +25,7 @@ Her faz ayrı bir branch'te yapılır ve Pull Request ile `main`'e girer.
   - **Üzerinde çalıştığım:** MehburAI ("STABİL DEĞİL" polis bandı, indirme yok), MehburOS, MehBrowser, MAIO (Mehbur's Auto Inventory Organizer)
 - Görsellerin küçültülmesi (hedef: toplam 1 MB altı)
 
-## Faz 3 — İndirmeler (`feature/downloads`)
+## Faz 3 — İndirmeler (`feature/downloads`) ✅
 - Launcher ve 4 mod GitHub Releases'e yüklenir (her biri ayrı tag, örn. `deathnote-v1.0.0`)
 - Kartlardaki "İndir" düğmeleri bağlanır
 - Mod gereksinimleri kartlarda: Fabric, Minecraft 26.2, Java 25, Fabric API (+ Garip Şeyler için GeckoLib)
