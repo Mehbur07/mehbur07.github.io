@@ -40,5 +40,5 @@ Her faz ayrı bir branch'te yapılır ve Pull Request ile `main`'e girer.
 - SEO, paylaşım önizlemesi, favicon, mobil/erişilebilirlik/hız testi
 
 ## Faz 7 — Yayın ve geçiş
-- Son kontroller, `v1.0.0` tag'i + CHANGELOG
-- Lovable sitesinin kapatılması (Lovable panelinden)
+- ✅ Son kontroller, `v1.0.0` tag'i + CHANGELOG
+- ⏳ Lovable sitesinin kapatılması (Lovable panelinden, kullanıcı yapar)
