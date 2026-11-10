@@ -2,6 +2,20 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - Faz 2 (`feature/pages`, PR ile main'e): `projelerim.html`, `hakkimda.html`, `sosyal-medya.html`, `iletisim.html` eklendi; ana sayfaya bölüm kartları, menüye 4 sayfa
+  - Metinler eski Lovable sitesinden birebir alındı (kopyası: `kaynak-gorseller/eski-site-metinleri.txt`); mod açıklamaları jar içindeki `fabric.mod.json`'dan Türkçeye çevrildi
+  - Launcher açıklamasından "~5 MB" kaldırıldı (yeni exe 14 MB). MehburOS/MehBrowser/MAIO için kısa yer tutucu açıklamalar yazıldı — kullanıcı düzeltecek
+  - Çeviri sistemi değişti: içerik Türkçesi HTML'de, `translations.js` içinde sadece `en` (+ JS'in ürettiği ortak yazıların `tr`'si). EN eksikse Türkçe kalır
+  - Görseller System.Drawing ile küçültüldü: 12 MB → 166 KB. Marka ikonları Simple Icons v13.21.0 (CC0) `assets/icons/`'da
+- **Son Commit:** d9c616f Merge pull request #1 from Mehbur07/feature/design-system
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Faz 3 — `feature/downloads`: launcher (v0.31.2) ve 4 jar'ı GitHub Releases'e yükleyip "İndir · Yakında" düğmelerini bağlamak
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - İkon yolları kökten (`/assets/icons/...`); `index.html` dosyaya çift tıklanarak açılırsa ikonlar görünmez, yerel sunucuyla (`python -m http.server`) sorun yok
+  - MehPix kartındaki "Siteye Git" pasif; MehPix sitesi hazır olunca bağlanacak
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Faz 1 (`feature/design-system`, PR ile main'e): ortak `style.css` (renk değişkenleri, düğme/kart/rozet bileşenleri), `main.js` (header/footer tek yerden, tema, dil, pixel M07, parçacık ağı), `translations.js`
   - Yazı tipleri: Oxanium (başlık), Manrope (metin), IBM Plex Mono (etiket) — referans sitenin fontları bilerek kullanılmadı
   - Varsayılan tema koyu, varsayılan dil TR; seçimler tarayıcıda (localStorage) hatırlanıyor. Neon "sahne" iki temada da koyu kalıyor

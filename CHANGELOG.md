@@ -10,3 +10,5 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 - GitHub Pages'te yayınlanan geçici "yapım aşamasında" sayfası eklendi.
 - Sitenin tasarım temeli kuruldu: neon sarı/mor renkler, açık/koyu tema, TR/EN dil seçimi, ortak menü ve alt bilgi.
 - Ana sayfaya blok blok beliren pixel "M07" yazısı ve parçacık efekti eklendi; bileşenler için tasarım vitrini sayfası açıldı.
+- Projelerim, Hakkımda, Sosyal Medya ve İletişim sayfaları eklendi; ana sayfaya bölüm kartları geldi.
+- Projelerim sayfasında launcher, 4 Minecraft modu ve geliştirilen projeler listelendi; MehburAI kartına "STABİL DEĞİL" polis bandı eklendi.

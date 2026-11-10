@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projelerim — Mehbur07</title>
+  <meta name="description" content="Mehbur07'nin projeleri: MehburMC Launcher, Minecraft modları (Death Note, Iron Golem Troll, Garip Şeyler MC, Mehburity) ve geliştirilmekte olan yazılımlar.">
+  <meta name="robots" content="noindex">
+  <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('m07-theme'),l=localStorage.getItem('m07-lang');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='en'||l==='tr')d.lang=l;}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600;700&family=Oxanium:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="projects">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow"><span data-i18n="projects.eyebrow">Yazılım</span> · <span lang="en">Minecraft</span></p>
+        <h1 data-i18n="nav.projects">Projelerim</h1>
+        <p data-i18n="projects.lead">Geliştirdiğim yazılımlar ve Minecraft modları. Hazır olanları indirebilir, üzerinde çalıştıklarımı buradan takip edebilirsin.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 40px">
+      <div class="container">
+
+        <!-- ============ HAZIR PROJELER ============ -->
+        <div class="project-group" aria-labelledby="ready-title">
+          <div class="section-head">
+            <h2 class="section-title" id="ready-title" data-i18n="projects.readyTitle">Hazır Projeler</h2>
+            <p data-i18n="projects.readyText">Kullanıma hazır, indirilebilir projeler. İndirme bağlantıları çok yakında eklenecek.</p>
+          </div>
+
+          <div class="grid">
+            <!-- MehburMC Launcher -->
+            <article class="card project-card">
+              <div class="project-card__head">
+                <div class="card__media"><img src="assets/img/mehburmc.jpg" alt="MehburMC Launcher logosu" width="88" height="88" loading="lazy"></div>
+                <div class="project-card__title">
+                  <span class="badge" data-i18n="projects.typeLauncher">Minecraft Launcher</span>
+                  <h3>MehburMC Launcher</h3>
+                  <span class="project-card__meta">v0.31.2 · Windows</span>
+                </div>
+              </div>
+              <p class="project-card__subtitle" data-i18n="projects.mmc.subtitle">Hafif ve hızlı Minecraft launcher</p>
+              <p data-i18n="projects.mmc.text">Kendi geliştirdiğim, Tauri ile yazılmış son derece hafif bir Windows Minecraft launcher'ı. Vanilla, Forge, Fabric ve OptiFine sürümlerini tek tıkla kurar; CurseForge ve Modrinth üzerinden mod ve modpack'leri kolayca içe aktarır. Java Runtime'ı gerekli sürümle kendisi indirip kurar. Düşük RAM kullanımı, tema ve RAM ayarları ile otomatik güncelleme desteği bir arada.</p>
+              <ul class="tags">
+                <li class="tag">Windows</li><li class="tag">Tauri</li><li class="tag">Vanilla</li><li class="tag">Forge</li>
+                <li class="tag">Fabric</li><li class="tag">OptiFine</li><li class="tag">CurseForge</li><li class="tag">Modrinth</li>
+              </ul>
+              <div class="card__footer btn-row">
+                <span class="btn btn--primary btn--sm" aria-disabled="true" data-i18n="projects.downloadSoon">İndir · Yakında</span>
+              </div>
+            </article>
+
+            <!-- Death Note -->
+            <article class="card project-card">
+              <div class="project-card__head">
+                <div class="card__media"><img class="img-pixel" src="assets/img/deathnote.png" alt="Death Note modu logosu" width="88" height="88" loading="lazy"></div>
+                <div class="project-card__title">
+                  <span class="badge badge--purple" data-i18n="projects.typeMod">Minecraft Modu</span>
+                  <h3>Death Note</h3>
+                  <span class="project-card__meta">v1.0.0 · Fabric</span>
+                </div>
+              </div>
+              <p data-i18n="projects.dn.text">Tüylere ve kitaplara Death Note büyüsü ekler. Bir oyuncunun adını yaz ve onu yere ser.</p>
+              <ul class="tags">
+                <li class="tag">Fabric</li><li class="tag">Minecraft 26.2</li><li class="tag">Java 25</li><li class="tag">Fabric API</li>
+              </ul>
+              <div class="card__footer btn-row">
+                <span class="btn btn--primary btn--sm" aria-disabled="true" data-i18n="projects.downloadSoon">İndir · Yakında</span>
+              </div>
+            </article>
+
+            <!-- Iron Golem Troll -->
+            <article class="card project-card">
+              <div class="project-card__head">
+                <div class="card__media"><img class="img-pixel" src="assets/img/irongolemtroll.png" alt="Iron Golem Troll modu logosu" width="88" height="88" loading="lazy"></div>
+                <div class="project-card__title">
+                  <span class="badge badge--purple" data-i18n="projects.typeMod">Minecraft Modu</span>
+                  <h3>Iron Golem Troll</h3>
+                  <span class="project-card__meta">v1.0.0 · Fabric</span>
+                </div>
+              </div>
+              <p data-i18n="projects.igt.text">Bir demir golemine vur ve onunla birlikte bitmeyen bir yükselme döngüsüne takıl. Sadece sunucu tarafında çalışır; oyuncuların bilgisayarına kurulsa da sorun çıkarmaz.</p>
+              <ul class="tags">
+                <li class="tag">Fabric</li><li class="tag">Minecraft 26.2</li><li class="tag">Java 25</li><li class="tag">Fabric API</li><li class="tag" data-i18n="projects.serverSide">Sunucu tarafı</li>
+              </ul>
+              <div class="card__footer btn-row">
+                <span class="btn btn--primary btn--sm" aria-disabled="true" data-i18n="projects.downloadSoon">İndir · Yakında</span>
+              </div>
+            </article>
+
+            <!-- Garip Şeyler MC -->
+            <article class="card project-card">
+              <div class="project-card__head">
+                <div class="card__media"><img src="assets/img/garipseyler.jpg" alt="Garip Şeyler MC modu logosu" width="88" height="88" loading="lazy"></div>
+                <div class="project-card__title">
+                  <span class="badge badge--purple" data-i18n="projects.typeMod">Minecraft Modu</span>
+                  <h3>Garip Şeyler MC</h3>
+                  <span class="project-card__meta">v0.1.0 · Fabric</span>
+                </div>
+              </div>
+              <p data-i18n="projects.gs.text">Ters Dünya'ya hoş geldin. Nether kırmızıya bürünür, Demogorgon'lar avlanır, Vecna bekler.</p>
+              <ul class="tags">
+                <li class="tag">Fabric</li><li class="tag">Minecraft 26.2</li><li class="tag">Java 25</li><li class="tag">Fabric API</li><li class="tag">GeckoLib</li>
+              </ul>
+              <div class="card__footer btn-row">
+                <span class="btn btn--primary btn--sm" aria-disabled="true" data-i18n="projects.downloadSoon">İndir · Yakında</span>
+              </div>
+            </article>
+
+            <!-- Mehburity -->
+            <article class="card project-card">
+              <div class="project-card__head">
+                <div class="card__media"><img src="assets/img/mehburity.png" alt="Mehburity modu logosu" width="88" height="88" loading="lazy"></div>
+                <div class="project-card__title">
+                  <span class="badge badge--purple" data-i18n="projects.typeMod">Minecraft Modu</span>
+                  <h3>Mehburity</h3>
+                  <span class="project-card__meta">v0.1.0 · Fabric</span>
+                </div>
+              </div>
+              <p data-i18n="projects.mty.text">Verity'den ilham alan, havada süzülen neon camgöbeği bir yapay zekâ yoldaşı. Gemini ile sohbet eder, senin için savaşır, maden kazar, ev inşa eder ve kızdırılınca 18 blok boyunda bir iblise dönüşür. Zifiri karanlık geceler, bir el feneri ve karanlıktan izleyen şeyler seni bekliyor.</p>
+              <ul class="tags">
+                <li class="tag">Fabric</li><li class="tag">Minecraft 26.2</li><li class="tag">Java 25</li><li class="tag">Fabric API</li><li class="tag">Gemini</li>
+              </ul>
+              <div class="card__footer btn-row">
+                <span class="btn btn--primary btn--sm" aria-disabled="true" data-i18n="projects.downloadSoon">İndir · Yakında</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ============ ÜZERİNDE ÇALIŞTIĞIM PROJELER ============ -->
+        <div class="project-group" aria-labelledby="wip-title">
+          <div class="section-head">
+            <h2 class="section-title" id="wip-title" data-i18n="projects.wipTitle">Üzerinde Çalıştığım Projeler</h2>
+            <p data-i18n="projects.wipText">Henüz geliştirme aşamasında olan projeler. Hazır olduklarında burada indirilebilir olacaklar.</p>
+          </div>
+
+          <div class="grid">
+            <!-- MehburAI: stabil değil, indirme yok, üzerinde polis bandı -->
+            <article class="card project-card card--taped">
+              <div class="tape" aria-hidden="true">STABİL DEĞİL ⚠ STABİL DEĞİL ⚠ STABİL DEĞİL ⚠ STABİL DEĞİL ⚠ STABİL DEĞİL ⚠ STABİL DEĞİL</div>
+              <div class="project-card__head">
+                <div class="card__media"><img src="assets/img/mehburai.jpg" alt="MehburAI logosu" width="88" height="88" loading="lazy"></div>
+                <div class="project-card__title">
+                  <span class="badge" data-i18n="projects.typeAI">Hibrit AI</span>
+                  <h3>MehburAI</h3>
+                  <span class="project-card__meta" data-i18n="projects.unstable">Stabil değil · İndirilemez</span>
+                </div>
+              </div>
+              <p class="project-card__subtitle" data-i18n="projects.ai.subtitle">Hibrit masaüstü yapay zekâsı</p>
+              <p data-i18n="projects.ai.text">İnternet varken Google Gemini ve Wikipedia ile araştırıp yerel hafızasına kaydeden, internet yokken öğrendiklerini Türkçe semantik motoruyla hatırlayan, neon camgöbeği ve siyah temalı bir Windows masaüstü yapay zekâsı. Sesli asistan ("Hey Mehbur"), tam ekran JARVIS görüşmesi, kamera ile bakma, görsel çizme ve Telegram ile uzaktan kontrol özellikleri var.</p>
+              <ul class="tags">
+                <li class="tag">Windows</li><li class="tag">Python</li><li class="tag">CustomTkinter</li><li class="tag">Google Gemini</li>
+                <li class="tag">SQLite Memory</li><li class="tag" data-i18n="projects.voice">Sesli Asistan</li><li class="tag">Offline AI</li>
+              </ul>
+            </article>
+
+            <!-- MehburOS -->
+            <article class="card project-card">
+              <div class="project-card__head">
+                <div class="card__media"><img src="assets/img/mehburos.jpg" alt="MehburOS logosu" width="88" height="88" loading="lazy"></div>
+                <div class="project-card__title">
+                  <span class="badge badge--outline" data-i18n="projects.inDev">Geliştiriliyor</span>
+                  <h3>MehburOS</h3>
+                </div>
+              </div>
+              <p data-i18n="projects.os.text">Kendi işletim sistemi projem. Detaylar çok yakında!</p>
+            </article>
+
+            <!-- MehBrowser -->
+            <article class="card project-card">
+              <div class="project-card__head">
+                <div class="card__media"><img src="assets/img/mehbrowser.jpg" alt="MehBrowser logosu" width="88" height="88" loading="lazy"></div>
+                <div class="project-card__title">
+                  <span class="badge badge--outline" data-i18n="projects.inDev">Geliştiriliyor</span>
+                  <h3>MehBrowser</h3>
+                </div>
+              </div>
+              <p data-i18n="projects.browser.text">Kendi web tarayıcısı projem. Detaylar çok yakında!</p>
+            </article>
+
+            <!-- MAIO: henüz logosu yok, yazılı yer tutucu -->
+            <article class="card project-card">
+              <div class="project-card__head">
+                <div class="card__media card__media--text" aria-hidden="true">MAIO</div>
+                <div class="project-card__title">
+                  <span class="badge badge--outline" data-i18n="projects.inDev">Geliştiriliyor</span>
+                  <h3>MAIO</h3>
+                  <span class="project-card__meta">Mehbur's Auto Inventory Organizer</span>
+                </div>
+              </div>
+              <p data-i18n="projects.maio.text">Otomatik envanter düzenleyici projem. Detaylar çok yakında!</p>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
+</body>
+</html>
