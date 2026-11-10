@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mehbur07 — Mehmet Burak ŞAHİN</title>
-  <meta name="description" content="Mehmet Burak ŞAHİN (Mehbur07) — gamer, Kick ve Twitch yayıncısı, elektronikçi ve yazılım geliştirici.">
+  <title>Mehbur07 — Mehmet Burak ŞAHİN | Gamer, Yayıncı, Yazılımcı</title>
+  <meta name="description" content="Mehmet Burak ŞAHİN (Mehbur07) — Kick ve Twitch yayıncısı, elektronikçi ve yazılım geliştirici. Projeler, Minecraft modları, sosyal medya ve iletişim.">
   <!-- Site tamamlanana kadar arama motorlarına kapalı (Faz 6'da açılacak) -->
   <meta name="robots" content="noindex">
   <!-- Tema ve dil seçimini sayfa çizilmeden uygula (ekranın yanıp sönmesini önler) -->
@@ -20,18 +20,69 @@
   <header class="site-header" data-layout="header"></header>
 
   <main id="main">
+    <!-- Giriş: neon sahne + pixel M07 -->
     <section class="hero">
       <div class="container">
         <div class="stage">
           <canvas class="particles" aria-hidden="true"></canvas>
           <div class="pixel-text" data-pixel="M07"><span class="pixel-text__fallback">M07</span></div>
           <p class="eyebrow" data-i18n="home.eyebrow">Gamer · Yayıncı · Yazılımcı</p>
-          <h1>Mehmet Burak ŞAHİN</h1>
-          <p class="lead" data-i18n="home.lead">Site yenileniyor. Projelerim, Minecraft modlarım ve daha fazlası çok yakında burada!</p>
+          <h1>Mehmet Burak ŞAHİN <small>MEHBUR07</small></h1>
+          <p class="lead" data-i18n="home.lead">Kick ve Twitch yayıncısı, elektronikçi ve yazılım geliştirici. Oyun ve teknoloji tutkusuyla her gün yeni bir şey üretiyorum.</p>
           <div class="btn-row">
-            <a class="btn btn--primary" href="https://kick.com/Mehbur07" target="_blank" rel="noopener" data-i18n="home.ctaKick">Kick'te İzle</a>
-            <a class="btn btn--ghost" href="https://github.com/Mehbur07" target="_blank" rel="noopener" data-i18n="home.ctaGithub">GitHub'ım</a>
+            <a class="btn btn--primary" href="projelerim.html" data-i18n="home.ctaProjects">Projelerim</a>
+            <a class="btn btn--ghost" href="sosyal-medya.html" data-i18n="home.ctaSocial">Sosyal Medya</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bölüm kartları -->
+    <section class="section" style="padding-top: 24px" aria-labelledby="explore-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="explore-title" data-i18n="home.exploreTitle">Keşfet</h2>
+        </div>
+
+        <div class="home-grid">
+          <!-- MehPix: site henüz hazır değil, düğme pasif -->
+          <article class="card feature-card--wide">
+            <img class="feature-card__banner" src="assets/img/mehpix.jpg" alt="MehPiX logosu" width="720" height="393" loading="lazy">
+            <div class="feature-card__body">
+              <span class="badge badge--outline" data-i18n="home.mehpixBadge">Yapım aşamasında</span>
+              <h3>MehPiX</h3>
+              <p data-i18n="home.mehpixText">Kendi yapay zekâlı görsel üretim sitem. Şu an üzerinde çalışıyorum, çok yakında yayında!</p>
+              <span class="btn btn--primary" aria-disabled="true" data-i18n="home.mehpixCta">Siteye Git · Yakında</span>
+            </div>
+          </article>
+
+          <a class="card card--link feature-card" href="projelerim.html">
+            <span class="eyebrow" data-i18n="home.projectsCount">5 hazır · 4 geliştiriliyor</span>
+            <h3 data-i18n="nav.projects">Projelerim</h3>
+            <p data-i18n="home.projectsText">Minecraft launcher'ım, modlarım ve üzerinde çalıştığım yazılımlar.</p>
+            <span class="feature-card__go" data-i18n="home.go">Keşfet</span>
+          </a>
+
+          <a class="card card--link feature-card" href="hakkimda.html">
+            <span class="eyebrow" data-i18n="home.aboutEyebrow">Ben Burak</span>
+            <h3 data-i18n="nav.about">Hakkımda</h3>
+            <p data-i18n="home.aboutText">Oyuncu, yayıncı, elektronikçi ve yazılımcı. Kim olduğum ve hedeflerim.</p>
+            <span class="feature-card__go" data-i18n="home.go">Keşfet</span>
+          </a>
+
+          <a class="card card--link feature-card" href="sosyal-medya.html">
+            <span class="eyebrow" lang="en">Kick · Twitch · YouTube</span>
+            <h3 data-i18n="nav.social">Sosyal Medya</h3>
+            <p data-i18n="home.socialText">Yayınlarımı izle, beni takip et ve Discord topluluğuna katıl.</p>
+            <span class="feature-card__go" data-i18n="home.go">Keşfet</span>
+          </a>
+
+          <a class="card card--link feature-card" href="iletisim.html">
+            <span class="eyebrow" data-i18n="home.contactEyebrow">Bana Ulaş</span>
+            <h3 data-i18n="nav.contact">İletişim</h3>
+            <p data-i18n="home.contactText">Soruların, iş birlikleri veya sadece merhaba demek için bana yaz.</p>
+            <span class="feature-card__go" data-i18n="home.go">Keşfet</span>
+          </a>
         </div>
       </div>
     </section>

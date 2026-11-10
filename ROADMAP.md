@@ -16,7 +16,7 @@ Her faz ayrı bir branch'te yapılır ve Pull Request ile `main`'e girer.
 - Pixel **M07** yazısı (kodla çizilir, neon parlamalı)
 - Dil altyapısı (TR/EN)
 
-## Faz 2 — Sayfalar ve içerik (`feature/pages`)
+## Faz 2 — Sayfalar ve içerik (`feature/pages`) ✅
 - Ana sayfa: giriş + kartlar (MehPix, Projelerim, Hakkımda, Sosyal Medya, İletişim)
 - MehPix kartı: "Siteye Git" (site henüz yapım aşamasında)
 - Hakkımda, Sosyal Medya, İletişim (e-posta: mehmetburaksahin07@gmail.com)

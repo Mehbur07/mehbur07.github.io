@@ -5,16 +5,21 @@
    3) TR/EN dil seçimi
    4) Pixel yazı (M07) çizimi
    5) Neon sahnedeki parçacık ağı
+   6) "STABİL DEĞİL" polis bandının açısı
    ========================================================= */
 (function () {
   'use strict';
 
   /* ---------- Ayarlar: menü ve sosyal medya linkleri ---------- */
 
-  // Menüde görünecek sayfalar. Yeni sayfa eklenince buraya bir satır eklenir.
-  // (Faz 2'de Projelerim, Hakkımda, Sosyal Medya, İletişim eklenecek)
+  // Menüde görünecek sayfalar. Yeni sayfa eklenince buraya bir satır eklenir
+  // ve menü yazısı translations.js dosyasına iki dilde yazılır.
   var NAV = [
-    { key: 'nav.home', href: 'index.html', page: 'home' }
+    { key: 'nav.home', href: 'index.html', page: 'home' },
+    { key: 'nav.projects', href: 'projelerim.html', page: 'projects' },
+    { key: 'nav.about', href: 'hakkimda.html', page: 'about' },
+    { key: 'nav.social', href: 'sosyal-medya.html', page: 'social' },
+    { key: 'nav.contact', href: 'iletisim.html', page: 'contact' }
   ];
 
   var SOCIALS = [
@@ -40,10 +45,17 @@
     } catch (e) { return null; }
   }
 
+  // Çeviri bulunamazsa null döner; o zaman sayfadaki orijinal (Türkçe) metin kalır
   function t(key) {
     var lang = root.lang === 'en' ? 'en' : 'tr';
-    return (DICT[lang] && DICT[lang][key]) || DICT.tr[key] || key;
+    var value = DICT[lang] && DICT[lang][key];
+    if (value == null) value = DICT.tr[key];
+    return value == null ? null : value;
   }
+
+  // Sayfadaki orijinal Türkçe metinler (dil TR'ye dönünce geri yazmak için)
+  var originals = new WeakMap();
+  var originalAttrs = new WeakMap();
 
   /* ---------- İkonlar (SVG) ---------- */
 
@@ -135,7 +147,7 @@
     var btn = document.querySelector('.theme-toggle');
     if (!btn) return;
     var isLight = root.getAttribute('data-theme') === 'light';
-    var label = t(isLight ? 'theme.toDark' : 'theme.toLight');
+    var label = t(isLight ? 'theme.toDark' : 'theme.toLight') || '';
     btn.setAttribute('aria-label', label);
     btn.setAttribute('title', label);
   }
@@ -151,13 +163,21 @@
 
   function applyTranslations() {
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
-      el.textContent = t(el.getAttribute('data-i18n'));
+      if (!originals.has(el)) originals.set(el, el.textContent);
+      var value = t(el.getAttribute('data-i18n'));
+      el.textContent = value == null ? originals.get(el) : value;
     });
     // Örnek: data-i18n-attr="aria-label:nav.label"
     document.querySelectorAll('[data-i18n-attr]').forEach(function (el) {
       el.getAttribute('data-i18n-attr').split(';').forEach(function (pair) {
         var parts = pair.split(':');
-        if (parts.length === 2) el.setAttribute(parts[0].trim(), t(parts[1].trim()));
+        if (parts.length !== 2) return;
+        var attr = parts[0].trim();
+        if (!originalAttrs.has(el)) originalAttrs.set(el, {});
+        var saved = originalAttrs.get(el);
+        if (!(attr in saved)) saved[attr] = el.getAttribute(attr) || '';
+        var value = t(parts[1].trim());
+        el.setAttribute(attr, value == null ? saved[attr] : value);
       });
     });
     document.querySelectorAll('[data-lang]').forEach(function (btn) {
@@ -284,6 +304,23 @@
     }
   }
 
+  /* ---------- 6) Polis bandı ---------- */
+
+  // Bant, kartın sol üst köşesinden sağ alt köşesine tam çapraz uzansın diye
+  // açısı ve uzunluğu kartın boyutuna göre hesaplanır.
+  function fitTape(tape) {
+    var card = tape.parentElement;
+    function fit() {
+      var w = card.offsetWidth, h = card.offsetHeight;
+      if (!w || !h) return;
+      var angle = Math.atan2(h, w) * 180 / Math.PI;
+      tape.style.width = Math.ceil(Math.sqrt(w * w + h * h) + 80) + 'px';
+      tape.style.transform = 'translate(-50%, -50%) rotate(' + angle.toFixed(2) + 'deg)';
+    }
+    fit();
+    if ('ResizeObserver' in window) new ResizeObserver(fit).observe(card);
+  }
+
   /* ---------- Başlat ---------- */
 
   var header = document.querySelector('[data-layout="header"]');
@@ -297,4 +334,5 @@
 
   document.querySelectorAll('[data-pixel]').forEach(buildPixelText);
   document.querySelectorAll('canvas.particles').forEach(startParticles);
+  document.querySelectorAll('.tape').forEach(fitTape);
 })();

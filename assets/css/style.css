@@ -386,7 +386,7 @@ a { color: var(--accent-text); text-underline-offset: 3px; }
 .nav-toggle { display: none; }
 
 /* Mobil menü */
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .nav-toggle { display: inline-grid; }
   .site-nav {
     position: absolute;
@@ -409,7 +409,7 @@ a { color: var(--accent-text); text-underline-offset: 3px; }
 /* ---------- 8) Alt bilgi (footer) ---------- */
 
 .site-footer {
-  margin-top: 48px;
+  margin-top: 0;
   border-top: 1px solid var(--border);
   background: var(--bg-soft);
 }
@@ -530,4 +530,207 @@ a { color: var(--accent-text); text-underline-offset: 3px; }
 .hero { padding-block: clamp(24px, 5vw, 48px); }
 .hero .stage { display: grid; gap: 20px; justify-items: start; }
 .hero h1 { color: #f4effc; }
+.hero h1 small {
+  display: block;
+  margin-top: 6px;
+  font-size: .45em;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: #ffe62e;
+}
 .hero .lead { max-width: 560px; font-size: 1.1rem; }
+
+/* ---------- 11) Alt sayfa başlığı ---------- */
+
+.page-head { padding-block: clamp(40px, 7vw, 72px) 8px; }
+.page-head h1 { margin-top: 8px; }
+.page-head p:not(.eyebrow) { margin-top: 14px; max-width: 640px; color: var(--text-muted); font-size: 1.1rem; }
+
+/* ---------- 12) Ana sayfa kartları ---------- */
+
+.home-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .home-grid { grid-template-columns: repeat(2, 1fr); }
+  .feature-card--wide { grid-column: span 2; }
+}
+@media (min-width: 960px) {
+  .home-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.feature-card h3 { font-size: 1.4rem; }
+.feature-card__go {
+  margin-top: auto;
+  padding-top: 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--accent-text);
+}
+.feature-card__go::after { content: " →"; transition: margin .2s; }
+.card--link:hover .feature-card__go::after { margin-left: 4px; }
+
+/* MehPix kartı: geniş görsel + yazı */
+.feature-card--wide { display: grid; gap: 20px; align-items: center; }
+@media (min-width: 640px) {
+  .feature-card--wide { grid-template-columns: 1.1fr 1fr; }
+}
+.feature-card__banner {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 720 / 393;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.feature-card__body { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+
+/* ---------- 13) Proje kartları ---------- */
+
+.project-group + .project-group { margin-top: clamp(48px, 7vw, 72px); }
+
+.project-card__head { display: flex; gap: 16px; align-items: center; }
+.project-card__head .card__media { width: 88px; flex: none; }
+.project-card__title { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.project-card__title h3 { font-size: 1.2rem; }
+.project-card__meta {
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  color: var(--text-muted);
+}
+.project-card__subtitle { color: var(--text) !important; font-weight: 600; }
+
+/* Pixel art logolar bulanıklaşmasın */
+.img-pixel { image-rendering: pixelated; }
+
+/* Logosu olmayan proje için yazılı yer tutucu */
+.card__media--text {
+  display: grid;
+  place-items: center;
+  background: #0b0614;
+  border-color: #3a2560;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: .06em;
+  color: #ffe62e;
+  text-shadow: 0 0 10px rgba(255, 230, 46, .6);
+}
+
+/* ---------- 14) "STABİL DEĞİL" polis bandı ---------- */
+
+.card--taped { overflow: hidden; }
+.tape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  width: 150%;
+  transform: translate(-50%, -50%) rotate(40deg); /* JS kartın boyutuna göre düzeltir */
+  padding: 7px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  pointer-events: none;
+  background: #ffd60a;
+  color: #111;
+  border-block: 4px solid #111;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .45);
+  font-family: var(--font-display);
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+}
+
+/* ---------- 15) Hakkımda ---------- */
+
+.about-intro {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+}
+@media (min-width: 760px) {
+  .about-intro { grid-template-columns: 240px 1fr; gap: 40px; }
+}
+.about-avatar {
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  border: 1px solid var(--yellow-edge);
+  box-shadow: 0 0 40px var(--glow-yellow);
+}
+.about-intro h2 { margin-bottom: 14px; }
+.about-intro p { color: var(--text-muted); font-size: 1.1rem; }
+
+.goal-list {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: goal;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+}
+.goal-list li {
+  counter-increment: goal;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.goal-list li::before {
+  content: "0" counter(goal);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent-text);
+}
+
+/* ---------- 16) Sosyal medya ve iletişim kartları ---------- */
+
+.social-card { flex-direction: row; align-items: center; gap: 16px; text-decoration: none; }
+.social-card__icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+}
+/* İkon SVG dosyası maske olarak kullanılır, rengi --brand ile verilir */
+.social-card__icon i {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: var(--brand, var(--text));
+  -webkit-mask: var(--icon) center / contain no-repeat;
+  mask: var(--icon) center / contain no-repeat;
+}
+.social-card__text { display: flex; flex-direction: column; min-width: 0; }
+.social-card__text strong { font-family: var(--font-display); font-size: 1.1rem; }
+.social-card__text span { color: var(--text-muted); overflow-wrap: anywhere; }
+.social-card__go {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: .9rem;
+  color: var(--accent-text);
+  white-space: nowrap;
+}
+
+.contact-note {
+  margin-top: 32px;
+  padding: 20px 24px;
+  border: 1px dashed var(--purple);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+}

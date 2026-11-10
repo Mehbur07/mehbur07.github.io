@@ -4,7 +4,7 @@ Mehmet Burak ŞAHİN'in (Mehbur07) kişisel sitesi: projeler, Minecraft modları
 
 🌐 **Adres:** https://mehbur07.github.io
 
-> Durum: **Faz 1 tamamlandı** — Tasarım temeli hazır; ana sayfada yeni tasarımla bir "yenileniyor" sayfası var. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
+> Durum: **Faz 2 tamamlandı** — Bütün sayfalar ve içerik yayında. İndirme bağlantıları (Faz 3), İngilizce içerik (Faz 4) ve mesaj formu (Faz 5) sırada. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
 
 ## Kullanılan teknolojiler
 
@@ -26,8 +26,13 @@ Kurulum gerekmez. İki yol var:
 ## Klasör yapısı
 
 ```
-index.html               Ana sayfa
+index.html               Ana sayfa (giriş + bölüm kartları)
+projelerim.html          Hazır projeler ve üzerinde çalışılan projeler
+hakkimda.html            Hakkımda ve hedefler
+sosyal-medya.html        Sosyal medya hesapları
+iletisim.html            İletişim kanalları
 tasarim.html             Tasarım vitrini (bütün bileşenlerin önizlemesi, arama motorlarına kapalı)
+assets/icons/            Marka ikonları (Simple Icons v13.21.0, CC0 lisanslı)
 assets/css/style.css     Ortak stil: renkler, yazı tipleri, düğmeler, kartlar, menü
 assets/js/main.js        Menü ve alt bilgi, tema düğmesi, dil seçimi, pixel M07, parçacık efekti
 assets/js/translations.js  TR/EN metinleri
@@ -43,7 +48,9 @@ kaynak-gorseller/        Logoların orijinalleri (git'e girmez, sadece bu bilgis
 - **Renkleri değiştirmek:** `assets/css/style.css` dosyasının en üstündeki değişkenler (`--yellow`, `--purple` vb.). Açık temanın renkleri hemen altındaki `[data-theme="light"]` bölümünde.
 - **Menüye sayfa eklemek:** `assets/js/main.js` içindeki `NAV` listesine bir satır ekle, metnini `translations.js` dosyasına iki dilde yaz.
 - **Sosyal medya linkleri:** `assets/js/main.js` içindeki `SOCIALS` listesi.
-- **Bir yazıyı çevrilebilir yapmak:** HTML'de etikete `data-i18n="anahtar"` ekle, `translations.js` içine `tr` ve `en` karşılığını yaz.
+- **Bir yazıyı çevrilebilir yapmak:** HTML'de etikete `data-i18n="anahtar"` ekle (Türkçesi HTML'de kalır), İngilizcesini `translations.js` içindeki `en` bölümüne aynı anahtarla yaz.
+- **Yeni proje kartı eklemek:** `projelerim.html` içinde mevcut bir `<article class="card project-card">` bloğunu kopyalayıp düzenle. Logoyu `assets/img/` klasörüne küçültülmüş olarak koy (256×256 yeterli).
+- **Bir projeye "STABİL DEĞİL" bandı eklemek:** Karta `card--taped` sınıfını ve içine `<div class="tape" aria-hidden="true">STABİL DEĞİL ⚠ …</div>` ekle; açısı otomatik ayarlanır.
 
 ## Yayına alma
 
