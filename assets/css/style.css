@@ -731,6 +731,22 @@ a { color: var(--accent-text); text-underline-offset: 3px; }
   white-space: nowrap;
 }
 
+/* Kopyalanabilir terminal komutu (Linux kurulumu) */
+.cmd {
+  margin: 0;
+  padding: 10px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-text);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: .82rem;
+  line-height: 1.5;
+  color: var(--text);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
 /* ---------- İletişim formu ---------- */
 
 .contact-form { gap: 20px; max-width: 760px; padding: 28px; }
