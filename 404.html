@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 404 sayfası her adreste açılabilir (örn. /olmayan/sayfa); bütün linkler site kökünden çözülsün -->
+  <base href="/">
+  <title data-i18n="title.notfound">Sayfa Bulunamadı — Mehbur07</title>
+  <meta name="robots" content="noindex">
+  <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('m07-theme'),l=localStorage.getItem('m07-lang');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='en'||l==='tr')d.lang=l;}catch(e){}})();</script>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b0614">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600;700&family=Oxanium:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="notfound">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="stage">
+          <canvas class="particles" aria-hidden="true"></canvas>
+          <div class="pixel-text" data-pixel="404"><span class="pixel-text__fallback">404</span></div>
+          <p class="eyebrow" data-i18n="notfound.eyebrow">Hata 404</p>
+          <h1 data-i18n="notfound.title">Sayfa bulunamadı</h1>
+          <p class="lead" data-i18n="notfound.text">Aradığın sayfa taşınmış, silinmiş ya da hiç var olmamış olabilir.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="index.html" data-i18n="notfound.home">Ana Sayfaya Dön</a>
+            <a class="btn btn--ghost" href="projelerim.html" data-i18n="nav.projects">Projelerim</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
+</body>
+</html>

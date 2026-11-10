@@ -2,6 +2,19 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - Faz 6 (`chore/polish`): 5 sayfadan `noindex` kaldırıldı (sadece `tasarim.html` ve `404.html` kapalı); her sayfaya `canonical`, Open Graph / Twitter kartı etiketleri, `theme-color`; ana sayfaya `Person` yapılandırılmış verisi (JSON-LD, `sameAs` = sosyal hesaplar)
+  - Favicon maskot logodan üretildi: kökte `favicon.ico` (16/32/48), `assets/img/favicon-32.png`, `apple-touch-icon.png` (180). Paylaşım görseli `assets/img/og-image.jpg` (1200x630, 79 KB) site tasarımıyla HTML'den çizildi
+  - `robots.txt`, `sitemap.xml` (5 sayfa) ve temalı `404.html` (`<base href="/">` ile her adreste çalışır; pixel yazıya "4" harfi eklendi) eklendi
+  - Lighthouse'u yerelde `pnpm dlx` ile çalıştırmak otomatik güvenlik kontrolünce engellendi; yerine kendi erişilebilirlik betiğimle (kontrast, alt, etiket, başlık sırası, dokunma alanı, tekrar eden id) 6 sayfa × 2 tema tarandı → temiz (betik bilerek bozuk bir sayfada 7/7 sorunu yakaladı). Hız/SEO ölçümü yayından sonra Google PageSpeed Insights ile canlı sitede yapılacak
+- **Son Commit:** 76ae0ba Merge pull request #6 from Mehbur07/feature/linux-launcher
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Faz 7 — v1.0.0 tag'i ve CHANGELOG sürüm başlığı; kullanıcı Lovable sitesini panelden kapatır. İsteğe bağlı: Google Search Console'a site + sitemap eklemek
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Yeni sayfa eklenirse `sitemap.xml` ve sayfanın `canonical`/`og:*` etiketleri güncellenmeli
+  - Paylaşım önizlemeleri (Discord, X vb.) önbellek tutar; görsel değişirse eski önizleme bir süre görünebilir
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Kullanıcı deneme e-postasının geldiğini doğruladı; iletişim formu PR #5 merge edildi
   - `feature/linux-launcher`: Linux .deb paketi (Ubuntu 26.04 / MehburOS, amd64, 8,2 MB) ayrı tag açılmadan mevcut `mehburmc-launcher-v0.31.2` Release'ine ikinci dosya olarak yüklendi (aynı uygulama, aynı sürüm); Release notları iki sistemin kurulumunu anlatacak şekilde yenilendi
   - Projelerim'e "MehburMC Launcher Linux Version" kartı (Windows kartının yanında) ve kopyalanabilir `sudo apt install` komut kutusu (`.cmd` stili) eklendi; ana sayfa sayacı "6 hazır"

@@ -4,7 +4,7 @@ Mehmet Burak ŞAHİN'in (Mehbur07) kişisel sitesi: projeler, Minecraft modları
 
 🌐 **Adres:** https://mehbur07.github.io
 
-> Durum: **Faz 5 tamamlandı** — Bütün sayfalar Türkçe ve İngilizce yayında; launcher ve 4 mod GitHub Releases üzerinden indirilebiliyor; iletişim formu mesajları e-postaya iletiyor. Cilalama ve SEO (Faz 6) sırada. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
+> Durum: **Faz 6 tamamlandı** — Site Türkçe ve İngilizce yayında, arama motorlarına açık; launcher (Windows + Linux) ve 4 mod GitHub Releases üzerinden indirilebiliyor; iletişim formu mesajları e-postaya iletiyor. Sırada Faz 7 (v1.0.0 sürümü ve Lovable sitesinin kapatılması) var. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
 
 ## Kullanılan teknolojiler
 
@@ -32,11 +32,14 @@ hakkimda.html            Hakkımda ve hedefler
 sosyal-medya.html        Sosyal medya hesapları
 iletisim.html            İletişim kanalları
 tasarim.html             Tasarım vitrini (bütün bileşenlerin önizlemesi, arama motorlarına kapalı)
+404.html                 "Sayfa bulunamadı" sayfası (GitHub Pages olmayan adreslerde otomatik gösterir)
+favicon.ico              Sekme ikonu (16/32/48 px)
+robots.txt, sitemap.xml  Arama motorları için tarama kuralları ve sayfa listesi
 assets/icons/            Marka ikonları (Simple Icons v13.21.0, CC0 lisanslı)
 assets/css/style.css     Ortak stil: renkler, yazı tipleri, düğmeler, kartlar, menü
 assets/js/main.js        Menü ve alt bilgi, tema düğmesi, dil seçimi, pixel M07, parçacık efekti
 assets/js/translations.js  TR/EN metinleri
-assets/img/              Siteye giren (küçültülmüş) görseller
+assets/img/              Siteye giren (küçültülmüş) görseller; og-image.jpg = link paylaşılınca çıkan 1200x630 kart
 ROADMAP.md               Proje fazları
 PROGRESS.md              Oturumlar arası ilerleme notları
 CHANGELOG.md             Değişiklik geçmişi
@@ -47,7 +50,8 @@ kaynak-gorseller/        Logoların orijinalleri (git'e girmez, sadece bu bilgis
 
 - **Renkleri değiştirmek:** `assets/css/style.css` dosyasının en üstündeki değişkenler (`--yellow`, `--purple` vb.). Açık temanın renkleri hemen altındaki `[data-theme="light"]` bölümünde.
 - **Menüye sayfa eklemek:** `assets/js/main.js` içindeki `NAV` listesine bir satır ekle, metnini `translations.js` dosyasına iki dilde yaz.
-- **Sosyal medya linkleri:** `assets/js/main.js` içindeki `SOCIALS` listesi.
+- **Sosyal medya linkleri:** `assets/js/main.js` içindeki `SOCIALS` listesi. Ana sayfadaki yapılandırılmış verinin (`application/ld+json`) `sameAs` listesini de güncelle.
+- **Yeni sayfa eklemek:** Var olan bir sayfayı kopyala; `<head>` içindeki `canonical`, `og:title`, `og:description`, `og:url` değerlerini yeni sayfaya göre değiştir ve sayfayı `sitemap.xml`'e ekle.
 - **Bir yazıyı çevrilebilir yapmak:** HTML'de etikete `data-i18n="anahtar"` ekle (Türkçesi HTML'de kalır), İngilizcesini `translations.js` içindeki `en` bölümüne aynı anahtarla yaz. Görsel açıklaması (`alt`) gibi bir özellik için `data-i18n-attr="alt:anahtar"` kullan. Bir yazının İngilizcesi yazılmazsa İngilizce modda Türkçesi görünür; sayfa bozulmaz.
 - **Yeni proje kartı eklemek:** `projelerim.html` içinde mevcut bir `<article class="card project-card">` bloğunu kopyalayıp düzenle. Logoyu `assets/img/` klasörüne küçültülmüş olarak koy (256×256 yeterli).
 - **Bir projeye "STABİL DEĞİL" bandı eklemek:** Karta `card--taped` sınıfını ve içine `<div class="tape" aria-hidden="true">STABİL DEĞİL ⚠ …</div>` ekle; açısı otomatik ayarlanır.

@@ -62,6 +62,7 @@ window.M07_TRANSLATIONS = {
     'title.about': 'About — Mehbur07',
     'title.social': 'Social Media — Mehbur07',
     'title.contact': 'Contact — Mehbur07',
+    'title.notfound': 'Page Not Found — Mehbur07',
 
     /* --- Görsel açıklamaları (alt) --- */
     'alt.mehpix': 'MehPiX logo',
@@ -93,6 +94,12 @@ window.M07_TRANSLATIONS = {
     'home.socialText': 'Watch my streams, follow me and join the Discord community.',
     'home.contactEyebrow': 'Get in Touch',
     'home.contactText': 'Questions, collaborations or just want to say hi? Write to me.',
+
+    /* --- 404 sayfası --- */
+    'notfound.eyebrow': 'Error 404',
+    'notfound.title': 'Page not found',
+    'notfound.text': "The page you're looking for may have been moved, deleted or never existed.",
+    'notfound.home': 'Back to Home',
 
     /* --- Projelerim --- */
     'projects.eyebrow': 'Software',
