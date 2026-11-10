@@ -30,7 +30,7 @@ Her faz ayrı bir branch'te yapılır ve Pull Request ile `main`'e girer.
 - Kartlardaki "İndir" düğmeleri bağlanır
 - Mod gereksinimleri kartlarda: Fabric, Minecraft 26.2, Java 25, Fabric API (+ Garip Şeyler için GeckoLib)
 
-## Faz 4 — İngilizce (`feature/english`)
+## Faz 4 — İngilizce (`feature/english`) ✅
 - Tüm metinlerin çevirisi, dil seçiminin tarayıcıda hatırlanması
 
 ## Faz 5 — İletişim formu (`feature/contact-form`)

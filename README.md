@@ -4,7 +4,7 @@ Mehmet Burak ŞAHİN'in (Mehbur07) kişisel sitesi: projeler, Minecraft modları
 
 🌐 **Adres:** https://mehbur07.github.io
 
-> Durum: **Faz 3 tamamlandı** — Bütün sayfalar yayında; launcher ve 4 mod GitHub Releases üzerinden indirilebiliyor. İngilizce içerik (Faz 4) ve mesaj formu (Faz 5) sırada. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
+> Durum: **Faz 4 tamamlandı** — Bütün sayfalar Türkçe ve İngilizce yayında; launcher ve 4 mod GitHub Releases üzerinden indirilebiliyor. Mesaj formu (Faz 5) sırada. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
 
 ## Kullanılan teknolojiler
 
@@ -48,7 +48,7 @@ kaynak-gorseller/        Logoların orijinalleri (git'e girmez, sadece bu bilgis
 - **Renkleri değiştirmek:** `assets/css/style.css` dosyasının en üstündeki değişkenler (`--yellow`, `--purple` vb.). Açık temanın renkleri hemen altındaki `[data-theme="light"]` bölümünde.
 - **Menüye sayfa eklemek:** `assets/js/main.js` içindeki `NAV` listesine bir satır ekle, metnini `translations.js` dosyasına iki dilde yaz.
 - **Sosyal medya linkleri:** `assets/js/main.js` içindeki `SOCIALS` listesi.
-- **Bir yazıyı çevrilebilir yapmak:** HTML'de etikete `data-i18n="anahtar"` ekle (Türkçesi HTML'de kalır), İngilizcesini `translations.js` içindeki `en` bölümüne aynı anahtarla yaz.
+- **Bir yazıyı çevrilebilir yapmak:** HTML'de etikete `data-i18n="anahtar"` ekle (Türkçesi HTML'de kalır), İngilizcesini `translations.js` içindeki `en` bölümüne aynı anahtarla yaz. Görsel açıklaması (`alt`) gibi bir özellik için `data-i18n-attr="alt:anahtar"` kullan. Bir yazının İngilizcesi yazılmazsa İngilizce modda Türkçesi görünür; sayfa bozulmaz.
 - **Yeni proje kartı eklemek:** `projelerim.html` içinde mevcut bir `<article class="card project-card">` bloğunu kopyalayıp düzenle. Logoyu `assets/img/` klasörüne küçültülmüş olarak koy (256×256 yeterli).
 - **Bir projeye "STABİL DEĞİL" bandı eklemek:** Karta `card--taped` sınıfını ve içine `<div class="tape" aria-hidden="true">STABİL DEĞİL ⚠ …</div>` ekle; açısı otomatik ayarlanır.
 
