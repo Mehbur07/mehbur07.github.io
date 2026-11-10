@@ -2,6 +2,19 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `feature/open-source-links`: Hakkımda'ya tam olarak "Projelerim açık kaynaklıdır." (`about.openSource`), art arda paragraflar için `.about-intro p + p` boşluğu
+  - Projelerim'de "Kaynak Kodu" düğmesi (`projects.source`): Launcher (Windows + Linux → MehburMC-Launcher), deathnote-mode, irongolemtroll-mode, garipseylermc, mehburity-mode, MehburAI, mehburs-mini-map-mod. MehburOS / MehBrowser repoları gizli, MAIO'nun reposu yok → düğme yok
+  - Kullanıcı isteğiyle `deathnote-mode` ve `mehburity-mode` repoları PUBLIC yapıldı; öncesinde tüm commit geçmişleri secret taramasından geçti (temiz; Mehburity testlerindeki `test-key-123` sahte değer). İkisinde Dependabot uyarıları açıldı
+  - Kullanıcı kararı: PyAI bu sitede yayınlanmayacak
+- **Son Commit:** 98a09b3 Merge pull request #13 from Mehbur07/feature/minimap-card
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map açıklamaları, Discord davetinin süresiz olduğunun kontrolü
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - deathnote-mode, mehburity-mode, garipseylermc ve MehburAI repolarında LICENSE dosyası yok (hukuken "açık kaynak" sayılmaları için lisans gerekir) — kullanıcıya önerildi, karar onda
+  - deathnote-mode commit'leri gerçek gmail adresiyle atılmış; repo açık olduğu için bu adres commit geçmişinde görünür (adres zaten sitenin İletişim sayfasında da var)
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - `feature/minimap-card`: "Üzerinde Çalıştığım Projeler" bölümüne Mehbur's Mini Map kartı (MAIO'dan sonra), rozet "Geliştiriliyor"
   - Logo: kullanıcının verdiği 512×512 piksel-art PNG → `assets/img/mehbursminimap.png` (256×256, en yakın komşu küçültme, 2 KB); orijinali `kaynak-gorseller/mehbursminimap-logo.png`
   - Açıklama yer tutucu ("Kendi mini harita projem. Detaylar çok yakında!") — projenin kaynağı bu bilgisayarda bulunamadı; TR/EN eklendi (`alt.minimap`, `projects.minimap.text`)
