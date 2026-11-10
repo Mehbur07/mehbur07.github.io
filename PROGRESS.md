@@ -2,6 +2,16 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - Google Search Console: kullanıcı "URL öneki" mülkü (`https://mehbur07.github.io/`) oluşturdu; HTML etiketi yöntemiyle doğrulama için `google-site-verification` meta etiketi `index.html`'e eklendi (`chore/search-console`)
+  - Kullanıcı yayından sonra Search Console'da "Doğrula"ya basacak, `sitemap.xml`'i gönderecek ve ana sayfa için dizine ekleme isteyecek
+- **Son Commit:** cc50c7b Merge pull request #7 from Mehbur07/chore/polish
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Faz 7 — v1.0.0 tag'i ve CHANGELOG sürüm başlığı; kullanıcı Lovable sitesini panelden kapatır
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - `google-site-verification` etiketi silinirse Search Console sahipliği düşer; ana sayfada kalmalı
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Faz 6 (`chore/polish`): 5 sayfadan `noindex` kaldırıldı (sadece `tasarim.html` ve `404.html` kapalı); her sayfaya `canonical`, Open Graph / Twitter kartı etiketleri, `theme-color`; ana sayfaya `Person` yapılandırılmış verisi (JSON-LD, `sameAs` = sosyal hesaplar)
   - Favicon maskot logodan üretildi: kökte `favicon.ico` (16/32/48), `assets/img/favicon-32.png`, `apple-touch-icon.png` (180). Paylaşım görseli `assets/img/og-image.jpg` (1200x630, 79 KB) site tasarımıyla HTML'den çizildi
   - `robots.txt`, `sitemap.xml` (5 sayfa) ve temalı `404.html` (`<base href="/">` ile her adreste çalışır; pixel yazıya "4" harfi eklendi) eklendi
