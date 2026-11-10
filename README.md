@@ -4,7 +4,7 @@ Mehmet Burak ŞAHİN'in (Mehbur07) kişisel sitesi: projeler, Minecraft modları
 
 🌐 **Adres:** https://mehbur07.github.io
 
-> Durum: **Faz 6 tamamlandı** — Site Türkçe ve İngilizce yayında, arama motorlarına açık; launcher (Windows + Linux) ve 4 mod GitHub Releases üzerinden indirilebiliyor; iletişim formu mesajları e-postaya iletiyor. Sırada Faz 7 (v1.0.0 sürümü ve Lovable sitesinin kapatılması) var. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
+> Durum: **v1.0.0 yayında** — Site Türkçe ve İngilizce, arama motorlarına açık ve Google Search Console'a bağlı; launcher (Windows + Linux) ve 4 mod GitHub Releases üzerinden indirilebiliyor; iletişim formu mesajları e-postaya iletiyor. Değişiklik geçmişi için [CHANGELOG.md](CHANGELOG.md), fazlar için [ROADMAP.md](ROADMAP.md).
 
 ## Kullanılan teknolojiler
 

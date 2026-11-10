@@ -5,6 +5,10 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-11-10
+
+İlk tam sürüm: Lovable sitesinin yerine geçen, GitHub Pages üzerinde yayınlanan yeni site.
+
 ### Eklendi
 - Proje iskeleti kuruldu: README, yol haritası, git ayar dosyaları.
 - GitHub Pages'te yayınlanan geçici "yapım aşamasında" sayfası eklendi.
@@ -18,3 +22,6 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 - Projelerim sayfasına "MehburMC Launcher Linux Version" kartı eklendi; Ubuntu 26.04 / MehburOS için .deb paketi launcher'ın v0.31.2 sürümüne yüklendi.
 - Site arama motorlarına açıldı; sekme ikonu (favicon), link paylaşılınca çıkan önizleme kartı, site haritası ve sitenin tasarımında bir "Sayfa bulunamadı" (404) sayfası eklendi.
 - Site Google Search Console'a bağlandı (sahiplik doğrulama etiketi eklendi).
+
+[Unreleased]: https://github.com/Mehbur07/mehbur07.github.io/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/Mehbur07/mehbur07.github.io/tree/v1.0.0

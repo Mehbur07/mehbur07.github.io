@@ -2,6 +2,20 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - Faz 7 (`chore/release-v1.0.0`): CHANGELOG'daki [Unreleased] maddeleri `[1.0.0] - 2026-11-10` başlığına taşındı, karşılaştırma linkleri eklendi; README durum satırı "v1.0.0 yayında"
+  - Merge sonrası main'e `v1.0.0` (annotated) tag'i atılacak; ayrı bir GitHub Release açılmıyor (repo'daki "Latest" launcher olarak kalsın)
+  - Son kontrol: canlı sitede 6 sayfa, 30 iç link/dosya, 7 indirme ve 5 sürüm notu bağlantısı ile 6 sosyal hesap çalışıyor
+  - Discord bu bilgisayardan doğrulanamadı: Türkiye'de Discord erişim engeli var (discord.com da açılmıyor); davetin geçerliliğini kullanıcı kontrol etmeli
+  - Kullanıcı Search Console'da doğrulamayı yaptı ve site haritası gönderme ekranına geldi
+- **Son Commit:** f35cb97 Merge pull request #8 from Mehbur07/chore/search-console
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Kullanıcı Lovable sitesini panelden kapatır (önce sosyal medya biyografilerindeki eski lovable.app linklerini mehbur07.github.io ile değiştirir); sonra ROADMAP'te Faz 7 tamamen ✅
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Discord daveti süresiz değilse bir gün geçersiz olur; Discord'da "süresiz" davet oluşturulup `main.js` SOCIALS + `iletisim.html`'deki link güncellenmeli
+  - Bundan sonraki her değişiklik CHANGELOG'da yeni [Unreleased] bölümüne yazılır
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Google Search Console: kullanıcı "URL öneki" mülkü (`https://mehbur07.github.io/`) oluşturdu; HTML etiketi yöntemiyle doğrulama için `google-site-verification` meta etiketi `index.html`'e eklendi (`chore/search-console`)
   - Kullanıcı yayından sonra Search Console'da "Doğrula"ya basacak, `sitemap.xml`'i gönderecek ve ana sayfa için dizine ekleme isteyecek
 - **Son Commit:** cc50c7b Merge pull request #7 from Mehbur07/chore/polish
