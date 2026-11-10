@@ -6,7 +6,7 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 ## [Unreleased]
 
 ### Eklendi
-- Bütün sayfalarda arka planda yavaşça süzülen, yanıp sönen neon sarı parçacıklar eklendi; içeriğin arkasında kalır, tıklamayı engellemez, "hareketi azalt" ayarı açık olanlarda gösterilmez.
+- Ana sayfadaki sahnede bulunan, birbirine çizgilerle bağlanan neon sarı/mor parçacık ağı artık bütün sayfalarda arka planda dolaşıyor; içeriğin arkasında kalır, tıklamayı engellemez, açık temada beyaz zeminde görünsün diye koyu tonlarla çizilir.
 - Hakkımda sayfasına "Projelerim açık kaynaklıdır." cümlesi eklendi; Projelerim sayfasında kodu açık olan her projenin kartına GitHub reposuna giden "Kaynak Kodu" düğmesi kondu (Death Note ve Mehburity repoları da herkese açıldı).
 - Projelerim sayfasındaki "Üzerinde Çalıştığım Projeler" bölümüne logosuyla birlikte Mehbur's Mini Map kartı eklendi; ana sayfadaki proje sayacı "5 geliştiriliyor" oldu.
 - Ana sayfadaki MehPiX kartının "Siteye Git" düğmesi artık yayındaki MehPiX sitesini (mehpix.github.io) açıyor; kartın rozeti "Yayında" oldu ve açıklaması sitenin gerçek içeriğine (yazılım stüdyosu, PyAI, Quiz) göre yenilendi.
