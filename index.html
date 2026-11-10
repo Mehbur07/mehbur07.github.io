@@ -1,72 +1,42 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mehbur07 — Yapım Aşamasında</title>
-  <meta name="description" content="Mehmet Burak ŞAHİN (Mehbur07) kişisel sitesi yapım aşamasında.">
+  <title>Mehbur07 — Mehmet Burak ŞAHİN</title>
+  <meta name="description" content="Mehmet Burak ŞAHİN (Mehbur07) — gamer, Kick ve Twitch yayıncısı, elektronikçi ve yazılım geliştirici.">
+  <!-- Site tamamlanana kadar arama motorlarına kapalı (Faz 6'da açılacak) -->
   <meta name="robots" content="noindex">
-  <style>
-    /* Geçici "yapım aşamasında" sayfası — Faz 1-2'de gerçek siteyle değiştirilecek */
-    :root {
-      --bg: #0d0716;          /* koyu mor-siyah zemin */
-      --surface: #1a0f2e;     /* kart rengi */
-      --yellow: #ffe62e;      /* neon sarı */
-      --purple: #8a2be2;      /* neon mor */
-      --text: #f3eefc;
-      --muted: #b7a8d6;
-    }
-    * { box-sizing: border-box; margin: 0; }
-    body {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 16px;
-      background: radial-gradient(circle at 50% 30%, #2a1050 0%, var(--bg) 60%);
-      color: var(--text);
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      text-align: center;
-    }
-    main {
-      max-width: 480px;
-      padding: 40px 28px;
-      background: var(--surface);
-      border: 1px solid var(--purple);
-      border-radius: 16px;
-      box-shadow: 0 0 40px rgba(138, 43, 226, .35);
-    }
-    h1 {
-      font-family: ui-monospace, "Consolas", monospace;
-      font-size: clamp(56px, 18vw, 96px);
-      letter-spacing: .08em;
-      color: var(--yellow);
-      text-shadow: 0 0 8px var(--yellow), 0 0 28px rgba(255, 230, 46, .6);
-    }
-    p { margin-top: 16px; color: var(--muted); line-height: 1.6; }
-    strong { color: var(--text); }
-    nav { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-    a {
-      padding: 10px 16px;
-      border: 1px solid var(--purple);
-      border-radius: 10px;
-      color: var(--text);
-      text-decoration: none;
-      transition: background .2s, color .2s;
-    }
-    a:hover, a:focus-visible { background: var(--yellow); color: var(--bg); outline: none; }
-  </style>
+  <!-- Tema ve dil seçimini sayfa çizilmeden uygula (ekranın yanıp sönmesini önler) -->
+  <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('m07-theme'),l=localStorage.getItem('m07-lang');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='en'||l==='tr')d.lang=l;}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600;700&family=Oxanium:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </head>
-<body>
-  <main>
-    <h1>M07</h1>
-    <p><strong>Mehmet Burak ŞAHİN (Mehbur07)</strong></p>
-    <p>Site yapım aşamasında. Çok yakında burada!</p>
-    <nav aria-label="Sosyal medya">
-      <a href="https://kick.com/Mehbur07" target="_blank" rel="noopener">Kick</a>
-      <a href="https://twitch.tv/Mehbur07" target="_blank" rel="noopener">Twitch</a>
-      <a href="https://youtube.com/@Mehbur07" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://github.com/Mehbur07" target="_blank" rel="noopener">GitHub</a>
-    </nav>
+<body data-page="home">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="stage">
+          <canvas class="particles" aria-hidden="true"></canvas>
+          <div class="pixel-text" data-pixel="M07"><span class="pixel-text__fallback">M07</span></div>
+          <p class="eyebrow" data-i18n="home.eyebrow">Gamer · Yayıncı · Yazılımcı</p>
+          <h1>Mehmet Burak ŞAHİN</h1>
+          <p class="lead" data-i18n="home.lead">Site yenileniyor. Projelerim, Minecraft modlarım ve daha fazlası çok yakında burada!</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://kick.com/Mehbur07" target="_blank" rel="noopener" data-i18n="home.ctaKick">Kick'te İzle</a>
+            <a class="btn btn--ghost" href="https://github.com/Mehbur07" target="_blank" rel="noopener" data-i18n="home.ctaGithub">GitHub'ım</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
 </body>
 </html>
