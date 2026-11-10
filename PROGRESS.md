@@ -2,6 +2,16 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - Kullanıcı Lovable sitesini yayından kaldırdı (proje silinmedi); `mehbur07.lovable.app` artık 404 "Project not found" veriyor
+  - ROADMAP'te Faz 7 ve dolayısıyla bütün fazlar (0–7) ✅; v1.0.0 tag'i main'de (`8c0612f`)
+- **Son Commit:** 8c0612f Merge pull request #9 from Mehbur07/chore/release-v1.0.0
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Yol haritası tamamlandı. Açık kalan küçük işler: MehburOS / MehBrowser / MAIO için gerçek açıklamalar, Discord davetinin süresiz olduğunun kontrolü, MehPix sitesi hazır olunca ana sayfadaki "Siteye Git" düğmesinin bağlanması
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Yeni değişiklikler CHANGELOG'un [Unreleased] bölümüne yazılır; anlamlı bir set birikince yeni semver tag (örn. v1.1.0) önerilir
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Faz 7 (`chore/release-v1.0.0`): CHANGELOG'daki [Unreleased] maddeleri `[1.0.0] - 2026-11-10` başlığına taşındı, karşılaştırma linkleri eklendi; README durum satırı "v1.0.0 yayında"
   - Merge sonrası main'e `v1.0.0` (annotated) tag'i atılacak; ayrı bir GitHub Release açılmıyor (repo'daki "Latest" launcher olarak kalsın)
   - Son kontrol: canlı sitede 6 sayfa, 30 iç link/dosya, 7 indirme ve 5 sürüm notu bağlantısı ile 6 sosyal hesap çalışıyor

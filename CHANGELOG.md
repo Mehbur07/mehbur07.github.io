@@ -5,6 +5,9 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 
 ## [Unreleased]
 
+### Değişti
+- Eski Lovable sitesi (mehbur07.lovable.app) kapatıldı; site artık sadece mehbur07.github.io adresinde.
+
 ## [1.0.0] - 2026-11-10
 
 İlk tam sürüm: Lovable sitesinin yerine geçen, GitHub Pages üzerinde yayınlanan yeni site.

@@ -39,6 +39,6 @@ Her faz ayrı bir branch'te yapılır ve Pull Request ile `main`'e girer.
 ## Faz 6 — Cilalama (`chore/polish`) ✅
 - SEO, paylaşım önizlemesi, favicon, mobil/erişilebilirlik/hız testi
 
-## Faz 7 — Yayın ve geçiş
+## Faz 7 — Yayın ve geçiş ✅
 - ✅ Son kontroller, `v1.0.0` tag'i + CHANGELOG
-- ⏳ Lovable sitesinin kapatılması (Lovable panelinden, kullanıcı yapar)
+- ✅ Lovable sitesinin kapatılması (Lovable panelinden; proje silinmedi, yayından kaldırıldı)
