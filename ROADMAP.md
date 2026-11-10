@@ -33,7 +33,7 @@ Her faz ayrı bir branch'te yapılır ve Pull Request ile `main`'e girer.
 ## Faz 4 — İngilizce (`feature/english`) ✅
 - Tüm metinlerin çevirisi, dil seçiminin tarayıcıda hatırlanması
 
-## Faz 5 — İletişim formu (`feature/contact-form`)
+## Faz 5 — İletişim formu (`feature/contact-form`) ✅
 - Web3Forms erişim anahtarı alınır, form bağlanır ve test edilir
 
 ## Faz 6 — Cilalama (`chore/polish`)

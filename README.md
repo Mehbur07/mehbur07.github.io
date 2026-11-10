@@ -4,7 +4,7 @@ Mehmet Burak ŞAHİN'in (Mehbur07) kişisel sitesi: projeler, Minecraft modları
 
 🌐 **Adres:** https://mehbur07.github.io
 
-> Durum: **Faz 4 tamamlandı** — Bütün sayfalar Türkçe ve İngilizce yayında; launcher ve 4 mod GitHub Releases üzerinden indirilebiliyor. Mesaj formu (Faz 5) sırada. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
+> Durum: **Faz 5 tamamlandı** — Bütün sayfalar Türkçe ve İngilizce yayında; launcher ve 4 mod GitHub Releases üzerinden indirilebiliyor; iletişim formu mesajları e-postaya iletiyor. Cilalama ve SEO (Faz 6) sırada. Yol haritası için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
 
 ## Kullanılan teknolojiler
 
@@ -66,3 +66,7 @@ gh release create deathnote-v1.1.0 --target main --title "Death Note v1.1.0" --n
 ```
 
 Sonra `projelerim.html` içinde o kartın sürüm satırını, "İndir" bağlantısını (`releases/download/<tag>/<dosya>`) ve "Sürüm Notları" bağlantısını (`releases/tag/<tag>`) yeni etikete göre güncelle.
+
+## İletişim formu (Web3Forms)
+
+`iletisim.html` içindeki form mesajları [Web3Forms](https://web3forms.com) aracılığıyla e-postaya iletir. Erişim anahtarı formdaki gizli `access_key` alanında durur. Bu anahtar sayfa koduna konmak için tasarlanmıştır; gizli bir şifre değildir, yalnızca mesajların hangi e-postaya gideceğini belirtir. Anahtarı değiştirmek için sadece o alanın değerini güncelle. Anahtar boş bırakılırsa form kendini kapatır. Ücretsiz plan aylık 250 mesajla sınırlıdır.

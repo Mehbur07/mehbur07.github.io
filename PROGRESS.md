@@ -2,15 +2,17 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
-  - Faz 5 (`feature/contact-form`) başladı: `iletisim.html`'e Web3Forms mesaj formu (ad, e-posta, mesaj + `botcheck` spam tuzağı), `main.js`'e `setupContactForm` (fetch ile JSON gönderim, çift gönderim kilidi, iki dilli durum mesajları), `style.css`'e form stilleri ve `--success`/`--danger` renkleri
+  - Faz 5 (`feature/contact-form`, PR #5): `iletisim.html`'e Web3Forms mesaj formu (ad, e-posta, mesaj + `botcheck` spam tuzağı), `main.js`'e `setupContactForm` (fetch ile JSON gönderim, çift gönderim kilidi, iki dilli durum mesajları), `style.css`'e form stilleri ve `--success`/`--danger` renkleri
   - Erişim anahtarı boşsa form kendini kapatıp "henüz aktif değil" der; JS kapalıysa form normal POST ile yine gönderilir
   - Eski "form çok yakında" notu ve `.contact-note` stili kaldırıldı
   - Sahte sunucu cevabıyla test edildi: anahtar yok / başarı / API hatası / bağlantı hatası / geçersiz e-posta / dil değişimi — hepsi doğru
-- **Son Commit:** 3d99867 Merge pull request #4 from Mehbur07/feature/english
-- **Aktif Branch:** feature/contact-form (PR açık, Web3Forms anahtarı bekleniyor)
-- **Sıradaki İlk İş (Next Action):** Kullanıcıdan Web3Forms access key'i ve sayfa koduna yazma onayını al → `iletisim.html`'deki `access_key` değerine yaz → gerçek bir deneme mesajı gönderip e-postaya geldiğini kullanıcıya doğrulat → ROADMAP'te Faz 5'i ✅ yap → PR'ı merge et
+  - Kullanıcı Web3Forms anahtarını verdi ve sayfa koduna yazılmasını onayladı (anahtar herkese açık olmak üzere tasarlanmış, gizli değil); `iletisim.html`'deki `access_key` alanına yazıldı
+  - Tarayıcı üzerinden gerçek bir deneme mesajı gönderildi, Web3Forms "success" döndü
+- **Son Commit:** ada3f66 feat: add Web3Forms contact form
+- **Aktif Branch:** main (`feature/contact-form` PR #5 ile merge edilecek)
+- **Sıradaki İlk İş (Next Action):** Faz 6 — `chore/polish`: SEO (noindex kaldırma, meta/OG etiketleri, sitemap), son kontroller
 - **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
-  - Anahtar girilmeden merge edilirse form "henüz aktif değil" der (site bozulmaz ama form çalışmaz)
+  - Web3Forms anahtarı değişirse sadece `iletisim.html`'deki `access_key` değeri güncellenir; boş kalırsa form "henüz aktif değil" der
   - Web3Forms ücretsiz planı aylık 250 mesajla sınırlı
   - `minlength` kuralı tarayıcı gereği sadece klavyeyle yazılan metinde devreye girer
 
