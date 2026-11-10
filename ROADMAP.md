@@ -36,7 +36,7 @@ Her faz ayrı bir branch'te yapılır ve Pull Request ile `main`'e girer.
 ## Faz 5 — İletişim formu (`feature/contact-form`) ✅
 - Web3Forms erişim anahtarı alınır, form bağlanır ve test edilir
 
-## Faz 6 — Cilalama (`chore/polish`)
+## Faz 6 — Cilalama (`chore/polish`) ✅
 - SEO, paylaşım önizlemesi, favicon, mobil/erişilebilirlik/hız testi
 
 ## Faz 7 — Yayın ve geçiş

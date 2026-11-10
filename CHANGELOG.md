@@ -16,3 +16,4 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 - Sitenin tamamı İngilizceye çevrildi: sayfa metinleri, sekme başlıkları, görsel açıklamaları ve MehburAI bandı ("NOT STABLE") artık EN seçilince İngilizce görünüyor.
 - İletişim sayfasına mesaj formu eklendi: mesajlar Web3Forms aracılığıyla doğrudan e-postaya gelir, sonuç formun altında iki dilde gösterilir.
 - Projelerim sayfasına "MehburMC Launcher Linux Version" kartı eklendi; Ubuntu 26.04 / MehburOS için .deb paketi launcher'ın v0.31.2 sürümüne yüklendi.
+- Site arama motorlarına açıldı; sekme ikonu (favicon), link paylaşılınca çıkan önizleme kartı, site haritası ve sitenin tasarımında bir "Sayfa bulunamadı" (404) sayfası eklendi.
