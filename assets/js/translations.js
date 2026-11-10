@@ -5,12 +5,15 @@
    - Sayfa içeriklerinin Türkçesi doğrudan HTML'de yazılıdır.
      HTML'de data-i18n="anahtar" olan bir yazının İngilizcesi
      aşağıdaki "en" bölümüne aynı anahtarla eklenir.
-   - İngilizcesi henüz yazılmamış bir yazı, İngilizce seçiliyken de
+   - Görsel açıklaması (alt) gibi etiket özellikleri için HTML'de
+     data-i18n-attr="alt:anahtar" kullanılır.
+   - İngilizcesi yazılmamış bir yazı, İngilizce seçiliyken de
      Türkçe görünür (sayfa bozulmaz).
    - Menü ve alt bilgi gibi JavaScript'in oluşturduğu ortak yazıların
      Türkçesi HTML'de olmadığı için "tr" bölümünde durur.
 
-   Not: Sayfa içeriklerinin İngilizcesi Faz 4'te eklenecek.
+   Yeni bir yazı eklerken: HTML'ye data-i18n="bolum.ad" ekle,
+   İngilizcesini "en" bölümünde ilgili sayfanın altına yaz.
    ========================================================= */
 window.M07_TRANSLATIONS = {
   tr: {
@@ -30,13 +33,14 @@ window.M07_TRANSLATIONS = {
     'footer.rights': 'Tüm hakları saklıdır.'
   },
   en: {
+    /* --- Ortak (menü, alt bilgi) --- */
     'skip': 'Skip to content',
     'nav.label': 'Main menu',
     'nav.menu': 'Toggle menu',
     'nav.home': 'Home',
     'nav.projects': 'Projects',
     'nav.about': 'About',
-    'nav.social': 'Social',
+    'nav.social': 'Social Media',
     'nav.contact': 'Contact',
     'lang.label': 'Language',
     'theme.toLight': 'Switch to light theme',
@@ -45,6 +49,101 @@ window.M07_TRANSLATIONS = {
     'footer.social': 'Social media',
     'footer.rights': 'All rights reserved.',
 
-    'home.eyebrow': 'Gamer · Streamer · Developer'
+    /* --- Sekme başlıkları --- */
+    'title.home': 'Mehbur07 — Mehmet Burak ŞAHİN | Gamer, Streamer, Developer',
+    'title.projects': 'Projects — Mehbur07',
+    'title.about': 'About — Mehbur07',
+    'title.social': 'Social Media — Mehbur07',
+    'title.contact': 'Contact — Mehbur07',
+
+    /* --- Görsel açıklamaları (alt) --- */
+    'alt.mehpix': 'MehPiX logo',
+    'alt.mmc': 'MehburMC Launcher logo',
+    'alt.dn': 'Death Note mod logo',
+    'alt.igt': 'Iron Golem Troll mod logo',
+    'alt.gs': 'Garip Şeyler MC mod logo',
+    'alt.mty': 'Mehburity mod logo',
+    'alt.ai': 'MehburAI logo',
+    'alt.os': 'MehburOS logo',
+    'alt.browser': 'MehBrowser logo',
+    'alt.avatar': 'Mehbur07 mascot logo',
+
+    /* --- Ana sayfa --- */
+    'home.eyebrow': 'Gamer · Streamer · Developer',
+    'home.lead': 'Kick and Twitch streamer, electronics hobbyist and software developer. Driven by my passion for games and tech, I build something new every day.',
+    'home.ctaProjects': 'My Projects',
+    'home.ctaSocial': 'Social Media',
+    'home.exploreTitle': 'Explore',
+    'home.mehpixBadge': 'In the works',
+    'home.mehpixText': "My own AI image generation site. I'm working on it right now, launching very soon!",
+    'home.mehpixCta': 'Visit Site · Soon',
+    'home.projectsCount': '5 ready · 4 in development',
+    'home.projectsText': "My Minecraft launcher, my mods and the software I'm working on.",
+    'home.go': 'Explore',
+    'home.aboutEyebrow': "I'm Burak",
+    'home.aboutText': "Gamer, streamer, electronics hobbyist and developer. Who I am and what I'm aiming for.",
+    'home.socialText': 'Watch my streams, follow me and join the Discord community.',
+    'home.contactEyebrow': 'Get in Touch',
+    'home.contactText': 'Questions, collaborations or just want to say hi? Write to me.',
+
+    /* --- Projelerim --- */
+    'projects.eyebrow': 'Software',
+    'projects.lead': "Software I've built and my Minecraft mods. Download the ready ones and follow the ones I'm still working on.",
+    'projects.readyTitle': 'Ready Projects',
+    'projects.readyText': "Ready-to-use, downloadable projects. Files are hosted on GitHub; each project's release notes include installation steps (in Turkish).",
+    'projects.typeLauncher': 'Minecraft Launcher',
+    'projects.typeMod': 'Minecraft Mod',
+    'projects.typeAI': 'Hybrid AI',
+    'projects.download': 'Download',
+    'projects.releaseNotes': 'Release Notes',
+    'projects.serverSide': 'Server-side',
+    'projects.mmc.subtitle': 'A lightweight, fast Minecraft launcher',
+    'projects.mmc.text': 'An ultra-lightweight Windows Minecraft launcher I built myself with Tauri. It installs Vanilla, Forge, Fabric and OptiFine versions in one click and easily imports mods and modpacks from CurseForge and Modrinth. It downloads and sets up the right Java Runtime on its own. Low RAM usage, theme and RAM settings, and automatic updates, all in one.',
+    'projects.dn.text': "Adds Death Note magic to feathers and books. Write a player's name and take them down.",
+    'projects.igt.text': "Hit an iron golem and get caught with it in a never-ending levitation loop. Runs server-side only; installing it on players' computers won't cause any problems.",
+    'projects.gs.size': '1.4 MB',
+    'projects.gs.text': 'Welcome to the Upside Down. The Nether turns red, Demogorgons hunt and Vecna waits.',
+    'projects.mty.text': 'A floating, neon-cyan AI companion inspired by Verity. It chats with you through Gemini, fights for you, mines, builds houses and, when angered, turns into an 18-block-tall demon. Pitch-black nights, a flashlight and things watching from the dark await you.',
+    'projects.wipTitle': "What I'm Working On",
+    'projects.wipText': "Projects still in development. Once they're ready, you'll be able to download them here.",
+    'projects.tape': 'NOT STABLE ⚠ NOT STABLE ⚠ NOT STABLE ⚠ NOT STABLE ⚠ NOT STABLE ⚠ NOT STABLE ⚠ NOT STABLE',
+    'projects.unstable': 'Not stable · Not downloadable',
+    'projects.ai.subtitle': 'A hybrid desktop AI',
+    'projects.ai.text': 'A neon-cyan and black themed Windows desktop AI. When online, it researches with Google Gemini and Wikipedia and saves what it learns to its local memory; when offline, it recalls that knowledge with its Turkish semantic engine. Features include a voice assistant ("Hey Mehbur"), full-screen JARVIS conversations, seeing through the camera, drawing images and remote control via Telegram.',
+    'projects.voice': 'Voice Assistant',
+    'projects.inDev': 'In development',
+    'projects.os.text': 'My own operating system project. Details coming very soon!',
+    'projects.browser.text': 'My own web browser project. Details coming very soon!',
+    'projects.maio.text': 'My automatic inventory organizer project. Details coming very soon!',
+
+    /* --- Hakkımda --- */
+    'about.eyebrow': 'Gamer · Streamer · Electronics · Developer',
+    'about.hello': "👋 I'm Burak.",
+    'about.text': "I'm a young gamer, streamer, electronics hobbyist and developer. My passion for technology and games led me to grow in these fields. Every day, I keep learning and making something new.",
+    'about.goalsTitle': 'My Goals',
+    'about.goal1': 'To entertain you in my streams and videos, and never bore you.',
+    'about.goal2': "To become more successful in the fields I've mentioned.",
+    'about.goal3': 'To be a source of inspiration for people.',
+    'about.goal4': "To prove wrong everyone who thinks I'll never succeed. 🔥",
+    'about.ctaProjects': 'Check Out My Projects',
+    'about.ctaSocial': 'Follow Me',
+
+    /* --- Sosyal Medya --- */
+    'social.eyebrow': 'Streams · Videos · Community',
+    'social.lead': 'Follow me and join the community!',
+    'social.watch': 'Watch',
+    'social.subscribe': 'Subscribe',
+    'social.follow': 'Follow',
+    'social.join': 'Join',
+    'social.discordText': 'Mehbur07 server',
+
+    /* --- İletişim --- */
+    'contact.eyebrow': 'Get in Touch',
+    'contact.lead': "Don't hesitate to reach out! For questions, collaborations or just to say hi, write to me through any of the channels below.",
+    'contact.email': 'Email',
+    'contact.write': 'Write',
+    'contact.discordText': 'Join my server',
+    'contact.dm': 'Send a DM',
+    'contact.formSoon': '✉️ A contact form for messaging me through the site is coming here very soon. Until then, you can reach me through the channels above.'
   }
 };

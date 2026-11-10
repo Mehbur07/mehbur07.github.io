@@ -2,6 +2,21 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - Faz 4 (`feature/english`, PR ile main'e): `translations.js` `en` sözlüğüne bütün sayfa metinlerinin İngilizcesi eklendi (88 anahtar; eksik/fazla anahtar yok)
+  - Daha önce çevrilmeyen yerler de çevrilebilir yapıldı: 5 sayfanın `<title>`'ı, 10 görselin `alt` açıklaması, MehburAI bandı ("NOT STABLE"), "1,4 MB" → "1.4 MB"
+  - Çeviri kararları: "Ters Dünya" → "Upside Down"; menüde "Sosyal Medya" → "Social Media"; özel adlar (Garip Şeyler MC, MehPiX) çevrilmedi
+  - Release notları Türkçe kaldı; site İngilizcede bunu "(in Turkish)" diye belirtiyor
+  - Headless Chrome ile TR→EN→TR geçişi test edildi: metin, başlık, alt ve band doğru değişip geri dönüyor, seçim localStorage'da kalıyor
+- **Son Commit:** 6ef9641 Merge pull request #3 from Mehbur07/feature/downloads
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Faz 5 — `feature/contact-form`: Web3Forms ile iletişim formu (kullanıcı site canlıyken Web3Forms'tan access key alacak; key'in sayfa koduna yazılması için onayı bekleniyor)
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Meta description'lar Türkçe kaldı (arama motorları JS çalıştırmadan okur); Faz 6 SEO işinde ele alınabilir
+  - Yeni bir HTML yazısı eklenirse İngilizcesi `translations.js`'e de yazılmalı, yoksa EN modda Türkçe görünür
+  - İkon yolları kökten (`/assets/icons/...`); dosyaya çift tıklayınca ikonlar görünmez, yerel sunucuyla sorun yok
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Faz 3 (`feature/downloads`, PR ile main'e): 5 GitHub Release oluşturuldu — `mehburmc-launcher-v0.31.2` (Latest), `deathnote-v1.0.0`, `irongolemtroll-v1.0.0`, `garipseylermc-v0.1.0`, `mehburity-v0.1.0`
   - Release notları Türkçe: açıklama, gereksinimler (jar'lardaki `fabric.mod.json`'dan: Fabric Loader ≥0.19.5, MC ~26.2, Java ≥25, Fabric API; Garip Şeyler için GeckoLib ≥5.5.5), kurulum adımları, SHA-256
   - Yüklenen dosyalar geri indirilip SHA-256 ile doğrulandı; .exe gömülü anahtar/token için tarandı (temiz)
