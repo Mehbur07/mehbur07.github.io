@@ -475,6 +475,19 @@ a { color: var(--accent-text); text-underline-offset: 3px; }
   width: 100%;
   height: 100%;
 }
+/* Bütün sitede dolaşan neon sarı parçacıklar: ekrana sabit, tıklamaları engellemez.
+   Bölüm arka planlarının üstünde ama içeriğin (kartlar, yazılar) arkasında durur. */
+.ambient-particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+main .container,
+.site-footer .container { position: relative; z-index: 1; }
+
 .stage p { color: #c9bce4; }
 .stage .eyebrow { color: #ffe62e; }
 .stage .btn--ghost { color: #f4effc; border-color: #9d4dff; }

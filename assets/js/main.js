@@ -4,7 +4,7 @@
    2) Açık/koyu tema düğmesi
    3) TR/EN dil seçimi
    4) Pixel yazı (M07) çizimi
-   5) Neon sahnedeki parçacık ağı
+   5) Neon sahnedeki parçacık ağı + sitenin arka planında dolaşan neon sarı parçacıklar
    6) "STABİL DEĞİL" polis bandının açısı
    7) İletişim formu (Web3Forms)
    ========================================================= */
@@ -306,6 +306,99 @@
     }
   }
 
+  /* ---------- 5b) Sitenin arka planında dolaşan neon sarı parçacıklar ---------- */
+
+  // Bütün sayfalarda, içeriğin arkasında yavaşça süzülen ve hafifçe yanıp sönen
+  // parlak sarı noktalar. Ekrana sabittir (sayfa kayarken yerinde kalır).
+  // "Hareketi azalt" ayarı açık olanlarda hiç çizilmez; sekme arka plandayken durur.
+  function startAmbientParticles() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var canvas = document.createElement('canvas');
+    canvas.className = 'ambient-particles';
+    canvas.setAttribute('aria-hidden', 'true');
+    var ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    document.body.insertBefore(canvas, document.body.firstChild);
+
+    // Parlayan nokta görüntüsü bir kez çizilip her karede kopyalanır (hızlı)
+    function makeSprite(core, glow) {
+      var s = document.createElement('canvas');
+      s.width = s.height = 64;
+      var g = s.getContext('2d');
+      var grad = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+      grad.addColorStop(0, 'rgba(' + core + ',1)');
+      grad.addColorStop(0.18, 'rgba(' + core + ',.95)');
+      grad.addColorStop(0.35, 'rgba(' + glow + ',.45)');
+      grad.addColorStop(1, 'rgba(' + glow + ',0)');
+      g.fillStyle = grad;
+      g.fillRect(0, 0, 64, 64);
+      return s;
+    }
+    var SPRITE_DARK = makeSprite('255,247,190', '255,230,46');   // koyu tema: beyazımsı çekirdek, neon sarı hale
+    var SPRITE_LIGHT = makeSprite('255,222,20', '235,190,0');     // açık tema: beyaz zeminde seçilsin diye daha doygun sarı
+
+    var w = 0, h = 0, pts = [], raf = 0, last = 0;
+
+    function resize() {
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = window.innerWidth; h = window.innerHeight;
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      // Ekran büyüdükçe parçacık sayısı artar (en az 14, en fazla 46)
+      var count = Math.max(14, Math.min(46, Math.round((w * h) / 30000)));
+      while (pts.length < count) pts.push(newPoint(true));
+      pts.length = count;
+    }
+
+    function newPoint(anywhere) {
+      return {
+        x: Math.random() * w,
+        y: anywhere ? Math.random() * h : h + 20,
+        vx: (Math.random() - 0.5) * 0.25,
+        vy: -(Math.random() * 0.25 + 0.08),        // hafifçe yukarı süzülür
+        size: Math.random() * 12 + 12,             // parıltı çapı (px)
+        phase: Math.random() * Math.PI * 2,        // yanıp sönme zamanlaması
+        speed: Math.random() * 0.0015 + 0.0008,
+        wobble: Math.random() * Math.PI * 2
+      };
+    }
+
+    function frame(t) {
+      var dt = last ? Math.min(t - last, 50) / 16.67 : 1; // ekran tazeleme hızından bağımsız hız
+      last = t;
+      ctx.clearRect(0, 0, w, h);
+      var sprite = root.getAttribute('data-theme') === 'light' ? SPRITE_LIGHT : SPRITE_DARK;
+      for (var i = 0; i < pts.length; i++) {
+        var p = pts[i];
+        p.wobble += 0.01 * dt;
+        p.x += (p.vx + Math.sin(p.wobble) * 0.12) * dt;
+        p.y += p.vy * dt;
+        if (p.y < -20) pts[i] = p = newPoint(false);
+        if (p.x < -20) p.x = w + 20; else if (p.x > w + 20) p.x = -20;
+        var alpha = 0.5 + 0.5 * (0.5 + 0.5 * Math.sin(t * p.speed + p.phase));
+        ctx.globalAlpha = alpha;
+        ctx.drawImage(sprite, p.x - p.size / 2, p.y - p.size / 2, p.size, p.size);
+      }
+      ctx.globalAlpha = 1;
+      raf = requestAnimationFrame(frame);
+    }
+
+    function play() { if (!raf) { last = 0; raf = requestAnimationFrame(frame); } }
+    function pause() { cancelAnimationFrame(raf); raf = 0; }
+
+    var timer = 0;
+    window.addEventListener('resize', function () {
+      clearTimeout(timer);
+      timer = setTimeout(resize, 150);
+    });
+    document.addEventListener('visibilitychange', function () {
+      document.hidden ? pause() : play();
+    });
+    resize();
+    play();
+  }
+
   /* ---------- 6) Polis bandı ---------- */
 
   // Bant, kartın sol üst köşesinden sağ alt köşesine tam çapraz uzansın diye
@@ -391,6 +484,7 @@
 
   document.querySelectorAll('[data-pixel]').forEach(buildPixelText);
   document.querySelectorAll('canvas.particles').forEach(startParticles);
+  startAmbientParticles();
   document.querySelectorAll('.tape').forEach(fitTape);
   document.querySelectorAll('[data-contact-form]').forEach(setupContactForm);
 })();
