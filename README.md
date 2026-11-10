@@ -61,6 +61,8 @@ kaynak-gorseller/        Logoların orijinalleri (git'e girmez, sadece bu bilgis
 Dosyalar repoya konmaz, her sürüm ayrı bir GitHub Release olarak yüklenir. Etiket (tag) biçimi `<proje>-v<sürüm>`:
 `mehburmc-launcher-v0.31.2`, `deathnote-v1.0.0`, `irongolemtroll-v1.0.0`, `garipseylermc-v0.1.0`, `mehburity-v0.1.0`.
 
+Launcher'ın Windows (`.exe`) ve Linux (`.deb`) dosyaları aynı sürümün Release'inde durur; Projelerim'de her birinin ayrı kartı vardır. Yeni sürümde iki dosyayı da aynı Release'e yükle (`gh release upload <tag> dosya`).
+
 ```bash
 gh release create deathnote-v1.1.0 --target main --title "Death Note v1.1.0" --notes-file notlar.md deathnote-1.1.0.jar
 ```

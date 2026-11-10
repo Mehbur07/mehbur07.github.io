@@ -2,6 +2,18 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - Kullanıcı deneme e-postasının geldiğini doğruladı; iletişim formu PR #5 merge edildi
+  - `feature/linux-launcher`: Linux .deb paketi (Ubuntu 26.04 / MehburOS, amd64, 8,2 MB) ayrı tag açılmadan mevcut `mehburmc-launcher-v0.31.2` Release'ine ikinci dosya olarak yüklendi (aynı uygulama, aynı sürüm); Release notları iki sistemin kurulumunu anlatacak şekilde yenilendi
+  - Projelerim'e "MehburMC Launcher Linux Version" kartı (Windows kartının yanında) ve kopyalanabilir `sudo apt install` komut kutusu (`.cmd` stili) eklendi; ana sayfa sayacı "6 hazır"
+  - .deb içindeki `control` dosyasından bağımlılıklar okundu (pkexec, libwebkit2gtk-4.1-0, libgtk-3-0); paket gömülü anahtar için tarandı (temiz), yüklenen dosya SHA-256 ile doğrulandı
+- **Son Commit:** e06bfff Merge pull request #5 from Mehbur07/feature/contact-form
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Faz 6 — `chore/polish`: SEO (noindex kaldırma, meta/OG etiketleri, sitemap/robots), paylaşım önizlemesi, favicon, mobil/erişilebilirlik/hız testi
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Launcher'ın yeni sürümünde iki dosya (.exe ve .deb) da aynı Release'e yüklenmeli ve iki kartın bağlantıları güncellenmeli
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Faz 5 (`feature/contact-form`, PR #5): `iletisim.html`'e Web3Forms mesaj formu (ad, e-posta, mesaj + `botcheck` spam tuzağı), `main.js`'e `setupContactForm` (fetch ile JSON gönderim, çift gönderim kilidi, iki dilli durum mesajları), `style.css`'e form stilleri ve `--success`/`--danger` renkleri
   - Erişim anahtarı boşsa form kendini kapatıp "henüz aktif değil" der; JS kapalıysa form normal POST ile yine gönderilir
   - Eski "form çok yakında" notu ve `.contact-note` stili kaldırıldı
