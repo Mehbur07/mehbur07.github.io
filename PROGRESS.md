@@ -2,6 +2,18 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `fix/ambient-particle-network`: kullanıcı parlayan "ateş böceği" parçacıkları istemedi; ana sayfa sahnesindeki çizgilerle bağlı parçacık AĞININ aynısını bütün sitede istedi
+  - `startParticles(canvas, ambient)` yeniden kullanıldı; `startAmbientParticles` artık sadece ekrana sabit canvas'ı oluşturup bu fonksiyonu çağırıyor (eski sprite kodu silindi)
+  - Renkler `DARK` (sahneyle birebir) / `LIGHT` (açık temada #d9b400 sarı, #7f2cff mor, çizgi opaklığı .35); tema değişince MutationObserver ile yeniden çizim
+  - "Hareketi azalt" açıkken ağ artık gizlenmiyor, sahnedeki gibi sabit duruyor
+- **Son Commit:** 0c2f3c4 Merge pull request #15 from Mehbur07/feature/ambient-particles
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map açıklamaları, Discord davetinin süresiz olduğunun kontrolü, lisansı olmayan repolar için lisans kararı
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Headless Chrome (--disable-gpu) ekran görüntülerinde M07'nin kare kare beliren CSS animasyonu yarım görünür — test aracının yavaşlığı, gerçek tarayıcıda sorun yok; tam hali görmek için --force-prefers-reduced-motion ile çek
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - `feature/ambient-particles`: bütün sayfalarda ekrana sabit `canvas.ambient-particles` (main.js `startAmbientParticles`), neon sarı parlayan noktalar yukarı doğru süzülür, salınır, yanıp söner
   - Katman düzeni: canvas `z-index:0`, `main .container` ve `.site-footer .container` `z-index:1` → parçacıklar bölüm zeminlerinin (section--soft, footer) üstünde ama kartların/yazıların arkasında; `pointer-events:none`
   - Açık temada daha doygun sarı sprite (beyaz zeminde seçilsin); "hareketi azalt" açıkken katman hiç eklenmez; sekme gizliyken animasyon durur

@@ -54,7 +54,7 @@ kaynak-gorseller/        Logoların orijinalleri (git'e girmez, sadece bu bilgis
 - **Yeni sayfa eklemek:** Var olan bir sayfayı kopyala; `<head>` içindeki `canonical`, `og:title`, `og:description`, `og:url` değerlerini yeni sayfaya göre değiştir ve sayfayı `sitemap.xml`'e ekle.
 - **Bir yazıyı çevrilebilir yapmak:** HTML'de etikete `data-i18n="anahtar"` ekle (Türkçesi HTML'de kalır), İngilizcesini `translations.js` içindeki `en` bölümüne aynı anahtarla yaz. Görsel açıklaması (`alt`) gibi bir özellik için `data-i18n-attr="alt:anahtar"` kullan. Bir yazının İngilizcesi yazılmazsa İngilizce modda Türkçesi görünür; sayfa bozulmaz.
 - **Yeni proje kartı eklemek:** `projelerim.html` içinde mevcut bir `<article class="card project-card">` bloğunu kopyalayıp düzenle. Logoyu `assets/img/` klasörüne küçültülmüş olarak koy (256×256 yeterli).
-- **Arka planda dolaşan sarı parçacıklar:** `assets/js/main.js` içindeki `startAmbientParticles` bölümü. Sayısı `count` satırında (en az 14, en fazla 46), boyutu `size`, hızı `vx`/`vy`, rengi `makeSprite(...)` satırlarında ayarlanır. İşletim sisteminde "hareketi azalt" ayarı açık olanlarda gösterilmez.
+- **Arka plandaki parçacık ağı:** Ana sayfadaki sahnede çalışan ağın aynısı bütün sayfalarda içeriğin arkasında durur (`assets/js/main.js` → `startParticles` / `startAmbientParticles`). Nokta sayısı `count`, çizgi mesafesi `LINK`, renkler `DARK` / `LIGHT` satırlarında. "Hareketi azalt" ayarı açık olanlarda noktalar sabit durur.
 - **Bir projeye "STABİL DEĞİL" bandı eklemek:** Karta `card--taped` sınıfını ve içine `<div class="tape" aria-hidden="true">STABİL DEĞİL ⚠ …</div>` ekle; açısı otomatik ayarlanır.
 
 ## Yayına alma
