@@ -2,6 +2,20 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - Faz 5 (`feature/contact-form`) başladı: `iletisim.html`'e Web3Forms mesaj formu (ad, e-posta, mesaj + `botcheck` spam tuzağı), `main.js`'e `setupContactForm` (fetch ile JSON gönderim, çift gönderim kilidi, iki dilli durum mesajları), `style.css`'e form stilleri ve `--success`/`--danger` renkleri
+  - Erişim anahtarı boşsa form kendini kapatıp "henüz aktif değil" der; JS kapalıysa form normal POST ile yine gönderilir
+  - Eski "form çok yakında" notu ve `.contact-note` stili kaldırıldı
+  - Sahte sunucu cevabıyla test edildi: anahtar yok / başarı / API hatası / bağlantı hatası / geçersiz e-posta / dil değişimi — hepsi doğru
+- **Son Commit:** 3d99867 Merge pull request #4 from Mehbur07/feature/english
+- **Aktif Branch:** feature/contact-form (PR açık, Web3Forms anahtarı bekleniyor)
+- **Sıradaki İlk İş (Next Action):** Kullanıcıdan Web3Forms access key'i ve sayfa koduna yazma onayını al → `iletisim.html`'deki `access_key` değerine yaz → gerçek bir deneme mesajı gönderip e-postaya geldiğini kullanıcıya doğrulat → ROADMAP'te Faz 5'i ✅ yap → PR'ı merge et
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Anahtar girilmeden merge edilirse form "henüz aktif değil" der (site bozulmaz ama form çalışmaz)
+  - Web3Forms ücretsiz planı aylık 250 mesajla sınırlı
+  - `minlength` kuralı tarayıcı gereği sadece klavyeyle yazılan metinde devreye girer
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Faz 4 (`feature/english`, PR ile main'e): `translations.js` `en` sözlüğüne bütün sayfa metinlerinin İngilizcesi eklendi (88 anahtar; eksik/fazla anahtar yok)
   - Daha önce çevrilmeyen yerler de çevrilebilir yapıldı: 5 sayfanın `<title>`'ı, 10 görselin `alt` açıklaması, MehburAI bandı ("NOT STABLE"), "1,4 MB" → "1.4 MB"
   - Çeviri kararları: "Ters Dünya" → "Upside Down"; menüde "Sosyal Medya" → "Social Media"; özel adlar (Garip Şeyler MC, MehPiX) çevrilmedi

@@ -14,3 +14,4 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 - Projelerim sayfasında launcher, 4 Minecraft modu ve geliştirilen projeler listelendi; MehburAI kartına "STABİL DEĞİL" polis bandı eklendi.
 - MehburMC Launcher ve 4 Minecraft modu GitHub Releases'e yüklendi; Projelerim sayfasındaki "İndir" ve "Sürüm Notları" düğmeleri çalışır hale geldi.
 - Sitenin tamamı İngilizceye çevrildi: sayfa metinleri, sekme başlıkları, görsel açıklamaları ve MehburAI bandı ("NOT STABLE") artık EN seçilince İngilizce görünüyor.
+- İletişim sayfasına mesaj formu eklendi: mesajlar Web3Forms aracılığıyla doğrudan e-postaya gelir, sonuç formun altında iki dilde gösterilir.

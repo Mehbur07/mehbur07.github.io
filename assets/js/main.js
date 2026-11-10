@@ -6,6 +6,7 @@
    4) Pixel yazı (M07) çizimi
    5) Neon sahnedeki parçacık ağı
    6) "STABİL DEĞİL" polis bandının açısı
+   7) İletişim formu (Web3Forms)
    ========================================================= */
 (function () {
   'use strict';
@@ -321,6 +322,61 @@
     if ('ResizeObserver' in window) new ResizeObserver(fit).observe(card);
   }
 
+  /* ---------- 7) İletişim formu ---------- */
+
+  // Form sayfayı yenilemeden Web3Forms'a gönderilir, sonuç formun altında
+  // gösterilir. JavaScript kapalıysa form normal yoldan yine gönderilir.
+  function setupContactForm(form) {
+    var status = form.querySelector('.form-status');
+    var button = form.querySelector('button[type="submit"]');
+    var keyInput = form.querySelector('input[name="access_key"]');
+
+    // Durum mesajı data-i18n ile yazılır; dil değişince kendiliğinden çevrilir
+    function show(key, state) {
+      status.setAttribute('data-i18n', key);
+      status.textContent = t(key);
+      if (state) status.setAttribute('data-state', state);
+      else status.removeAttribute('data-state');
+      status.hidden = false;
+    }
+
+    // Erişim anahtarı yazılmamışsa form kullanılamaz
+    if (!keyInput || !keyInput.value.trim()) {
+      button.disabled = true;
+      show('form.notReady', 'error');
+      return;
+    }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (button.disabled) return;   // çift tıklamada iki kez gönderme
+
+      var data = {};
+      new FormData(form).forEach(function (value, name) { data[name] = value; });
+
+      button.disabled = true;
+      show('form.sending');
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (res) {
+          return res.json().catch(function () { return {}; }).then(function (json) {
+            if (res.ok && json.success) {
+              show('form.success', 'success');
+              form.reset();
+            } else {
+              show('form.error', 'error');
+            }
+          });
+        })
+        .catch(function () { show('form.network', 'error'); })
+        .then(function () { button.disabled = false; });
+    });
+  }
+
   /* ---------- Başlat ---------- */
 
   var header = document.querySelector('[data-layout="header"]');
@@ -335,4 +391,5 @@
   document.querySelectorAll('[data-pixel]').forEach(buildPixelText);
   document.querySelectorAll('canvas.particles').forEach(startParticles);
   document.querySelectorAll('.tape').forEach(fitTape);
+  document.querySelectorAll('[data-contact-form]').forEach(setupContactForm);
 })();
