@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasarım Vitrini — Mehbur07</title>
+  <!-- Bu sayfa sadece geliştirme içindir: bileşenlerin nasıl göründüğünü gösterir -->
+  <meta name="robots" content="noindex">
+  <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('m07-theme'),l=localStorage.getItem('m07-lang');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='en'||l==='tr')d.lang=l;}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600;700&family=Oxanium:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <style>
+    /* Sadece bu vitrin sayfasına özel küçük stiller */
+    .swatches { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+    .swatch { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--surface); }
+    .swatch span { display: block; height: 64px; }
+    .swatch code { display: block; padding: 8px 10px; font-family: var(--font-mono); font-size: .75rem; color: var(--text-muted); }
+    .demo-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .demo-block + .demo-block { margin-top: 48px; }
+    .demo-block > h2 { margin-bottom: 20px; }
+  </style>
+</head>
+<body data-page="design">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Faz 1</p>
+        <h1>Tasarım Vitrini</h1>
+        <p>Sitenin bütün yapı taşları bu sayfada. Sağ üstten temayı ve dili değiştirerek görünümü kontrol edebilirsin.</p>
+      </div>
+
+      <section class="demo-block">
+        <h2 class="section-title">Renkler</h2>
+        <div class="swatches">
+          <div class="swatch"><span style="background:var(--bg)"></span><code>--bg</code></div>
+          <div class="swatch"><span style="background:var(--surface)"></span><code>--surface</code></div>
+          <div class="swatch"><span style="background:var(--border)"></span><code>--border</code></div>
+          <div class="swatch"><span style="background:var(--text)"></span><code>--text</code></div>
+          <div class="swatch"><span style="background:var(--text-muted)"></span><code>--text-muted</code></div>
+          <div class="swatch"><span style="background:var(--yellow)"></span><code>--yellow</code></div>
+          <div class="swatch"><span style="background:var(--purple)"></span><code>--purple</code></div>
+          <div class="swatch"><span style="background:var(--purple-deep)"></span><code>--purple-deep</code></div>
+        </div>
+      </section>
+
+      <section class="demo-block">
+        <h2 class="section-title">Yazı tipleri</h2>
+        <div class="stack">
+          <p class="eyebrow" lang="en">Oxanium · Manrope · IBM Plex Mono</p>
+          <h1>Başlık 1 — Oyun ve teknoloji</h1>
+          <h2>Başlık 2 — Projelerim</h2>
+          <h3>Başlık 3 — MehburMC Launcher</h3>
+          <p>Gövde metni: Türkçe karakter testi — ğüşıöç ĞÜŞİÖÇ. Oyun ve teknoloji tutkusuyla her gün yeni bir şey üretiyorum.</p>
+          <p><a href="#">Örnek link</a></p>
+        </div>
+      </section>
+
+      <section class="demo-block">
+        <h2 class="section-title">Düğmeler</h2>
+        <div class="demo-row">
+          <a class="btn btn--primary" href="#">Birincil</a>
+          <a class="btn btn--ghost" href="#">İkincil</a>
+          <a class="btn btn--primary btn--sm" href="#">Küçük</a>
+          <a class="btn btn--ghost" aria-disabled="true">Pasif (yakında)</a>
+        </div>
+      </section>
+
+      <section class="demo-block">
+        <h2 class="section-title">Rozet ve etiketler</h2>
+        <div class="demo-row">
+          <span class="badge">YENİ</span>
+          <span class="badge badge--purple">Minecraft Modu</span>
+          <span class="badge badge--outline">Yakında</span>
+        </div>
+        <ul class="tags" style="margin-top:16px">
+          <li class="tag">Fabric</li>
+          <li class="tag">Minecraft 26.2</li>
+          <li class="tag">Java 25</li>
+          <li class="tag">Tauri</li>
+        </ul>
+      </section>
+
+      <section class="demo-block">
+        <h2 class="section-title">Kartlar</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="card__media"><img src="assets/img/mehbur07-logo.jpg" alt="" width="72" height="72"></div>
+            <span class="badge">Örnek</span>
+            <h3>Düz kart</h3>
+            <p>Bilgi göstermek için kullanılan kart. Görsel, rozet, başlık, açıklama ve etiketler içerebilir.</p>
+            <ul class="tags"><li class="tag">Etiket</li><li class="tag">Etiket</li></ul>
+            <div class="card__footer"><a class="btn btn--primary btn--sm" href="#">İndir</a></div>
+          </article>
+          <a class="card card--link" href="#">
+            <span class="badge badge--purple">Bağlantı</span>
+            <h3>Tıklanabilir kart</h3>
+            <p>Üzerine gelince hafifçe yükselir ve mor parlar. Ana sayfadaki bölüm kartları böyle olacak.</p>
+          </a>
+          <a class="card card--link" href="#">
+            <span class="badge badge--outline">Yakında</span>
+            <h3>İkinci kart</h3>
+            <p>Kartlar ekran genişliğine göre otomatik olarak yan yana veya alt alta dizilir.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="demo-block">
+        <h2 class="section-title">Neon sahne + pixel M07</h2>
+        <div class="stage">
+          <canvas class="particles" aria-hidden="true"></canvas>
+          <div class="pixel-text" data-pixel="M07"><span class="pixel-text__fallback">M07</span></div>
+          <p style="margin-top:16px">Sahne açık temada da koyu kalır; neon görünüm markanın parçası.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
+</body>
+</html>

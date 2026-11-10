@@ -10,7 +10,7 @@ Her faz ayrı bir branch'te yapılır ve Pull Request ile `main`'e girer.
 - GitHub reposu, `main` koruma kuralı, Dependabot uyarıları
 - GitHub Pages açık; geçici "yapım aşamasında" sayfası
 
-## Faz 1 — Tasarım temeli (`feature/design-system`)
+## Faz 1 — Tasarım temeli (`feature/design-system`) ✅
 - Renkler: neon sarı + koyu neon mor (açık temada daha koyu tonlar)
 - Yazı tipleri, menü, alt bilgi, açık/koyu tema düğmesi
 - Pixel **M07** yazısı (kodla çizilir, neon parlamalı)
