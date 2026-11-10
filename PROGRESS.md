@@ -2,6 +2,17 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `feature/mehpix-link`: MehPiX sitesi yayında (https://mehpix.github.io/); ana sayfadaki kartın pasif "Siteye Git · Yakında" düğmesi gerçek bağlantı oldu (yeni sekmede açılır)
+  - Rozet "Yapım aşamasında" → "Yayında"; açıklama sitenin gerçek içeriğine göre yazıldı: MehPiX artık "görsel üretim sitesi" değil, PyAI ve Quiz projelerini sunan bir yazılım stüdyosu
+  - TR/EN metinleri güncellendi (`home.mehpixBadge`, `home.mehpixText`, `home.mehpixCta`)
+- **Son Commit:** a810f34 Merge pull request #11 from Mehbur07/fix/light-theme-colors
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO açıklamaları, Discord davetinin süresiz olduğunun kontrolü
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - MehPiX sitesinin içeriği değişirse (yeni proje vb.) ana sayfadaki kart açıklamasını da güncellemek gerekebilir
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - `fix/light-theme-colors`: açık temada `--yellow`/`--yellow-edge` koyu temayla aynı (#ffe62e/#d9b400); süs moru `--purple`/`--purple-deep` = #cfa6ff (beyaza yakın neon lavanta), `--border` #e4d2ff, `--glow-purple` lavanta
   - Kullanıcı seçimi: mor YAZILAR beyaza yakın olmasın (okunmaz), daha parlak neon mor olsun → `--accent-text` #7f2cff (#6a1fd1 yerine; açık zeminlerde kontrast ≥4.5)
   - Açık temada `.badge--purple` yazısı koyu (`--on-accent`), çünkü rozet zemini artık açık

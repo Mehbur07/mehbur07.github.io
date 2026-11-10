@@ -5,6 +5,9 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 
 ## [Unreleased]
 
+### Eklendi
+- Ana sayfadaki MehPiX kartının "Siteye Git" düğmesi artık yayındaki MehPiX sitesini (mehpix.github.io) açıyor; kartın rozeti "Yayında" oldu ve açıklaması sitenin gerçek içeriğine (yazılım stüdyosu, PyAI, Quiz) göre yenilendi.
+
 ### Değişti
 - Eski Lovable sitesi (mehbur07.lovable.app) kapatıldı; site artık sadece mehbur07.github.io adresinde.
 - Açık temada sarı artık koyu temadakiyle aynı neon sarı; mor süslemeler (çerçeve, rozet, parıltı) beyaza yakın neon lavanta, mor yazılar daha parlak bir neon mor oldu.
