@@ -27,6 +27,8 @@
   --glow-yellow: rgba(255, 230, 46, .45);
   --glow-purple: rgba(157, 77, 255, .40);
   --header-bg: rgba(11, 6, 20, .78);
+  --success: #3ee08f;        /* form: başarı */
+  --danger: #ff6b8a;         /* form: hata */
 
   --font-display: 'Oxanium', 'Segoe UI', system-ui, sans-serif;
   --font-body: 'Manrope', 'Segoe UI', system-ui, sans-serif;
@@ -58,6 +60,8 @@
   --accent: var(--yellow);
   --accent-text: #6a1fd1;
   --on-accent: #1b1030;
+  --success: #11804a;
+  --danger: #c4183f;
   --glow-yellow: rgba(255, 200, 0, .35);
   --glow-purple: rgba(106, 31, 209, .18);
   --header-bg: rgba(250, 247, 255, .82);
@@ -727,10 +731,68 @@ a { color: var(--accent-text); text-underline-offset: 3px; }
   white-space: nowrap;
 }
 
-.contact-note {
-  margin-top: 32px;
-  padding: 20px 24px;
-  border: 1px dashed var(--purple);
-  border-radius: var(--radius);
-  color: var(--text-muted);
+/* ---------- İletişim formu ---------- */
+
+.contact-form { gap: 20px; max-width: 760px; padding: 28px; }
+
+.form-row { display: grid; gap: 20px; }
+@media (min-width: 640px) { .form-row { grid-template-columns: 1fr 1fr; } }
+
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: .95rem;
+  color: var(--text);
+}
+.field input,
+.field textarea {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-size: 1rem;              /* 16px: telefonda otomatik yakınlaştırmayı önler */
+  transition: border-color .2s, box-shadow .2s;
+}
+.field textarea { min-height: 150px; resize: vertical; line-height: 1.6; }
+.field input::placeholder,
+.field textarea::placeholder { color: var(--text-muted); opacity: .7; }
+.field input:hover,
+.field textarea:hover { border-color: var(--purple); }
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--accent-text);
+  box-shadow: 0 0 0 3px var(--glow-purple);
+}
+/* Kullanıcı bir alanı yanlış doldurup çıkınca kırmızı kenar */
+.field input:user-invalid,
+.field textarea:user-invalid { border-color: var(--danger); }
+
+/* Spam tuzağı: görünmez */
+.form-trap { display: none; }
+
+.contact-form__footer { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.contact-form__privacy { flex: 1 1 260px; font-size: .88rem; }
+
+.contact-form .form-status {
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  font-weight: 600;
+  color: var(--text);
+}
+.form-status[data-state="success"] {
+  border-color: var(--success);
+  color: var(--success);
+  background: color-mix(in srgb, var(--success) 10%, transparent);
+}
+.form-status[data-state="error"] {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 10%, transparent);
 }

@@ -30,7 +30,14 @@ window.M07_TRANSLATIONS = {
     'theme.toDark': 'Koyu temaya geç',
     'footer.tagline': 'Gamer, yayıncı, elektronikçi ve yazılımcı. Oyun ve teknoloji tutkusuyla her gün yeni bir şey üretiyorum.',
     'footer.social': 'Sosyal medya',
-    'footer.rights': 'Tüm hakları saklıdır.'
+    'footer.rights': 'Tüm hakları saklıdır.',
+
+    /* İletişim formunun durum mesajları (JavaScript yazar) */
+    'form.notReady': 'Mesaj formu henüz aktif değil. Şimdilik yukarıdaki e-posta adresinden bana yazabilirsin.',
+    'form.sending': 'Gönderiliyor…',
+    'form.success': 'Mesajın gönderildi, teşekkürler! En kısa sürede dönüş yaparım.',
+    'form.error': 'Mesaj gönderilemedi. Lütfen biraz sonra tekrar dene ya da doğrudan e-posta at.',
+    'form.network': 'Bağlantı kurulamadı. İnternetini kontrol edip tekrar dene.'
   },
   en: {
     /* --- Ortak (menü, alt bilgi) --- */
@@ -144,6 +151,22 @@ window.M07_TRANSLATIONS = {
     'contact.write': 'Write',
     'contact.discordText': 'Join my server',
     'contact.dm': 'Send a DM',
-    'contact.formSoon': '✉️ A contact form for messaging me through the site is coming here very soon. Until then, you can reach me through the channels above.'
+    'contact.formTitle': 'Send a Message',
+    'contact.formText': "Fill out the form and your message lands straight in my inbox. I'll get back to you as soon as I can.",
+    'contact.nameLabel': 'Your name',
+    'contact.namePh': 'Alex',
+    'contact.emailLabel': 'Your email',
+    'contact.emailPh': 'you@example.com',
+    'contact.messageLabel': 'Your message',
+    'contact.messagePh': 'Hi Burak, ...',
+    'contact.send': 'Send',
+    'contact.privacy': 'Your message is delivered via Web3Forms; your email address is only used to reply to you.',
+
+    /* --- İletişim formu durum mesajları --- */
+    'form.notReady': "The contact form isn't active yet. For now, you can write to me at the email address above.",
+    'form.sending': 'Sending…',
+    'form.success': "Your message has been sent, thanks! I'll get back to you as soon as I can.",
+    'form.error': "Your message couldn't be sent. Please try again a bit later or email me directly.",
+    'form.network': "Couldn't connect. Check your internet connection and try again."
   }
 };

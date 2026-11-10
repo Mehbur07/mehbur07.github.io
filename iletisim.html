@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title data-i18n="title.contact">İletişim — Mehbur07</title>
-  <meta name="description" content="Mehbur07 ile iletişime geç: e-posta, Discord veya X.">
+  <meta name="description" content="Mehbur07 ile iletişime geç: mesaj formu, e-posta, Discord veya X.">
   <meta name="robots" content="noindex">
   <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('m07-theme'),l=localStorage.getItem('m07-lang');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='en'||l==='tr')d.lang=l;}catch(e){}})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,8 +46,47 @@
           </a>
         </div>
 
-        <!-- Faz 5'te buraya mesaj formu gelecek -->
-        <p class="contact-note" data-i18n="contact.formSoon">✉️ Site üzerinden mesaj gönderme formu çok yakında burada olacak. O zamana kadar yukarıdaki kanallardan bana ulaşabilirsin.</p>
+      </div>
+    </section>
+
+    <!-- Mesaj formu: Web3Forms ile doğrudan e-postama gelir -->
+    <section class="section section--soft" aria-labelledby="form-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="form-title" data-i18n="contact.formTitle">Mesaj Gönder</h2>
+          <p data-i18n="contact.formText">Formu doldur, mesajın doğrudan e-postama gelsin. En kısa sürede dönüş yaparım.</p>
+        </div>
+
+        <form class="card contact-form" action="https://api.web3forms.com/submit" method="POST" data-contact-form>
+          <!-- Web3Forms erişim anahtarı (sayfa koduna konmak için tasarlanmış, gizli değildir).
+               Sadece mesajların hangi e-postaya gideceğini belirtir. -->
+          <input type="hidden" name="access_key" value="ffd463f5-cb22-4a93-a3aa-6ae42559db66">
+          <input type="hidden" name="subject" value="Mehbur07 sitesinden yeni mesaj">
+          <input type="hidden" name="from_name" value="Mehbur07 Sitesi">
+          <!-- Spam tuzağı: insanlar görmez, botlar doldurur -->
+          <input type="checkbox" name="botcheck" class="form-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-name" data-i18n="contact.nameLabel">Adın</label>
+              <input id="cf-name" name="name" type="text" required maxlength="100" autocomplete="name" placeholder="Burak" data-i18n-attr="placeholder:contact.namePh">
+            </div>
+            <div class="field">
+              <label for="cf-email" data-i18n="contact.emailLabel">E-posta adresin</label>
+              <input id="cf-email" name="email" type="email" required maxlength="150" autocomplete="email" placeholder="ornek@eposta.com" data-i18n-attr="placeholder:contact.emailPh">
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-message" data-i18n="contact.messageLabel">Mesajın</label>
+            <textarea id="cf-message" name="message" required minlength="10" maxlength="3000" rows="6" placeholder="Merhaba Burak, ..." data-i18n-attr="placeholder:contact.messagePh"></textarea>
+          </div>
+
+          <div class="contact-form__footer">
+            <button type="submit" class="btn btn--primary" data-i18n="contact.send">Gönder</button>
+            <p class="contact-form__privacy" data-i18n="contact.privacy">Mesajın Web3Forms aracılığıyla iletilir; e-posta adresin sadece sana dönüş yapmak için kullanılır.</p>
+          </div>
+          <p class="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
       </div>
     </section>
   </main>
