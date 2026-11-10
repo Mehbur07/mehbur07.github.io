@@ -2,6 +2,17 @@
 
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `feature/ambient-particles`: bütün sayfalarda ekrana sabit `canvas.ambient-particles` (main.js `startAmbientParticles`), neon sarı parlayan noktalar yukarı doğru süzülür, salınır, yanıp söner
+  - Katman düzeni: canvas `z-index:0`, `main .container` ve `.site-footer .container` `z-index:1` → parçacıklar bölüm zeminlerinin (section--soft, footer) üstünde ama kartların/yazıların arkasında; `pointer-events:none`
+  - Açık temada daha doygun sarı sprite (beyaz zeminde seçilsin); "hareketi azalt" açıkken katman hiç eklenmez; sekme gizliyken animasyon durur
+- **Son Commit:** 1558661 Merge pull request #14 from Mehbur07/feature/open-source-links
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map açıklamaları, Discord davetinin süresiz olduğunun kontrolü, lisansı olmayan repolar için lisans kararı
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Yeni bir sayfa bölümü `.container` dışında içerik koyarsa o içerik parçacıkların altında kalır (sadece görsel; tıklama etkilenmez)
+
+### [2026-11-10 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - `feature/open-source-links`: Hakkımda'ya tam olarak "Projelerim açık kaynaklıdır." (`about.openSource`), art arda paragraflar için `.about-intro p + p` boşluğu
   - Projelerim'de "Kaynak Kodu" düğmesi (`projects.source`): Launcher (Windows + Linux → MehburMC-Launcher), deathnote-mode, irongolemtroll-mode, garipseylermc, mehburity-mode, MehburAI, mehburs-mini-map-mod. MehburOS / MehBrowser repoları gizli, MAIO'nun reposu yok → düğme yok
   - Kullanıcı isteğiyle `deathnote-mode` ve `mehburity-mode` repoları PUBLIC yapıldı; öncesinde tüm commit geçmişleri secret taramasından geçti (temiz; Mehburity testlerindeki `test-key-123` sahte değer). İkisinde Dependabot uyarıları açıldı
