@@ -1,0 +1,20 @@
+# Bağımlılık ve derleme klasörleri
+node_modules/
+__pycache__/
+.venv/
+dist/
+build/
+
+# Log ve sistem dosyaları
+*.log
+.DS_Store
+Thumbs.db
+
+# Ortam değişkenleri (gizli bilgiler)
+.env
+.env.*
+!.env.example
+
+# Logoların büyük orijinalleri: sadece bu bilgisayarda durur,
+# siteye küçültülmüş kopyaları (assets/img/) girer
+kaynak-gorseller/
