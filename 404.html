@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 404 sayfası her adreste açılabilir (örn. /olmayan/sayfa); bütün linkler site kökünden çözülsün -->
-  <base href="/">
+  <!-- 404 sayfası her adreste açılabilir (örn. /olmayan/sayfa); bütün linkler site kökünden çözülsün.
+       Dosya bilgisayarda doğrudan açılınca (file://) "kök" diskin kökü olur ve tasarım bulunamaz,
+       bu yüzden taban adres yalnızca sitede (http/https) eklenir. -->
+  <script>if(location.protocol!=='file:'){var b=document.createElement('base');b.href='/';document.head.appendChild(b);}</script>
   <title data-i18n="title.notfound">Sayfa Bulunamadı — Mehbur07</title>
   <meta name="robots" content="noindex">
   <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('m07-theme'),l=localStorage.getItem('m07-lang');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='en'||l==='tr')d.lang=l;}catch(e){}})();</script>
