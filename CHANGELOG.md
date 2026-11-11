@@ -6,6 +6,7 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 ## [Unreleased]
 
 ### Eklendi
+- Projelerim sayfasının "Hazır Projeler" bölümüne tarayıcıda çalışan Windows 11 simülasyonu Win11 Web'in kartı eklendi; "İndir" yerine siteyi açan "Siteye Git" ve "Kaynak Kodu" düğmeleri var. Ana sayfadaki proje sayacı "7 hazır" oldu.
 - Ana sayfadaki sahnede bulunan, birbirine çizgilerle bağlanan neon sarı/mor parçacık ağı artık bütün sayfalarda arka planda dolaşıyor; içeriğin arkasında kalır, tıklamayı engellemez, açık temada beyaz zeminde görünsün diye koyu tonlarla çizilir.
 - Hakkımda sayfasına "Projelerim açık kaynaklıdır." cümlesi eklendi; Projelerim sayfasında kodu açık olan her projenin kartına GitHub reposuna giden "Kaynak Kodu" düğmesi kondu (Death Note ve Mehburity repoları da herkese açıldı).
 - Projelerim sayfasındaki "Üzerinde Çalıştığım Projeler" bölümüne logosuyla birlikte Mehbur's Mini Map kartı eklendi; ana sayfadaki proje sayacı "5 geliştiriliyor" oldu.

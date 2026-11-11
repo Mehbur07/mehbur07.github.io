@@ -2,6 +2,19 @@
 
 ### [2026-11-11 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `feature/win11-web-project`: Projelerim > Hazır Projeler'e Win11 Web kartı (https://mehbur07.github.io/win11-sanal-makine-site/, repo `win11-sanal-makine-site`, public)
+  - İndirme yok: birincil düğme "Siteye Git" (`projects.visit`, yeni sekmede), yanında "Kaynak Kodu"; "Sürüm Notları" yok
+  - Logo `assets/img/win11web.svg` (dört mavi kare, SVG); yeni çeviri anahtarları `projects.typeWeb`, `projects.w11.*`, `alt.w11`
+  - Ana sayfa sayacı "7 hazır · 5 geliştiriliyor" (TR + EN)
+- **Son Commit:** 70a29fe Merge pull request #18 from Mehbur07/fix/minimap-remove-source
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map açıklamaları, Discord davetinin süresiz olduğunun kontrolü, lisansı olmayan public repolar için lisans kararı
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - "Hazır Projeler" bölüm açıklaması hâlâ "indirilebilir projeler" diyor; Win11 Web indirilmiyor, istenirse metin genelleştirilebilir
+  - Bir repo gizlenip açıldığında Projelerim'deki "Kaynak Kodu" düğmesini de güncellemek gerekir
+
+### [2026-11-11 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Kullanıcı isteğiyle `mehburs-mini-map-mod` ve `MehburAI` repoları PRIVATE yapıldı (MehburAI'ın 2 yıldızı kalıcı olarak silindi — kullanıcıya soruldu, onayladı)
   - `fix/minimap-remove-source`: Projelerim'de bu iki kartın "Kaynak Kodu" düğmesi kaldırıldı; kalan kaynak düğmeleri: Launcher (Windows + Linux), Death Note, Iron Golem Troll, Garip Şeyler MC, Mehburity
   - Hakkımda'daki "Projelerim açık kaynaklıdır." cümlesine dokunulmadı
