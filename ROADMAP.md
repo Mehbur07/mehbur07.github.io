@@ -21,7 +21,7 @@ Her faz ayrı bir branch'te yapılır ve Pull Request ile `main`'e girer.
 - MehPix kartı: "Siteye Git" (site henüz yapım aşamasında)
 - Hakkımda, Sosyal Medya, İletişim (e-posta: mehmetburaksahin07@gmail.com)
 - Projelerim:
-  - **Hazır:** MehburMC Launcher 0.31.2, Death Note, Iron Golem Troll, Garip Şeyler MC, Mehburity
+  - **Hazır:** MehburMC Launcher 0.32.0, Death Note, Iron Golem Troll, Garip Şeyler MC, Mehburity
   - **Üzerinde çalıştığım:** MehburAI ("STABİL DEĞİL" polis bandı, indirme yok), MehburOS, MehBrowser, MAIO (Mehbur's Auto Inventory Organizer)
 - Görsellerin küçültülmesi (hedef: toplam 1 MB altı)
 
