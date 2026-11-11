@@ -2,6 +2,19 @@
 
 ### [2026-11-11 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `fix/404-local-preview`: 404.html'deki `<base href="/">` artık küçük bir script ile yalnızca http/https'te ekleniyor; `file://` ile açılınca CSS/JS diskin kökünde aranmıyor, sayfa tasarımlı görünüyor
+  - Sebep: kullanıcı 404.html'i doğrudan açınca tasarımsız gördü; canlı sitede sorun yoktu
+  - 404 sayfasını referans görsele göre yeniden tasarlama fikri kullanıcı tarafından geri alındı; tasarım aynı kaldı
+  - Test: file:// ve iç içe adresten (/olmayan/sayfa) servis eden yerel sunucuda ekran görüntüsüyle doğrulandı
+- **Son Commit:** 05e9157 Merge pull request #19 from Mehbur07/feature/win11-web-project
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map açıklamaları, Discord davetinin süresiz olduğunun kontrolü, lisansı olmayan public repolar için lisans kararı
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Diğer sayfalarda `<base>` yok, onlar doğrudan açılınca zaten düzgün görünüyor; base yalnızca 404'te gerekli
+  - "Hazır Projeler" bölüm açıklaması hâlâ "indirilebilir projeler" diyor; Win11 Web indirilmiyor
+
+### [2026-11-11 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - `feature/win11-web-project`: Projelerim > Hazır Projeler'e Win11 Web kartı (https://mehbur07.github.io/win11-sanal-makine-site/, repo `win11-sanal-makine-site`, public)
   - İndirme yok: birincil düğme "Siteye Git" (`projects.visit`, yeni sekmede), yanında "Kaynak Kodu"; "Sürüm Notları" yok
   - Logo `assets/img/win11web.svg` (dört mavi kare, SVG); yeni çeviri anahtarları `projects.typeWeb`, `projects.w11.*`, `alt.w11`
