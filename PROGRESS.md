@@ -2,6 +2,16 @@
 
 ### [2026-11-11 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `fix/win11-card-storage-text`: Win11 Web sitesi artık dosyaları cihazda oluşturulan "Win11 Web" klasörüne kaydettiği için kart açıklaması (TR + EN `projects.w11.text`) buna göre düzeltildi
+- **Son Commit:** 05e9157 Merge pull request #19 from Mehbur07/feature/win11-web-project
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map açıklamaları, Discord davetinin süresiz olduğunun kontrolü, lisansı olmayan public repolar için lisans kararı
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - "Hazır Projeler" bölüm açıklaması hâlâ "indirilebilir projeler" diyor; Win11 Web indirilmiyor
+  - Win11 Web'in özellikleri değişirse bu karttaki açıklamayı da güncellemek gerekir
+
+### [2026-11-11 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - `fix/404-local-preview`: 404.html'deki `<base href="/">` artık küçük bir script ile yalnızca http/https'te ekleniyor; `file://` ile açılınca CSS/JS diskin kökünde aranmıyor, sayfa tasarımlı görünüyor
   - Sebep: kullanıcı 404.html'i doğrudan açınca tasarımsız gördü; canlı sitede sorun yoktu
   - 404 sayfasını referans görsele göre yeniden tasarlama fikri kullanıcı tarafından geri alındı; tasarım aynı kaldı

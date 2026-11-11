@@ -128,7 +128,7 @@ window.M07_TRANSLATIONS = {
     'projects.visit': 'Visit Site',
     'projects.w11.meta': 'Runs in the browser',
     'projects.w11.subtitle': 'A Windows 11 simulation that runs in your browser',
-    'projects.w11.text': 'A Windows 11-style desktop that opens right in your browser, no installation needed. It has draggable, resizable windows, a Start menu, a taskbar and apps like File Explorer, Notepad, Calculator, Paint and Terminal. Your files and settings are saved in your browser.',
+    'projects.w11.text': 'A Windows 11-style desktop that opens right in your browser, no installation needed. It has draggable, resizable windows, a Start menu, a taskbar and apps like File Explorer, Notepad, Calculator, Paint and Terminal. Your notes and drawings are saved to a "Win11 Web" folder created on your device.',
     'projects.mty.text': 'A floating, neon-cyan AI companion inspired by Verity. It chats with you through Gemini, fights for you, mines, builds houses and, when angered, turns into an 18-block-tall demon. Pitch-black nights, a flashlight and things watching from the dark await you.',
     'projects.wipTitle': "What I'm Working On",
     'projects.wipText': "Projects still in development. Once they're ready, you'll be able to download them here.",
