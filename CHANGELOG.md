@@ -12,6 +12,7 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 - Ana sayfadaki MehPiX kartının "Siteye Git" düğmesi artık yayındaki MehPiX sitesini (mehpix.github.io) açıyor; kartın rozeti "Yayında" oldu ve açıklaması sitenin gerçek içeriğine (yazılım stüdyosu, PyAI, Quiz) göre yenilendi.
 
 ### Değişti
+- Mehbur's Mini Map ve MehburAI'ın kodları artık gizli; Projelerim sayfasındaki kartlarından "Kaynak Kodu" düğmesi kaldırıldı.
 - Projelerim sayfasındaki MehburMC Launcher kartları (Windows ve Linux) launcher'ın 0.32.0 sürümüne güncellendi; bu sürümle launcher'dan yöneticilere mesaj yazılabiliyor.
 - Eski Lovable sitesi (mehbur07.lovable.app) kapatıldı; site artık sadece mehbur07.github.io adresinde.
 - Açık temada sarı artık koyu temadakiyle aynı neon sarı; mor süslemeler (çerçeve, rozet, parıltı) beyaza yakın neon lavanta, mor yazılar daha parlak bir neon mor oldu.
