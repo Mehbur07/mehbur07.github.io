@@ -1,5 +1,16 @@
 # İlerleme Notları
 
+### [2026-11-11 - Mehbur07]
+- **Yapılanlar & Kararlar:**
+  - Kullanıcı isteğiyle `mehburs-mini-map-mod` ve `MehburAI` repoları PRIVATE yapıldı (MehburAI'ın 2 yıldızı kalıcı olarak silindi — kullanıcıya soruldu, onayladı)
+  - `fix/minimap-remove-source`: Projelerim'de bu iki kartın "Kaynak Kodu" düğmesi kaldırıldı; kalan kaynak düğmeleri: Launcher (Windows + Linux), Death Note, Iron Golem Troll, Garip Şeyler MC, Mehburity
+  - Hakkımda'daki "Projelerim açık kaynaklıdır." cümlesine dokunulmadı
+- **Son Commit:** 64ed427 Merge pull request #17 from Mehbur07/chore/launcher-v0.32.0
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map açıklamaları, Discord davetinin süresiz olduğunun kontrolü, lisansı olmayan public repolar (deathnote-mode, mehburity-mode, garipseylermc) için lisans kararı
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Bir repo gizlenip açıldığında Projelerim'deki "Kaynak Kodu" düğmesini de güncellemek gerekir (gizli repo bağlantısı ziyaretçide 404 verir)
+
 ### [2026-11-10 - Mehbur07]
 - **Yapılanlar & Kararlar:**
   - `fix/ambient-particle-network`: kullanıcı parlayan "ateş böceği" parçacıkları istemedi; ana sayfa sahnesindeki çizgilerle bağlı parçacık AĞININ aynısını bütün sitede istedi
