@@ -1,5 +1,17 @@
 # İlerleme Notları
 
+### [2026-11-12 - Mehbur07]
+- **Yapılanlar & Kararlar:**
+  - `feature/light-theme-stage`: neon sahne (`.stage`) artık temaya uyuyor; açık temada beyaz-lavanta zemin, koyu yazı, eyebrow/`h1 small` neon mor (`--accent-text`), ghost düğme mor kenarlı
+  - Pixel M07 açık temada da sarı; kenarı `#a88600`, parıltısı ayrı `px-glow-light` animasyonuyla koyulaştırıldı
+  - `startParticles` artık her canvas için temaya göre DARK/LIGHT seçiyor (eski `ambient` parametresi kaldırıldı); tema değişince sahne de anında yeniden çiziliyor
+  - Etkilenen sayfalar: ana sayfa, 404, tasarim.html (hepsi `.stage` kullanıyor)
+- **Son Commit:** 245e0e1 Merge pull request #21 from Mehbur07/fix/win11-card-storage-text
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map açıklamaları, Discord davetinin süresiz olduğunun kontrolü, lisansı olmayan public repolar için lisans kararı
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Headless Chrome 500px'ten dar pencerede sayfayı kesik çiziyor; telefon görünümünü gerçek cihazda veya DevTools'ta kontrol et
+
 ### [2026-11-11 - Mehbur07]
 - **Yapılanlar & Kararlar:**
   - `fix/win11-card-storage-text`: Win11 Web sitesi artık dosyaları cihazda oluşturulan "Win11 Web" klasörüne kaydettiği için kart açıklaması (TR + EN `projects.w11.text`) buna göre düzeltildi
