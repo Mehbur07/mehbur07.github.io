@@ -228,9 +228,9 @@
 
   /* ---------- 5) Parçacık ağı ---------- */
 
-  // ambient = true ise bütün sayfanın arkasındaki katmandır: renkler temaya göre
-  // seçilir (açık temada beyaz zeminde görünsün diye koyu sarı/mor).
-  function startParticles(canvas, ambient) {
+  // Renkler temaya göre seçilir: açık temada (sahne ve sayfa zemini beyazken)
+  // görünsün diye koyu sarı/mor kullanılır.
+  function startParticles(canvas) {
     var ctx = canvas.getContext('2d');
     if (!ctx) return;
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -263,7 +263,7 @@
     var LIGHT = { y: '217,180,0', p: '127,44,255', line: .35 };
 
     function draw() {
-      var col = ambient && root.getAttribute('data-theme') === 'light' ? LIGHT : DARK;
+      var col = root.getAttribute('data-theme') === 'light' ? LIGHT : DARK;
       ctx.clearRect(0, 0, w, h);
       for (var i = 0; i < pts.length; i++) {
         for (var j = i + 1; j < pts.length; j++) {
@@ -303,7 +303,7 @@
     resize();
     if ('ResizeObserver' in window) new ResizeObserver(resize).observe(canvas);
     // Tema değişince renkler hemen güncellensin (hareket kapalıyken de)
-    if (ambient && 'MutationObserver' in window) {
+    if ('MutationObserver' in window) {
       new MutationObserver(draw).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
     }
     // Ekranda görünmüyorsa animasyonu durdur (pil ve işlemci tasarrufu)
@@ -325,7 +325,7 @@
     canvas.className = 'ambient-particles';
     canvas.setAttribute('aria-hidden', 'true');
     document.body.insertBefore(canvas, document.body.firstChild);
-    startParticles(canvas, true);
+    startParticles(canvas);
   }
 
   /* ---------- 6) Polis bandı ---------- */
@@ -412,7 +412,7 @@
   applyTranslations();
 
   document.querySelectorAll('[data-pixel]').forEach(buildPixelText);
-  document.querySelectorAll('canvas.particles').forEach(startParticles);
+  document.querySelectorAll('canvas.particles').forEach(function (c) { startParticles(c); });
   startAmbientParticles();
   document.querySelectorAll('.tape').forEach(fitTape);
   document.querySelectorAll('[data-contact-form]').forEach(setupContactForm);
