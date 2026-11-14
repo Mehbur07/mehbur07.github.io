@@ -5,6 +5,9 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 
 ## [Unreleased]
 
+### Düzeltildi
+- Win11 Web kartının resminde Windows logosuna benzeyen dört kare yerine Win11 Web'in kendi pencere simgesi kullanılıyor.
+
 ### Eklendi
 - Ana sayfadaki giriş sahnesi (pixel M07, isim ve düğmeler) artık açık temada da açık renkli: beyaz-lavanta zemin, koyu yazılar, mor vurgular; sahnedeki parçacıklar da açık tema renkleriyle çiziliyor. Koyu tema aynı kaldı.
 - Projelerim sayfasının "Hazır Projeler" bölümüne tarayıcıda çalışan Windows 11 simülasyonu Win11 Web'in kartı eklendi; "İndir" yerine siteyi açan "Siteye Git" ve "Kaynak Kodu" düğmeleri var. Ana sayfadaki proje sayacı "7 hazır" oldu.

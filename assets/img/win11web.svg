@@ -4,8 +4,7 @@
     <linearGradient id="t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fdcff"/><stop offset="1" stop-color="#1f8fff"/></linearGradient>
   </defs>
   <rect width="88" height="88" fill="url(#bg)"/>
-  <g fill="url(#t)">
-    <rect x="22" y="22" width="20.5" height="20.5" rx="2.5"/><rect x="45.5" y="22" width="20.5" height="20.5" rx="2.5"/>
-    <rect x="22" y="45.5" width="20.5" height="20.5" rx="2.5"/><rect x="45.5" y="45.5" width="20.5" height="20.5" rx="2.5"/>
-  </g>
+  <rect x="20" y="24" width="48" height="40" rx="10" fill="url(#t)"/>
+  <rect x="27" y="31" width="34" height="6" rx="3" fill="#fff"/>
+  <rect x="27" y="42" width="34" height="15" rx="3" fill="#fff" fill-opacity=".45"/>
 </svg>

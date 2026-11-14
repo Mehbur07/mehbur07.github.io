@@ -1,5 +1,15 @@
 # İlerleme Notları
 
+### [2026-11-14 - Mehbur07]
+- **Yapılanlar & Kararlar:**
+  - Microsoft Defender SmartScreen, Win11 Web sitesini kimlik avı diye işaretledi (yanlış alarm; Windows logosu + oturum açma ekranı benzerliği)
+  - `fix/win11-card-icon`: Win11 Web kart resmindeki dört kareli logo, Win11 Web'in yeni "pencere" simgesiyle değiştirildi
+- **Son Commit:** bc44fca Merge pull request #22 from Mehbur07/feature/light-theme-stage
+- **Aktif Branch:** feature/project-detail-pages (commit edilmemiş `assets/img/projeler/` klasörü olduğu için geri dönüldü)
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map açıklamaları, Discord davetinin süresiz olduğunun kontrolü, lisansı olmayan public repolar için lisans kararı
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - SmartScreen yanlış alarmı Microsoft'a bildirilmeli; ana alan adı (mehbur07.github.io) da uyarı veriyor mu Edge'de kontrol edilmeli
+
 ### [2026-11-12 - Mehbur07]
 - **Yapılanlar & Kararlar:**
   - `feature/light-theme-stage`: neon sahne (`.stage`) artık temaya uyuyor; açık temada beyaz-lavanta zemin, koyu yazı, eyebrow/`h1 small` neon mor (`--accent-text`), ghost düğme mor kenarlı
