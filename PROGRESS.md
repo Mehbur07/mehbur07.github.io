@@ -2,6 +2,17 @@
 
 ### [2026-11-14 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - Win11 Web projesi VirtualMOS adıyla baştan yazılacağı için `chore/virtualmos-wip-card`: kart "Hazır Projeler"den "Üzerinde Çalıştığım Projeler"e taşındı, adı VirtualMOS oldu
+  - "Siteye Git" ve "Kaynak Kodu" düğmeleri kaldırıldı; sayaç "6 hazır · 6 geliştiriliyor" (TR + EN)
+  - Kullanılmayan `projects.w11.meta` / `projects.w11.subtitle` çevirileri silindi; `projects.typeWeb` ve `projects.visit` VirtualMOS hazır olunca tekrar kullanılacağı için bırakıldı
+- **Son Commit:** c772446 Merge pull request #23 from Mehbur07/fix/win11-card-icon
+- **Aktif Branch:** feature/project-detail-pages (commit edilmemiş `assets/img/projeler/` klasörü olduğu için geri dönüldü)
+- **Sıradaki İlk İş (Next Action):** Açık küçük işler: MehburOS / MehBrowser / MAIO / Mehbur's Mini Map açıklamaları, Discord davetinin süresiz olduğunun kontrolü, lisansı olmayan public repolar için lisans kararı
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - VirtualMOS v1.0.0 olunca kart "Hazır Projeler"e dönecek (Siteye Git: virtualmos.github.io + Kaynak Kodu)
+
+### [2026-11-14 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - Microsoft Defender SmartScreen, Win11 Web sitesini kimlik avı diye işaretledi (yanlış alarm; Windows logosu + oturum açma ekranı benzerliği)
   - `fix/win11-card-icon`: Win11 Web kart resmindeki dört kareli logo, Win11 Web'in yeni "pencere" simgesiyle değiştirildi
 - **Son Commit:** bc44fca Merge pull request #22 from Mehbur07/feature/light-theme-stage
