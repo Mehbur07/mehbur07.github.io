@@ -5,6 +5,9 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 
 ## [Unreleased]
 
+### Değiştirildi
+- Win11 Web kartı, proje VirtualMOS adıyla baştan yazıldığı için "Üzerinde Çalıştığım Projeler" bölümüne taşındı; siteye git ve kaynak kodu düğmeleri kaldırıldı.
+
 ### Düzeltildi
 - Win11 Web kartının resminde Windows logosuna benzeyen dört kare yerine Win11 Web'in kendi pencere simgesi kullanılıyor.
 
