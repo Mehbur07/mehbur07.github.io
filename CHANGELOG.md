@@ -5,6 +5,10 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 
 ## [Unreleased]
 
+### Eklendi
+- Projelerim sayfasının "Üzerinde Çalıştığım Projeler" bölümüne MehburMC Launcher'ın tanıtım ve indirme
+  sitesi "MehburMC Launcher-Site" kartı eklendi (TR + EN); ana sayfadaki sayaç "7 geliştiriliyor" oldu.
+
 ### Değiştirildi
 - Win11 Web kartı, proje VirtualMOS adıyla baştan yazıldığı için "Üzerinde Çalıştığım Projeler" bölümüne taşındı; siteye git ve kaynak kodu düğmeleri kaldırıldı.
 

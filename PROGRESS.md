@@ -1,5 +1,16 @@
 # İlerleme Notları
 
+### [2026-11-15 - Mehbur07]
+- **Yapılanlar & Kararlar:**
+  - `feature/mmc-site-card`: "Üzerinde Çalıştığım Projeler"e "MehburMC Launcher-Site" kartı eklendi (logo olarak mevcut `mehburmc.jpg`, "Geliştiriliyor" rozeti, TR + EN açıklama)
+  - Ana sayfa sayacı "6 hazır · 7 geliştiriliyor" oldu (TR + EN)
+  - İş, kullanıcının `feature/project-detail-pages` branch'ine ve commit edilmemiş `assets/img/projeler/` klasörüne dokunmamak için ayrı bir worktree'de yapıldı
+- **Son Commit:** c93810f Merge pull request #24 from Mehbur07/chore/virtualmos-wip-card
+- **Aktif Branch:** feature/project-detail-pages (kullanıcının çalışma klasörü; bu iş ona dokunmadı)
+- **Sıradaki İlk İş (Next Action):** Site yayına hazır olunca (v1.0.0) kartı "Hazır Projeler"e taşıyıp "Siteye Git" (https://mehburmc.github.io) ve "Kaynak Kodu" düğmelerini eklemek
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Yerel `feature/project-detail-pages` branch'i GitHub'daki main'in gerisinde (PR #23, #24 ve bu kart)
+
 ### [2026-11-14 - Mehbur07]
 - **Yapılanlar & Kararlar:**
   - Win11 Web projesi VirtualMOS adıyla baştan yazılacağı için `chore/virtualmos-wip-card`: kart "Hazır Projeler"den "Üzerinde Çalıştığım Projeler"e taşındı, adı VirtualMOS oldu

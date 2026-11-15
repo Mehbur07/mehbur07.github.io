@@ -77,6 +77,7 @@ window.M07_TRANSLATIONS = {
     'alt.os': 'MehburOS logo',
     'alt.browser': 'MehBrowser logo',
     'alt.minimap': "Mehbur's Mini Map logo",
+    'alt.mmcsite': 'MehburMC Launcher-Site logo',
     'alt.avatar': 'Mehbur07 mascot logo',
 
     /* --- Ana sayfa --- */
@@ -88,7 +89,7 @@ window.M07_TRANSLATIONS = {
     'home.mehpixBadge': 'Live',
     'home.mehpixText': 'The website of MehPiX, my software studio. Explore and download our projects like the PyAI chatbot and the Arduino-powered Quiz.',
     'home.mehpixCta': 'Visit Site',
-    'home.projectsCount': '6 ready · 6 in development',
+    'home.projectsCount': '6 ready · 7 in development',
     'home.projectsText': "My Minecraft launcher, my mods and the software I'm working on.",
     'home.go': 'Explore',
     'home.aboutEyebrow': "I'm Burak",
@@ -140,6 +141,7 @@ window.M07_TRANSLATIONS = {
     'projects.browser.text': 'My own web browser project. Details coming very soon!',
     'projects.maio.text': 'My automatic inventory organizer project. Details coming very soon!',
     'projects.minimap.text': 'My own mini map project. Details coming very soon!',
+    'projects.mmcsite.text': "MehburMC Launcher's own showcase and download site: a Windows/Linux download picker, screenshots and the open source code in one place. Details coming soon!",
 
     /* --- Hakkımda --- */
     'about.eyebrow': 'Gamer · Streamer · Electronics · Developer',
