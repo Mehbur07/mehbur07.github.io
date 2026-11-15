@@ -6,6 +6,8 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 ## [Unreleased]
 
 ### Eklendi
+- Projelerim sayfasına "MehburMC Launcher Android Version" kartı eklendi (TR + EN): İndir düğmesi
+  .apk dosyasını indirir, Kaynak Kodu GitHub'a gider. Ana sayfadaki sayaç "8 hazır · 6 geliştiriliyor" oldu.
 - Projelerim sayfasının "Üzerinde Çalıştığım Projeler" bölümüne MehburMC Launcher'ın tanıtım ve indirme
   sitesi "MehburMC Launcher-Site" kartı eklendi (TR + EN); ana sayfadaki sayaç "7 geliştiriliyor" oldu.
 
