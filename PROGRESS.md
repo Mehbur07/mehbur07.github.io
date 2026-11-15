@@ -1,5 +1,17 @@
 # İlerleme Notları
 
+### [2026-11-16 - Mehbur07]
+- **Yapılanlar & Kararlar:**
+  - `feature/mmc-site-ready`: MehburMC Launcher-Site v1.0.0 ile yayına çıktığı için kartı "Hazır Projeler"e (iki launcher kartının yanına) taşındı
+  - Düğmeler: "Siteye Git" → https://mehburmc.github.io/, "Kaynak Kodu" → https://github.com/mehburmc/mehburmc.github.io (ikisi de yeni sekmede)
+  - Yeni "Web Sitesi" rozeti (`projects.typeSite`), alt başlık ve güncel açıklama (TR + EN); ana sayfa sayacı "7 hazır · 6 geliştiriliyor"
+  - İş yine kullanıcının `feature/project-detail-pages` branch'ine ve `assets/img/projeler/` klasörüne dokunmamak için ayrı worktree'de yapıldı; tarayıcıda TR/EN ve telefon genişliğinde test edildi
+- **Son Commit:** f5b2a05 Merge pull request #25 from Mehbur07/feature/mmc-site-card
+- **Aktif Branch:** feature/project-detail-pages (kullanıcının çalışma klasörü; bu iş ona dokunmadı)
+- **Sıradaki İlk İş (Next Action):** `feature/project-detail-pages` işine devam (proje detay sayfaları)
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Yerel `feature/project-detail-pages` branch'i GitHub'daki main'in gerisinde (PR #23-#25 ve bu kart); devam etmeden önce main'den güncellenmeli
+
 ### [2026-11-15 - Mehbur07]
 - **Yapılanlar & Kararlar:**
   - `feature/mmc-site-card`: "Üzerinde Çalıştığım Projeler"e "MehburMC Launcher-Site" kartı eklendi (logo olarak mevcut `mehburmc.jpg`, "Geliştiriliyor" rozeti, TR + EN açıklama)
