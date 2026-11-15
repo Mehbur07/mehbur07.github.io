@@ -89,7 +89,7 @@ window.M07_TRANSLATIONS = {
     'home.mehpixBadge': 'Live',
     'home.mehpixText': 'The website of MehPiX, my software studio. Explore and download our projects like the PyAI chatbot and the Arduino-powered Quiz.',
     'home.mehpixCta': 'Visit Site',
-    'home.projectsCount': '6 ready · 7 in development',
+    'home.projectsCount': '7 ready · 6 in development',
     'home.projectsText': "My Minecraft launcher, my mods and the software I'm working on.",
     'home.go': 'Explore',
     'home.aboutEyebrow': "I'm Burak",
@@ -126,6 +126,7 @@ window.M07_TRANSLATIONS = {
     'projects.gs.size': '1.4 MB',
     'projects.gs.text': 'Welcome to the Upside Down. The Nether turns red, Demogorgons hunt and Vecna waits.',
     'projects.typeWeb': 'Web App',
+    'projects.typeSite': 'Website',
     'projects.visit': 'Visit Site',
     'projects.w11.text': 'My browser-based virtual desktop project with the MehburOS theme. Details coming soon!',
     'projects.mty.text': 'A floating, neon-cyan AI companion inspired by Verity. It chats with you through Gemini, fights for you, mines, builds houses and, when angered, turns into an 18-block-tall demon. Pitch-black nights, a flashlight and things watching from the dark await you.',
@@ -141,7 +142,8 @@ window.M07_TRANSLATIONS = {
     'projects.browser.text': 'My own web browser project. Details coming very soon!',
     'projects.maio.text': 'My automatic inventory organizer project. Details coming very soon!',
     'projects.minimap.text': 'My own mini map project. Details coming very soon!',
-    'projects.mmcsite.text': "MehburMC Launcher's own showcase and download site: a Windows/Linux download picker, screenshots and the open source code in one place. Details coming soon!",
+    'projects.mmcsite.subtitle': 'The official MehburMC Launcher website',
+    'projects.mmcsite.text': "MehburMC Launcher's own showcase and download site. The Download button fetches the latest file for your system (Windows .exe / Linux .deb) live from GitHub. Screenshots, an FAQ and the source code are here too, in Turkish and English, with a Minecraft-themed 404 page.",
 
     /* --- Hakkımda --- */
     'about.eyebrow': 'Gamer · Streamer · Electronics · Developer',

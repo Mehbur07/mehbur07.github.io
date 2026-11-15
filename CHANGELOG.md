@@ -10,6 +10,8 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
   sitesi "MehburMC Launcher-Site" kartı eklendi (TR + EN); ana sayfadaki sayaç "7 geliştiriliyor" oldu.
 
 ### Değiştirildi
+- MehburMC Launcher-Site yayına çıktığı (v1.0.0) için kartı "Hazır Projeler"e taşındı; "Siteye Git"
+  (https://mehburmc.github.io) ve "Kaynak Kodu" düğmeleri eklendi. Ana sayfadaki sayaç "7 hazır · 6 geliştiriliyor" oldu.
 - Win11 Web kartı, proje VirtualMOS adıyla baştan yazıldığı için "Üzerinde Çalıştığım Projeler" bölümüne taşındı; siteye git ve kaynak kodu düğmeleri kaldırıldı.
 
 ### Düzeltildi
