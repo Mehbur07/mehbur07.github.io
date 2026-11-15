@@ -132,6 +132,7 @@ window.M07_TRANSLATIONS = {
     'projects.typeWeb': 'Web App',
     'projects.typeSite': 'Website',
     'projects.visit': 'Visit Site',
+    'projects.details': 'Details',
     'projects.w11.text': 'My browser-based virtual desktop project with the MehburOS theme. Details coming soon!',
     'projects.mty.text': 'A floating, neon-cyan AI companion inspired by Verity. It chats with you through Gemini, fights for you, mines, builds houses and, when angered, turns into an 18-block-tall demon. Pitch-black nights, a flashlight and things watching from the dark await you.',
     'projects.wipTitle': "What I'm Working On",
