@@ -79,6 +79,7 @@ window.M07_TRANSLATIONS = {
     'alt.browser': 'MehBrowser logo',
     'alt.minimap': "Mehbur's Mini Map logo",
     'alt.mmcsite': 'MehburMC Launcher-Site logo',
+    'alt.rg': 'RunGame logo',
     'alt.avatar': 'Mehbur07 mascot logo',
 
     /* --- Ana sayfa --- */
@@ -90,7 +91,7 @@ window.M07_TRANSLATIONS = {
     'home.mehpixBadge': 'Live',
     'home.mehpixText': 'The website of MehPiX, my software studio. Explore and download our projects like the PyAI chatbot and the Arduino-powered Quiz.',
     'home.mehpixCta': 'Visit Site',
-    'home.projectsCount': '8 ready · 6 in development',
+    'home.projectsCount': '8 ready · 7 in development',
     'home.projectsText': "My Minecraft launcher, my mods and the software I'm working on.",
     'home.go': 'Explore',
     'home.aboutEyebrow': "I'm Burak",
@@ -134,6 +135,9 @@ window.M07_TRANSLATIONS = {
     'projects.visit': 'Visit Site',
     'projects.details': 'Details',
     'projects.w11.text': 'My browser-based virtual desktop project with the MehburOS theme. Details coming soon!',
+    'projects.rg.meta': '3D survival game',
+    'projects.rg.text': 'My block-based 3D survival game, built with Unity. Run, dig, build and survive in a 2 million x 2 million block world. The main menu, save system and health/hunger/stamina are done; inventory and crafting are next.',
+    'projects.rg.survival': 'Survival',
     'projects.mty.text': 'A floating, neon-cyan AI companion inspired by Verity. It chats with you through Gemini, fights for you, mines, builds houses and, when angered, turns into an 18-block-tall demon. Pitch-black nights, a flashlight and things watching from the dark await you.',
     'projects.wipTitle': "What I'm Working On",
     'projects.wipText': "Projects still in development. Once they're ready, you'll be able to download them here.",
