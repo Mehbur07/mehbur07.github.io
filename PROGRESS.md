@@ -2,6 +2,19 @@
 
 ### [2026-11-16 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `feature/virtualmos-ready-card`: VirtualMOS v1.0.0 yayına çıktığı için kartı "Hazır Projeler"e (MehburMC Launcher-Site kartının yanına) taşındı
+  - Düğmeler: "Siteye Git" → https://virtualmos.github.io/, "Kaynak Kodu" → https://github.com/virtualmos/virtualmos.github.io; logo artık `mehburos.jpg`, "Web Uygulaması" rozeti, `projects.w11.meta`/`subtitle` ve yeni açıklama (TR + EN)
+  - Çalışırken GitHub'a başka yerden macOS kartı (PR #30) gelmişti; kullanıcı onayıyla stash + fast-forward yapıldı, sayaç çakışması "9 hazır · 7 geliştiriliyor" olarak çözüldü
+  - Tarayıcıda TR/EN ve telefon genişliğinde kart kontrol edildi
+- **Son Commit:** 45668fc Merge pull request #30 from Mehbur07/feature/macos-card
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** `feature/project-detail-pages` işine devam (proje detay sayfaları)
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - `assets/img/win11web.svg` artık hiçbir sayfada kullanılmıyor; silinmesi kullanıcı onayına bağlı
+  - `assets/img/projeler/` kullanıcının git'e eklenmemiş klasörü; bu işe dahil edilmedi
+
+### [2026-11-16 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - `feature/mmc-site-ready`: MehburMC Launcher-Site v1.0.0 ile yayına çıktığı için kartı "Hazır Projeler"e (iki launcher kartının yanına) taşındı
   - Düğmeler: "Siteye Git" → https://mehburmc.github.io/, "Kaynak Kodu" → https://github.com/mehburmc/mehburmc.github.io (ikisi de yeni sekmede)
   - Yeni "Web Sitesi" rozeti (`projects.typeSite`), alt başlık ve güncel açıklama (TR + EN); ana sayfa sayacı "7 hazır · 6 geliştiriliyor"
