@@ -6,6 +6,8 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 ## [Unreleased]
 
 ### Eklendi
+- Projelerim sayfasının "Üzerinde Çalıştığım Projeler" bölümüne ders çalışma planlayıcısı
+  "HDV (Hadi Ders Vakti)" kartı logosuyla eklendi (TR + EN); ana sayfadaki sayaç "9 hazır · 8 geliştiriliyor" oldu.
 - Projelerim sayfasının "Üzerinde Çalıştığım Projeler" bölümüne "MehburMC Launcher macOS Version"
   kartı eklendi (TR + EN); ana sayfadaki sayaç "8 hazır · 8 geliştiriliyor" oldu.
 - Projelerim sayfasının "Üzerinde Çalıştığım Projeler" bölümüne Unity ile geliştirilen blok tabanlı 3D
