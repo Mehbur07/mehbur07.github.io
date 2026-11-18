@@ -1,5 +1,20 @@
 # İlerleme Notları
 
+### [2026-11-18 - Mehbur07]
+- **Yapılanlar & Kararlar:**
+  - `feature/hdv-ready-card`: HDV (Hadi Ders Vakti) v1.0.0 yayına çıktığı için kartı "Hazır Projeler"e (VirtualMOS kartının yanına) taşındı
+  - "İndir" → https://github.com/Mehbur07/hdv-surumler/releases/latest/download/HDV-Kurulum.exe (her zaman en son sürüm); "Kurulum Rehberi" ve "Sürüm Notları" hdv-surumler reposuna gider. hdv kaynak kodu gizli olduğu için "Kaynak Kodu" düğmesi yok
+  - Kurulum dosyası (116 MB) GitHub'ın 100 MB dosya sınırı yüzünden site reposuna konmadı; yerel `dist\HDV-Kurulum.exe` ile birebir aynı dosya hdv-surumler Releases'inden iner
+  - Yeni anahtarlar: `projects.typeDesktop`, `projects.installGuide`, `projects.hdv.subtitle` (kullanılmayan `projects.hdv.meta` kaldırıldı); sayaç "10 hazır · 7 geliştiriliyor"
+  - Headless Edge ile masaüstü genişliğinde ekran görüntüsü alınıp kontrol edildi (telefon görüntüsü headless pencere boyutu yüzünden güvenilir değildi; telefonda gerçek tarayıcıyla bakılmalı)
+- **Son Commit:** 9e300a6 Merge pull request #32 from Mehbur07/feature/hdv-card
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** `feature/project-detail-pages` işine devam (proje detay sayfaları)
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - HDV'nin yeni sürümünde indirme bağlantısı kendiliğinden yeni dosyayı verir; yalnızca karttaki `v1.0.0 · Windows · 116 MB` yazısı elle güncellenmeli
+  - `assets/img/projeler/` kullanıcının git'e eklenmemiş klasörü; bu işe dahil edilmedi
+  - `assets/img/win11web.svg` kullanılmıyor; silinmesi kullanıcı onayına bağlı
+
 ### [2026-11-16 - Mehbur07]
 - **Yapılanlar & Kararlar:**
   - `feature/virtualmos-ready-card`: VirtualMOS v1.0.0 yayına çıktığı için kartı "Hazır Projeler"e (MehburMC Launcher-Site kartının yanına) taşındı
