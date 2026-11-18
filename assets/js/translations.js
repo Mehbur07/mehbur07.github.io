@@ -82,6 +82,7 @@ window.M07_TRANSLATIONS = {
     'alt.mmcsite': 'MehburMC Launcher-Site logo',
     'alt.rg': 'RunGame logo',
     'alt.hdv': 'HDV (Hadi Ders Vakti) logo',
+    'alt.mmclib': 'MehburMC Library logo',
     'alt.avatar': 'Mehbur07 mascot logo',
 
     /* --- Ana sayfa --- */
@@ -93,7 +94,7 @@ window.M07_TRANSLATIONS = {
     'home.mehpixBadge': 'Live',
     'home.mehpixText': 'The website of MehPiX, my software studio. Explore and download our projects like the PyAI chatbot and the Arduino-powered Quiz.',
     'home.mehpixCta': 'Visit Site',
-    'home.projectsCount': '10 ready · 7 in development',
+    'home.projectsCount': '10 ready · 8 in development',
     'home.projectsText': "My Minecraft launcher, my mods and the software I'm working on.",
     'home.go': 'Explore',
     'home.aboutEyebrow': "I'm Burak",
@@ -158,6 +159,8 @@ window.M07_TRANSLATIONS = {
     'projects.inDev': 'In development',
     'projects.os.text': 'My own operating system project. Details coming very soon!',
     'projects.mmcm.text': "The Mac version of MehburMC Launcher; it will run on Apple Silicon (M1 and later) and Intel Macs. Details coming very soon!",
+    'projects.mmclib.subtitle': "The MehburMC community's mod sharing site",
+    'projects.mmclib.text': "A site connected to the same library as MehburMC Launcher: mods, modpacks, resource packs and shaders uploaded from the launcher or the site show up in both places. You'll be able to browse and download without signing in, and sign in with your MehburMC account to upload your own mods. Supports light/dark theme and Turkish/English.",
     'projects.browser.text': 'My own web browser project. Details coming very soon!',
     'projects.maio.text': 'My automatic inventory organizer project. Details coming very soon!',
     'projects.minimap.text': 'My own mini map project. Details coming very soon!',

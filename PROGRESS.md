@@ -2,6 +2,20 @@
 
 ### [2026-11-18 - Mehbur07]
 - **Yapılanlar & Kararlar:**
+  - `feature/library-wip-card`: "Üzerinde Çalıştığım Projeler"in sonuna "MehburMC Kütüphanesi" kartı (MehburMC logosu, "Geliştiriliyor" rozeti, `v0.1.0 · TR / EN`)
+  - Düğmeler: "Siteye Git" → https://mehburmclibrary.github.io/, "Kaynak Kodu" → https://github.com/mehburmclibrary/mehburmclibrary.github.io (site yayında, kütüphane listesi henüz yok)
+  - Yeni anahtarlar: `alt.mmclib`, `projects.mmclib.subtitle`, `projects.mmclib.text`; sayaç "10 hazır · 8 geliştiriliyor"
+  - Chrome ile masaüstü ve telefon genişliğinde, TR ve EN olarak kontrol edildi
+- **Son Commit:** 00d92bb Merge pull request #33 from Mehbur07/feature/hdv-ready-card
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** `feature/project-detail-pages` işine devam (proje detay sayfaları)
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Kütüphane sitesi yeni sürüm çıkardıkça karttaki `v0.1.0` elle güncellenmeli; kütüphane hazır olunca kart "Hazır Projeler"e taşınabilir
+  - `assets/img/projeler/` kullanıcının git'e eklenmemiş klasörü; bu işe dahil edilmedi
+  - `assets/img/win11web.svg` kullanılmıyor; silinmesi kullanıcı onayına bağlı
+
+### [2026-11-18 - Mehbur07]
+- **Yapılanlar & Kararlar:**
   - `feature/hdv-ready-card`: HDV (Hadi Ders Vakti) v1.0.0 yayına çıktığı için kartı "Hazır Projeler"e (VirtualMOS kartının yanına) taşındı
   - "İndir" → https://github.com/Mehbur07/hdv-surumler/releases/latest/download/HDV-Kurulum.exe (her zaman en son sürüm); "Kurulum Rehberi" ve "Sürüm Notları" hdv-surumler reposuna gider. hdv kaynak kodu gizli olduğu için "Kaynak Kodu" düğmesi yok
   - Kurulum dosyası (116 MB) GitHub'ın 100 MB dosya sınırı yüzünden site reposuna konmadı; yerel `dist\HDV-Kurulum.exe` ile birebir aynı dosya hdv-surumler Releases'inden iner
