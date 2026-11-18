@@ -20,6 +20,9 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
   sitesi "MehburMC Launcher-Site" kartı eklendi (TR + EN); ana sayfadaki sayaç "7 geliştiriliyor" oldu.
 
 ### Değiştirildi
+- HDV (Hadi Ders Vakti) v1.0.0 yayına çıktığı için kartı "Hazır Projeler"e taşındı: "İndir" düğmesi Windows
+  kurulum dosyasını (HDV-Kurulum.exe, her zaman en son sürüm) indirir; "Kurulum Rehberi" ve "Sürüm Notları"
+  düğmeleri, "Masaüstü Uygulaması" rozeti ve güncel açıklama eklendi (TR + EN). Ana sayfadaki sayaç "10 hazır · 7 geliştiriliyor" oldu.
 - VirtualMOS yayına çıktığı (v1.0.0) için kartı "Hazır Projeler"e taşındı; MehburOS logosu, açıklama ve
   "Siteye Git" (https://virtualmos.github.io) ile "Kaynak Kodu" düğmeleri eklendi (TR + EN). Ana sayfadaki sayaç "9 hazır · 7 geliştiriliyor" oldu.
 - MehburMC Launcher-Site yayına çıktığı (v1.0.0) için kartı "Hazır Projeler"e taşındı; "Siteye Git"
