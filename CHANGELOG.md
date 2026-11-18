@@ -44,6 +44,7 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 - Ana sayfadaki MehPiX kartının "Siteye Git" düğmesi artık yayındaki MehPiX sitesini (mehpix.github.io) açıyor; kartın rozeti "Yayında" oldu ve açıklaması sitenin gerçek içeriğine (yazılım stüdyosu, PyAI, Quiz) göre yenilendi.
 
 ### Değişti
+- Projelerim sayfasındaki MehburMC Launcher kartları (Windows ve Linux) launcher'ın 0.34.0 sürümüne güncellendi; bu sürümde ilk açılış daha hızlı ve modlu profillere tek tıkla performans modu kurulabiliyor.
 - Projelerim'deki Win11 Web kartının açıklaması güncellendi: dosyalar artık cihazda oluşturulan "Win11 Web" klasörüne kaydediliyor.
 - Mehbur's Mini Map ve MehburAI'ın kodları artık gizli; Projelerim sayfasındaki kartlarından "Kaynak Kodu" düğmesi kaldırıldı.
 - Projelerim sayfasındaki MehburMC Launcher kartları (Windows ve Linux) launcher'ın 0.32.0 sürümüne güncellendi; bu sürümle launcher'dan yöneticilere mesaj yazılabiliyor.
