@@ -28,6 +28,7 @@ Kurulum gerekmez. İki yol var:
 ```
 index.html               Ana sayfa (giriş + bölüm kartları)
 projelerim.html          Hazır projeler ve üzerinde çalışılan projeler
+proje-*.html             Proje detay sayfaları (launcher ve 4 mod): özellikler, görüntüler, kurulum, SHA-256
 hakkimda.html            Hakkımda ve hedefler
 sosyal-medya.html        Sosyal medya hesapları
 iletisim.html            İletişim kanalları
@@ -40,6 +41,7 @@ assets/css/style.css     Ortak stil: renkler, yazı tipleri, düğmeler, kartlar
 assets/js/main.js        Menü ve alt bilgi, tema düğmesi, dil seçimi, pixel M07, parçacık efekti
 assets/js/translations.js  TR/EN metinleri
 assets/img/              Siteye giren (küçültülmüş) görseller; og-image.jpg = link paylaşılınca çıkan 1200x630 kart
+assets/img/projeler/     Detay sayfalarındaki ekran görüntüleri, eşya dokuları ve oyun videoları (+ kapak resimleri)
 ROADMAP.md               Proje fazları
 PROGRESS.md              Oturumlar arası ilerleme notları
 CHANGELOG.md             Değişiklik geçmişi
@@ -72,7 +74,11 @@ Launcher'ın Windows (`.exe`) ve Linux (`.deb`) dosyaları aynı sürümün Rele
 gh release create deathnote-v1.1.0 --target main --title "Death Note v1.1.0" --notes-file notlar.md deathnote-1.1.0.jar
 ```
 
-Sonra `projelerim.html` içinde o kartın sürüm satırını, "İndir" bağlantısını (`releases/download/<tag>/<dosya>`) ve "Sürüm Notları" bağlantısını (`releases/tag/<tag>`) yeni etikete göre güncelle.
+Sonra `projelerim.html` içinde o kartın sürüm satırını ve "İndir" bağlantısını (`releases/download/<tag>/<dosya>`) yeni etikete göre güncelle.
+
+"Sürüm Notları" düğmesi GitHub'a değil, sitedeki proje detay sayfasına (`proje-*.html`) gider. Yeni sürümde o sayfada da şunları güncelle: üstteki "İndir" bağlantıları ve sürüm satırı, "Bu sürümde yeni" maddeleri (launcher), Linux kurulum komutundaki dosya adı, "Dosyayı doğrulama" bölümündeki SHA-256 değerleri (`gh release view <tag> --json assets` ile görülür) ve sağdaki "Bilgiler" kutusundaki sürüm ile yayın tarihi. Değişen yazıların İngilizcesini `translations.js` içindeki `pd.` ile başlayan anahtarlarda güncellemeyi unutma.
+
+Detay sayfalarındaki oyun videoları `preload="none"` ile eklenir: sayfa açılırken yalnızca kapak resmi (`*-poster.jpg`) iner, video oynat'a basınca yüklenir.
 
 ## İletişim formu (Web3Forms)
 
