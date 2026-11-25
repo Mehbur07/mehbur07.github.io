@@ -6,6 +6,8 @@ Format [Keep a Changelog](https://keepachangelog.com/tr-TR/1.1.0/) esas alınır
 ## [Unreleased]
 
 ### Eklendi
+- MehburMC Launcher, Death Note, Iron Golem Troll, Garip Şeyler MC ve Mehburity için sitenin içinde proje detay sayfaları açıldı (TR + EN): özellikler, kurulum adımları, gereksinimler, SHA-256 doğrulama ve sağda bir "Bilgiler" kutusu var. Launcher sayfasında ekran görüntüleri, Death Note'ta oyun videosu ve ekran görüntüleri, Iron Golem Troll'da oyun videosu, diğer modlarda eşya dokuları gösteriliyor.
+- Projelerim'deki bu projelerin "Sürüm Notları" düğmeleri artık GitHub'a değil, bu detay sayfalarına gidiyor.
 - Projelerim sayfasının "Üzerinde Çalıştığım Projeler" bölümüne MehburMC topluluğunun mod paylaşım sitesi
   "MehburMC Kütüphanesi" kartı eklendi (TR + EN); "Siteye Git" ve "Kaynak Kodu" düğmeleri var. Ana sayfadaki
   sayaç "10 hazır · 8 geliştiriliyor" oldu.

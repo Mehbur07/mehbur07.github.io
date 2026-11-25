@@ -1,5 +1,21 @@
 # İlerleme Notları
 
+### [2026-11-25 - Mehbur07]
+- **Yapılanlar & Kararlar:**
+  - `feature/project-detail-pages`: 5 proje detay sayfası (`proje-mehburmc-launcher.html`, `proje-death-note.html`, `proje-iron-golem-troll.html`, `proje-garip-seyler-mc.html`, `proje-mehburity.html`). MehPiX'in PyAI sayfası örnek alındı: geri linki, başlık + "Yayında", etiketler, İndir / Kaynak Kodu, özellikler, görüntüler, gereksinimler, kurulum, SHA-256, sağda "Bilgiler" kutusu
+  - Projelerim'deki launcher (Windows, Linux → `#linux`) ve 4 modun "Sürüm Notları" düğmeleri bu sayfalara bağlandı. HDV'ninki hâlâ `hdv-surumler` Releases'ine gidiyor
+  - Medya `assets/img/projeler/`: launcher'ın 4 ekran görüntüsü, Death Note'un 6 ekran görüntüsü + 12 sn video (6,4 MB), Iron Golem Troll'un 50 sn videosu (28 MB), mod dokuları. Videolar `preload="none"`; sayfa açılırken sadece kapak resmi iner
+  - Launcher sayfası v0.34.0'a göre (yenilikler, SHA-256 ve tarih Release'ten alındı). EN çeviriler `translations.js` içinde `pd.` anahtarlarıyla (155 anahtar)
+  - Chrome ile masaüstü (TR/EN, açık/koyu) ve 520 px genişlikte kontrol edildi; bütün yerel yollar ve Release dosya adları/hash'leri doğrulandı
+- **Son Commit:** 507829c Merge pull request #36 from Mehbur07/chore/library-card-ready
+- **Aktif Branch:** main
+- **Sıradaki İlk İş (Next Action):** Kullanıcı Garip Şeyler MC ve Mehburity için oyun içi video/ekran görüntüsü gönderirse sayfalara eklemek (şimdilik eşya dokuları var)
+- **Bilinen Sorunlar / Dikkat Edilmesi Gerekenler:**
+  - Yeni sürümde detay sayfasındaki İndir linki, sürüm, SHA-256 ve tarih de güncellenmeli (README'de anlatıldı)
+  - Videolarda OBS kaplaması (Restream sohbet kutusu, sarı-siyah çerçeve) görünüyor; istenirse kırpılmış yeni kayıtla değiştirilebilir
+  - Iron Golem Troll videosu 28 MB (ffmpeg olmadığı için sıkıştırılmadı); ileride küçültülebilir
+  - `assets/img/win11web.svg` kullanılmıyor; silinmesi kullanıcı onayına bağlı
+
 ### [2026-11-18 - Mehbur07]
 - **Yapılanlar & Kararlar:**
   - `feature/library-wip-card`: "Üzerinde Çalıştığım Projeler"in sonuna "MehburMC Kütüphanesi" kartı (MehburMC logosu, "Geliştiriliyor" rozeti, `v0.1.0 · TR / EN`)

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iron Golem Troll — Mehbur07</title>
+  <meta name="description" content="Iron Golem Troll: Minecraft 26.2 için sunucu taraflı Fabric modu. Bir demir golemine vur ve bitmeyen bir yükselme döngüsüne takıl.">
+  <link rel="canonical" href="https://mehbur07.github.io/proje-iron-golem-troll.html">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b0614">
+  <!-- Paylaşım önizlemesi (Discord, X, WhatsApp vb.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mehbur07">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Iron Golem Troll — Mehbur07">
+  <meta property="og:description" content="Iron Golem Troll: Minecraft 26.2 için sunucu taraflı Fabric modu. Bir demir golemine vur ve bitmeyen bir yükselme döngüsüne takıl.">
+  <meta property="og:url" content="https://mehbur07.github.io/proje-iron-golem-troll.html">
+  <meta property="og:image" content="https://mehbur07.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mehbur07 — Mehmet Burak ŞAHİN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@RealMehbur07X">
+  <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('m07-theme'),l=localStorage.getItem('m07-lang');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='en'||l==='tr')d.lang=l;}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600;700&family=Oxanium:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="projects">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main">
+    <!-- Iron Golem Troll modunun detay sayfası -->
+    <section class="project-hero">
+      <div class="container project-hero__grid">
+        <div class="project-hero__text">
+          <a class="back-link" data-i18n="pd.back" href="projelerim.html">← Tüm projeler</a>
+          <div class="project-hero__title">
+            <h1>Iron Golem Troll</h1>
+            <span class="status-badge" data-i18n="pd.live">Yayında</span>
+          </div>
+          <ul class="tags"><li class="tag">Fabric</li><li class="tag">Minecraft 26.2</li><li class="tag">Java 25</li><li class="tag">Fabric API</li><li class="tag"><span data-i18n="projects.serverSide">Sunucu tarafı</span></li></ul>
+          <p class="lead" data-i18n="projects.igt.text">Bir demir golemine vur ve onunla birlikte bitmeyen bir yükselme döngüsüne takıl. Sadece sunucu tarafında çalışır; oyuncuların bilgisayarına kurulsa da sorun çıkarmaz.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://github.com/Mehbur07/mehbur07.github.io/releases/download/irongolemtroll-v1.0.0/iron-golem-troll-1.0.0.jar" data-i18n="projects.download">İndir</a>
+            <a class="btn btn--ghost btn--ext" href="https://github.com/Mehbur07/irongolemtroll-mode" target="_blank" rel="noopener" data-i18n="projects.source">Kaynak Kodu</a>
+          </div>
+          <p class="project-hero__meta">v1.0.0 · iron-golem-troll-1.0.0.jar · 24 KB</p>
+        </div>
+        <figure class="project-hero__media project-hero__media--logo">
+          <img class="img-pixel" src="assets/img/irongolemtroll.png" alt="Iron Golem Troll modu logosu" data-i18n-attr="alt:alt.igt" width="240" height="240">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section project-body">
+      <div class="container project-layout">
+        <div class="project-main">
+          <p class="project-intro" data-i18n="pd.igt.intro">Iron Golem Troll, Minecraft 26.2 için sunucu taraflı bir Fabric modu. Bir demir golemine vurduğunda golem eline bir demir blok alır, hemen yanına yürür ve altına demir blok koyarak 3 blok yukarı tırmanır. Kuleni yükseltip tekrar vurursan golem 3 blok daha tırmanır; böylece sonsuza kadar yükselen bir demir kule oluşur.</p>
+
+          <h2><span data-i18n="pd.features">Özellikler</span></h2>
+
+          <div class="feature-grid">
+            <article class="feature">
+              <h3 data-i18n="pd.igt.f1.t">Vur ve izle</h3>
+              <p data-i18n="pd.igt.f1.p">Golem eline demir blok alır, yanına gelir ve altına bloklar koyarak tırmanır. Tırmanış bitene kadar kimseye vuramaz.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.igt.f2.t">Bitmeyen kule</h3>
+              <p data-i18n="pd.igt.f2.p">Golem zaten yanında olduğu için her yeni vuruşta yeniden tırmanır; kule sen vurdukça yükselir.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.igt.f3.t">Kalıcı bloklar</h3>
+              <p data-i18n="pd.igt.f3.p">Golemin koyduğu demir bloklar kalıcıdır ve normal demir blok gibi kırılabilir.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.igt.f4.t">Sadece sunucuda</h3>
+              <p data-i18n="pd.igt.f4.p">Sunucuya kurman yeterli; oyuncuların modu kurması gerekmez. Kursalar da sorun çıkmaz.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.igt.f5.t">Ayarlanabilir</h3>
+              <p data-i18n="pd.igt.f5.p">config/iron_golem_troll.json ile trolü açıp kapatabilir, her vuruşta kaç blok tırmanacağını ve en uzak vuruş mesafesini ayarlayabilirsin. Uzaktan atılan oklar tırmanış başlatmaz.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.igt.f6.t">Komutlar</h3>
+              <p data-i18n="pd.igt.f6.p">Operatörler /igtroll on, off ve toggle ile trolü açıp kapatır; /igtroll reload ayarları yeniden okur, /igtroll status durumu gösterir.</p>
+            </article>
+          </div>
+
+          <h2><span data-i18n="pd.inGame">Oyundan görüntüler</span></h2>
+
+          <figure class="project-video">
+            <video controls preload="none" playsinline poster="assets/img/projeler/irongolemtroll-demo-poster.jpg" width="1280" height="720">
+              <source src="assets/img/projeler/irongolemtroll-demo.mp4" type="video/mp4">
+            </video>
+            <figcaption data-i18n="pd.igt.video">Vurulan demir golemler altlarına demir blok koyarak tırmanıyor; köyde demir kuleler yükseliyor.</figcaption>
+          </figure>
+
+          <h2><span data-i18n="pd.requirements">Gereksinimler</span></h2>
+
+          <ul class="check-list">
+            <li>Minecraft <strong>26.2</strong></li>
+            <li><a href="https://fabricmc.net/use/" target="_blank" rel="noopener">Fabric Loader</a> <strong>0.19.5</strong> <span data-i18n="pd.orNewer">veya üstü</span></li>
+            <li><a href="https://modrinth.com/mod/fabric-api" target="_blank" rel="noopener">Fabric API</a></li>
+            <li>Java <strong>25</strong></li>
+          </ul>
+
+          <h2><span data-i18n="pd.install">Kurulum</span></h2>
+
+          <ol class="steps">
+            <li data-i18n="pd.mod.step1">Fabric Loader'ı Minecraft 26.2 için kur.</li>
+            <li data-i18n="pd.igt.step2">İndirdiğin .jar dosyasını ve Fabric API'yi sunucunun mods klasörüne at; tek oyunculu oynuyorsan .minecraft/mods klasörüne.</li>
+            <li data-i18n="pd.mod.step3">Oyunu Fabric profiliyle başlat.</li>
+          </ol>
+          <p class="project-tip"><span data-i18n="pd.mod.tip">İpucu: MehburMC Launcher ile Fabric profilini tek tıkla kurabilir, modları Mod Toggle ile açıp kapatabilirsin.</span> <a href="proje-mehburmc-launcher.html" data-i18n="pd.mod.tipLink">Launcher'a göz at →</a></p>
+
+          <h2><span data-i18n="pd.verify">Dosyayı doğrulama</span></h2>
+          <p data-i18n="pd.verifyText">İndirdiğin dosyanın benim yayınladığımla birebir aynı olduğunu kontrol etmek için dosyanın bulunduğu klasörde PowerShell'i açıp şu komutu çalıştır:</p>
+          <pre class="cmd"><code>Get-FileHash .\iron-golem-troll-1.0.0.jar -Algorithm SHA256</code></pre>
+          <p class="project-small" data-i18n="pd.verifyExpect">Çıkan SHA-256 değeri bununla aynı olmalı:</p>
+          <pre class="cmd cmd--hash"><code>2074b81012c51d4f366cabdeaed8db21033c6f625a0831a137b7d1f58272fe93</code></pre>
+        </div>
+
+        <aside class="project-aside">
+          <div class="info-box">
+            <p class="eyebrow" data-i18n="pd.info">Bilgiler</p>
+            <dl>
+              <div><dt><span data-i18n="pd.type">Tür</span></dt><dd><span data-i18n="pd.modType">Minecraft modu</span></dd></div>
+              <div><dt><span data-i18n="pd.loader">Mod yükleyici</span></dt><dd>Fabric</dd></div>
+              <div><dt>Minecraft</dt><dd>26.2</dd></div>
+              <div><dt>Java</dt><dd>25</dd></div>
+              <div><dt><span data-i18n="pd.file">Dosya</span></dt><dd>iron-golem-troll-1.0.0.jar · 24 KB</dd></div>
+              <div><dt><span data-i18n="pd.version">Sürüm</span></dt><dd>1.0.0</dd></div>
+              <div><dt><span data-i18n="pd.date">Yayın tarihi</span></dt><dd><span data-i18n="pd.date.nov10">10 Kasım 2026</span></dd></div>
+              <div><dt><span data-i18n="pd.side">Çalıştığı yer</span></dt><dd><span data-i18n="projects.serverSide">Sunucu tarafı</span></dd></div>
+              <div><dt><span data-i18n="pd.license">Lisans</span></dt><dd>MIT</dd></div>
+              <div><dt><span data-i18n="pd.status">Durum</span></dt><dd><span class="status-badge" data-i18n="pd.live">Yayında</span></dd></div>
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
+</body>
+</html>

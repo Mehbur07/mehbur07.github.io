@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MehburMC Launcher — Mehbur07</title>
+  <meta name="description" content="MehburMC Launcher: Windows ve Linux için hafif, reklamsız Minecraft launcher&#x27;ı. Özellikler, ekran görüntüleri, kurulum ve indirme.">
+  <link rel="canonical" href="https://mehbur07.github.io/proje-mehburmc-launcher.html">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b0614">
+  <!-- Paylaşım önizlemesi (Discord, X, WhatsApp vb.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mehbur07">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="MehburMC Launcher — Mehbur07">
+  <meta property="og:description" content="MehburMC Launcher: Windows ve Linux için hafif, reklamsız Minecraft launcher&#x27;ı. Özellikler, ekran görüntüleri, kurulum ve indirme.">
+  <meta property="og:url" content="https://mehbur07.github.io/proje-mehburmc-launcher.html">
+  <meta property="og:image" content="https://mehbur07.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mehbur07 — Mehmet Burak ŞAHİN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@RealMehbur07X">
+  <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('m07-theme'),l=localStorage.getItem('m07-lang');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='en'||l==='tr')d.lang=l;}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600;700&family=Oxanium:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/translations.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="projects">
+  <header class="site-header" data-layout="header"></header>
+
+  <main id="main">
+    <!-- MehburMC Launcher detay sayfası: Projelerim'deki Windows ve Linux kartlarının "Sürüm Notları" düğmesi buraya gelir -->
+    <section class="project-hero">
+      <div class="container project-hero__grid">
+        <div class="project-hero__text">
+          <a class="back-link" data-i18n="pd.back" href="projelerim.html">← Tüm projeler</a>
+          <div class="project-hero__title">
+            <h1>MehburMC Launcher</h1>
+            <span class="status-badge" data-i18n="pd.live">Yayında</span>
+          </div>
+          <ul class="tags"><li class="tag">Windows</li><li class="tag">Linux</li><li class="tag">Tauri</li><li class="tag">Vanilla</li><li class="tag">Forge</li><li class="tag">Fabric</li><li class="tag">OptiFine</li><li class="tag">Modrinth</li></ul>
+          <p class="lead" data-i18n="pd.mmc.lead">Hafif ve reklamsız bir Minecraft launcher'ı. Vanilla, Forge, Fabric ve OptiFine'ı tek tıkla kurar; modların, skinlerin ve arkadaşların tek yerde.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" data-i18n="pd.mmc.dlWin" href="https://github.com/Mehbur07/mehbur07.github.io/releases/download/mehburmc-launcher-v0.34.0/MehburMCLauncher.exe">Windows için indir</a>
+            <a class="btn btn--ghost" data-i18n="pd.mmc.dlLinux" href="https://github.com/Mehbur07/mehbur07.github.io/releases/download/mehburmc-launcher-v0.34.0/MehburMC-Launcher_0.34.0_amd64.deb">Linux için indir (.deb)</a>
+            <a class="btn btn--ghost btn--ext" data-i18n="pd.mmc.site" href="https://mehburmc.github.io/" target="_blank" rel="noopener">Tanıtım Sitesi</a>
+            <a class="btn btn--ghost btn--ext" href="https://github.com/Mehbur07/MehburMC-Launcher" target="_blank" rel="noopener" data-i18n="projects.source">Kaynak Kodu</a>
+          </div>
+          <p class="project-hero__meta">v0.34.0 · MehburMCLauncher.exe · 14 MB · .deb · <span data-i18n="projects.mmcl.size">8,3 MB</span></p>
+        </div>
+        <figure class="project-hero__media">
+          <img src="assets/img/projeler/launcher-mod-browser.webp" alt="MehburMC Launcher Mod Tarayıcı ekranı" data-i18n-attr="alt:pd.mmc.heroAlt" width="1280" height="800" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section project-body">
+      <div class="container project-layout">
+        <div class="project-main">
+          <p class="project-intro" data-i18n="pd.mmc.intro">MehburMC Launcher, Windows ve Linux için kendi geliştirdiğim hafif, reklamsız ve telemetrisiz bir Minecraft Java Edition launcher'ı. Tauri ile yazıldığı için az RAM kullanır. Modlarını, skinlerini ve arkadaşlarını tek yerden yönetirsin; gereken Java sürümünü kendisi indirip kurar, yeni sürüm çıkınca da kendini günceller.</p>
+
+          <aside class="notice notice--warn">
+            <h3 data-i18n="pd.mmc.warn.t">İlk açılışta Windows uyarısı</h3>
+            <p data-i18n="pd.mmc.warn.p">MehburMC Launcher dijital olarak imzalanmadığı için Windows ilk açılışta "Windows bilgisayarınızı korudu" (SmartScreen) uyarısı gösterebilir. Bu, imzasız programlarda görülen genel bir uyarıdır. Çalıştırmak için Ek bilgi → Yine de çalıştır'a tıkla.</p>
+          </aside>
+
+          <h2><span data-i18n="pd.new">Bu sürümde yeni</span></h2>
+
+          <ul class="check-list">
+            <li data-i18n="pd.mmc.new1">Daha hızlı ilk açılış: artık aynı anda 32 dosya indiriliyor; bir Minecraft sürümünün ilk hazırlığı yaklaşık 105 saniyeden 76 saniyeye indi.</li>
+            <li data-i18n="pd.mmc.new2">Performans modları: modlu bir profilin Genel sekmesindeki Tek tıkla kur düğmesi ModernFix (daha hızlı açılış) ve FerriteCore (daha az bellek) modlarını kurar.</li>
+            <li data-i18n="pd.mmc.new3">MehburMC Kütüphanesi sitesine hazırlık: onaylı modlar, modpack'ler ve paketler yakında giriş yapmadan siteden de indirilebilecek.</li>
+          </ul>
+
+          <h2><span data-i18n="pd.features">Özellikler</span></h2>
+
+          <div class="feature-grid">
+            <article class="feature">
+              <h3 data-i18n="pd.mmc.f1.t">Profiller</h3>
+              <p data-i18n="pd.mmc.f1.p">Vanilla, Fabric, Quilt, Legacy Fabric, Forge, NeoForge ve OptiFine. Her profilin kendi mods, saves ve config klasörü var.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.mmc.f2.t">Otomatik Java</h3>
+              <p data-i18n="pd.mmc.f2.p">Her Minecraft sürümü için gereken Java'yı (Adoptium Temurin) kendisi indirip kurar; senin uğraşman gerekmez.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.mmc.f3.t">Mod Tarayıcı</h3>
+              <p data-i18n="pd.mmc.f3.p">Modrinth'te mod, modpack, resource pack ve shader arayıp kurarsın; güncellemeleri görür, .mrpack dosyalarını içe aktarırsın.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.mmc.f4.t">Mod Toggle</h3>
+              <p data-i18n="pd.mmc.f4.p">Modları tek tıkla aç ya da kapat, mod grupları kur, bir profilin modlarını başka bir profile aktar. Farklı sürüme aktarırken uygun sürümü Modrinth'ten bulur.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.mmc.f5.t">Skin &amp; Cape</h3>
+              <p data-i18n="pd.mmc.f5.p">Skin ve pelerin kütüphanesi, hazır koleksiyonlar, 3B önizlemeli piksel editörü ve toplulukla paylaşma.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.mmc.f6.t">Arkadaşlar</h3>
+              <p data-i18n="pd.mmc.f6.p">Arkadaş koduyla ekle; mesajlaş, grup sohbeti kur, 16 kişiye kadar sesli ara, ekranını ve mod listeni paylaş.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.mmc.f7.t">Sunucular ve kütüphane</h3>
+              <p data-i18n="pd.mmc.f7.p">Favori sunucular, ping ve oyuncu sayısı, tek tıkla katılma. MehburMC Kütüphanesi'nde oyuncuların yüklediği, taranıp onaylanmış mod ve paketler.</p>
+            </article>
+            <article class="feature">
+              <h3 data-i18n="pd.mmc.f8.t">Ve dahası</h3>
+              <p data-i18n="pd.mmc.f8.p">Minecraft haberleri, çökme analizi, yöneticilere mesaj yazma, istediğin renkte tema, Türkçe ve İngilizce arayüz, taşınabilir (portable) kullanım.</p>
+            </article>
+          </div>
+
+          <h2><span data-i18n="pd.screens">Ekran görüntüleri</span></h2>
+
+          <div class="gallery">
+            <figure>
+              <a href="assets/img/projeler/launcher-mod-browser.webp" target="_blank" rel="noopener"><img src="assets/img/projeler/launcher-mod-browser.webp" alt="Mod Tarayıcı: Modrinth&#x27;te mod, modpack ve shader ara, tek tıkla kur" data-i18n-attr="alt:pd.mmc.shot1" width="1280" height="800" loading="lazy"></a>
+              <figcaption data-i18n="pd.mmc.shot1">Mod Tarayıcı: Modrinth'te mod, modpack ve shader ara, tek tıkla kur</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/img/projeler/launcher-mod-toggle.webp" target="_blank" rel="noopener"><img src="assets/img/projeler/launcher-mod-toggle.webp" alt="Mod Toggle: bir profilin modlarını tek tıkla aç ya da kapat" data-i18n-attr="alt:pd.mmc.shot2" width="1280" height="800" loading="lazy"></a>
+              <figcaption data-i18n="pd.mmc.shot2">Mod Toggle: bir profilin modlarını tek tıkla aç ya da kapat</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/img/projeler/launcher-skins.webp" target="_blank" rel="noopener"><img src="assets/img/projeler/launcher-skins.webp" alt="Skin &amp; Cape: skin kütüphanesi ve 3B önizleme" data-i18n-attr="alt:pd.mmc.shot3" width="1280" height="800" loading="lazy"></a>
+              <figcaption data-i18n="pd.mmc.shot3">Skin &amp; Cape: skin kütüphanesi ve 3B önizleme</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/img/projeler/launcher-friends.webp" target="_blank" rel="noopener"><img src="assets/img/projeler/launcher-friends.webp" alt="Arkadaşlar: mesajlaşma, grup sohbeti ve sesli arama" data-i18n-attr="alt:pd.mmc.shot4" width="1280" height="800" loading="lazy"></a>
+              <figcaption data-i18n="pd.mmc.shot4">Arkadaşlar: mesajlaşma, grup sohbeti ve sesli arama</figcaption>
+            </figure>
+          </div>
+
+          <p class="project-small" data-i18n="pd.mmc.shotsNote">Ekran görüntülerindeki hesaplar, arkadaşlar ve mesajlar örnek verilerdir.</p>
+
+          <h2><span data-i18n="pd.install">Kurulum</span></h2>
+
+          <h3>Windows 10 / 11 (64 bit)</h3>
+
+          <ol class="steps">
+            <li data-i18n="pd.mmc.win1">MehburMCLauncher.exe dosyasını indir ve çalıştır.</li>
+            <li data-i18n="pd.mmc.win2">SmartScreen uyarısı çıkarsa Ek bilgi → Yine de çalıştır'a tıkla.</li>
+            <li data-i18n="pd.mmc.win3">Giriş yap, bir profil oluştur ve Oyna'ya bas.</li>
+          </ol>
+
+          <h3 id="linux">Linux (Ubuntu 26.04 / MehburOS, amd64)</h3>
+
+          <p data-i18n="pd.mmc.linuxText">Dosyanın olduğu klasörde terminal açıp şunu çalıştır. Gereken paketler (libwebkit2gtk-4.1-0, libgtk-3-0, pkexec) otomatik kurulur; sonraki sürümler launcher'ın içinden güncellenir.</p>
+
+          <pre class="cmd"><code>sudo apt install ./MehburMC-Launcher_0.34.0_amd64.deb</code></pre>
+
+          <p data-i18n="pd.mmc.linuxRemove">Kaldırmak için:</p>
+
+          <pre class="cmd"><code>sudo apt remove mehbur-mc-launcher</code></pre>
+
+          <h2><span data-i18n="pd.verify">Dosyayı doğrulama</span></h2>
+
+          <p data-i18n="pd.verifyText">İndirdiğin dosyanın benim yayınladığımla birebir aynı olduğunu kontrol etmek için dosyanın bulunduğu klasörde PowerShell'i açıp şu komutu çalıştır:</p>
+
+          <pre class="cmd"><code>Get-FileHash .\MehburMCLauncher.exe -Algorithm SHA256</code></pre>
+
+          <p class="project-small" data-i18n="pd.verifyExpect">Çıkan SHA-256 değeri bununla aynı olmalı:</p>
+
+          <pre class="cmd cmd--hash"><code>b8dc5b67fef0098c525f10888c8bb3264eacf66e7cd62e4d5d039b374c5cb1ec</code></pre>
+
+          <p data-i18n="pd.verifyLinux">Linux'ta .deb dosyası için aynı klasörde terminal açıp şunu çalıştır:</p>
+
+          <pre class="cmd"><code>sha256sum MehburMC-Launcher_0.34.0_amd64.deb</code></pre>
+
+          <p class="project-small" data-i18n="pd.verifyExpect">Çıkan SHA-256 değeri bununla aynı olmalı:</p>
+
+          <pre class="cmd cmd--hash"><code>6dbe5374efb6969666da156c2b112ba237942c8db5ddc3a9a21faf1fe536c74d</code></pre>
+        </div>
+
+        <aside class="project-aside">
+          <div class="info-box">
+            <p class="eyebrow" data-i18n="pd.info">Bilgiler</p>
+            <dl>
+              <div><dt><span data-i18n="pd.platform">Platform</span></dt><dd>Windows 10/11 (64 bit)<br>Ubuntu 26.04 / MehburOS</dd></div>
+              <div><dt><span data-i18n="pd.files">Dosyalar</span></dt><dd>.exe · 14 MB<br>.deb · <span data-i18n="projects.mmcl.size">8,3 MB</span></dd></div>
+              <div><dt><span data-i18n="pd.version">Sürüm</span></dt><dd>0.34.0</dd></div>
+              <div><dt><span data-i18n="pd.date">Yayın tarihi</span></dt><dd><span data-i18n="pd.date.nov18">18 Kasım 2026</span></dd></div>
+              <div><dt><span data-i18n="pd.tech">Teknoloji</span></dt><dd>Tauri 2 · Rust · React</dd></div>
+              <div><dt><span data-i18n="pd.license">Lisans</span></dt><dd>GPL-3.0</dd></div>
+              <div><dt><span data-i18n="pd.status">Durum</span></dt><dd><span class="status-badge" data-i18n="pd.live">Yayında</span></dd></div>
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-layout="footer"></footer>
+</body>
+</html>
