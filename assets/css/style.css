@@ -857,3 +857,252 @@ main .container,
   color: var(--danger);
   background: color-mix(in srgb, var(--danger) 10%, transparent);
 }
+
+/* ---------- 17) Proje detay sayfası (proje-*.html) ---------- */
+
+/* Üst bölüm: solda isim, etiketler, düğmeler; sağda logo ya da ekran görüntüsü */
+.project-hero { padding-block: clamp(28px, 5vw, 56px) 0; }
+.project-hero__grid { display: grid; gap: 32px; align-items: center; }
+@media (min-width: 900px) {
+  .project-hero__grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 48px; }
+}
+.project-hero__text > * + * { margin-top: 16px; }
+.project-hero__title { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.project-hero .lead { max-width: 620px; font-size: 1.1rem; color: var(--text-muted); }
+.project-hero .btn-row { margin-top: 24px; }
+.project-hero__meta { font-family: var(--font-mono); font-size: .8rem; color: var(--text-muted); }
+
+.project-hero__media {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 24px 60px -30px var(--glow-purple);
+}
+.project-hero__media img { width: 100%; height: auto; }
+
+/* Mod logoları: neon zeminli kare çerçeve */
+.project-hero__media--logo {
+  justify-self: center;
+  width: min(100%, 300px);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background: radial-gradient(circle at 50% 40%, rgba(157, 77, 255, .35), transparent 70%), #0b0614;
+  border-color: #3a2560;
+}
+.project-hero__media--logo img { width: 100%; height: 100%; object-fit: contain; border-radius: 12px; }
+:root[data-theme="light"] .project-hero__media--logo {
+  background: radial-gradient(circle at 50% 40%, rgba(207, 166, 255, .7), transparent 70%), #ffffff;
+  border-color: var(--border);
+}
+
+/* "← Tüm projeler" geri linki */
+.back-link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: .85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.back-link:hover { color: var(--accent-text); }
+
+/* "Yayında" rozeti: başında parlayan yeşil nokta */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 12px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--success);
+  background: color-mix(in srgb, var(--success) 10%, transparent);
+}
+.status-badge::before {
+  content: "";
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
+
+/* Siteden dışarı giden düğme: sonunda ok işareti */
+.btn--ext::after { content: "↗"; font-size: .9em; }
+
+/* Gövde: solda içerik, geniş ekranda sağda kaydırırken yerinde duran "Bilgiler" kutusu */
+.project-body { padding-top: clamp(36px, 6vw, 64px); }
+.project-layout { display: grid; gap: 40px; }
+@media (min-width: 960px) {
+  .project-layout { grid-template-columns: minmax(0, 1fr) 320px; gap: 48px; align-items: start; }
+  .project-aside { position: sticky; top: 92px; }
+}
+
+.project-main > * + * { margin-top: 16px; }
+.project-main > h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 48px;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+}
+.project-main > h2::before {
+  content: "";
+  flex: none;
+  width: 10px; height: 10px;
+  background: var(--yellow);
+  border: 1px solid var(--yellow-edge);
+  box-shadow: 0 0 10px var(--glow-yellow);
+}
+.project-main > h2 + * { margin-top: 20px; }
+.project-main > h3 { margin-top: 28px; font-size: 1.1rem; }
+/* Başlığa link ile gelince (örn. #linux) yapışkan menünün altında kalmasın */
+.project-main [id] { scroll-margin-top: 92px; }
+
+.project-intro { font-size: 1.08rem; }
+.project-small { font-size: .88rem; color: var(--text-muted); }
+.project-main > p:not([class]) { color: var(--text-muted); }
+
+.project-tip {
+  padding: 12px 16px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-soft);
+  font-size: .92rem;
+  color: var(--text-muted);
+}
+
+/* Uyarı / bilgi kutusu */
+.notice {
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  border-radius: var(--radius-sm);
+}
+.notice h3 { font-size: 1rem; margin-bottom: 6px; }
+.notice p { color: var(--text-muted); font-size: .95rem; }
+.notice--warn { border-left-color: var(--yellow-edge); background: color-mix(in srgb, var(--yellow) 7%, transparent); }
+.notice--info { border-left-color: var(--purple); background: color-mix(in srgb, var(--purple) 9%, transparent); }
+
+/* Özellik kartları */
+.feature-grid { display: grid; gap: 14px; }
+@media (min-width: 640px) { .feature-grid { grid-template-columns: 1fr 1fr; } }
+.feature {
+  padding: 18px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.feature h3 { display: flex; align-items: center; gap: 10px; font-size: 1.02rem; }
+.feature h3::before {
+  content: "";
+  flex: none;
+  width: 8px; height: 8px;
+  background: var(--accent-text);
+  box-shadow: 0 0 8px var(--glow-purple);
+}
+.feature p { margin-top: 6px; font-size: .93rem; color: var(--text-muted); }
+
+/* Tikli liste (gereksinimler, yenilikler) */
+.check-list { margin: 0; padding: 0; list-style: none; }
+.check-list li { position: relative; padding-left: 28px; color: var(--text-muted); }
+.check-list li + li { margin-top: 8px; }
+.check-list li::before {
+  content: "✓";
+  position: absolute; left: 4px; top: 0;
+  font-weight: 700;
+  color: var(--success);
+}
+.check-list strong { color: var(--text); }
+
+/* Numaralı kurulum adımları */
+.steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+.steps li { position: relative; padding-left: 40px; min-height: 28px; color: var(--text-muted); counter-increment: step; }
+.steps li + li { margin-top: 10px; }
+.steps li::before {
+  content: counter(step);
+  position: absolute; left: 0; top: -1px;
+  display: grid; place-items: center;
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  background: var(--yellow);
+  border: 1px solid var(--yellow-edge);
+  color: var(--on-accent);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+/* Ekran görüntüsü galerisi: farklı boyutlu görüntüler aynı oranlı çerçevede durur */
+.gallery { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+.gallery figure { margin: 0; }
+.gallery a { display: block; border-radius: var(--radius-sm); }
+.gallery img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background: #0b0614;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: border-color .2s, box-shadow .2s;
+}
+.gallery a:hover img { border-color: var(--purple); box-shadow: 0 10px 30px -12px var(--glow-purple); }
+.gallery figcaption, .project-video figcaption { margin-top: 8px; font-size: .86rem; color: var(--text-muted); }
+
+/* Pixel art dokular: küçük kareler, bulanıklaşmadan büyütülür */
+.gallery--pixel { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+.gallery__tile {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1 / 1;
+  padding: 18%;
+  background: radial-gradient(circle at 50% 45%, rgba(157, 77, 255, .3), transparent 70%), #0b0614;
+  border: 1px solid #3a2560;
+  border-radius: var(--radius-sm);
+}
+.gallery--pixel img {
+  aspect-ratio: 1 / 1;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  image-rendering: pixelated;
+}
+
+/* Oyun videosu */
+.project-video { margin: 0; }
+.project-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+/* SHA-256 değeri: uzun, tek parça yazı */
+.cmd--hash { font-size: .78rem; word-break: break-all; }
+
+/* Sağdaki "Bilgiler" kutusu */
+.info-box {
+  padding: 20px 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.info-box dl { margin: 10px 0 0; }
+.info-box dl > div {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 12px;
+  padding-block: 10px;
+  border-top: 1px solid var(--border);
+}
+.info-box dl > div:first-child { border-top: 0; }
+.info-box dt { font-size: .85rem; color: var(--text-muted); }
+.info-box dd { margin: 0; font-size: .92rem; font-weight: 600; overflow-wrap: break-word; }
